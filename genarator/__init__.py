@@ -1,0 +1,83 @@
+# def greet():
+#     yield 'hi'
+#     yield 'how'
+#
+# msg = greet()
+# print(list(msg))
+#
+# for item in msg:
+#     print(item)
+
+#squre number
+# def squres(l):
+#     for item in l:
+#         yield item**2
+#
+# l = [1,2,3,4]
+# res = (item ** 2 for item in l)
+# print(res)  #address
+# print(list(res))
+# print(dir(res))     #both iter and next method
+
+# print(next(res))
+# print(next(res))
+# print(next(res))
+
+#wa generator expression to yield even numbers in the range 1 -50
+# def even():
+#     for item in range(51):
+#         if item % 2 == 0:
+#             yield item
+# print(even())
+# print(list(even()))
+
+#wag fuction and expression to yield tha names starting with vowels
+# names = ['john', 'srikanth', 'evagreen', 'anabella']
+# def vow(names):
+#     for item in names:
+#         if item[0] in 'AEIOUaeiou':
+#             yield item
+#
+# vowel = vow(names)
+# print(vowel)
+# print(list(vowel))
+#
+# vow_ = (item for item in names if item[0] in 'AEIOUaeiou')
+# print(vow_)
+# print(list(vow_))
+
+#wag function expression to yield lenth of eachline in file only if the line is not empty
+# path = r"C:\Users\srikanth\PycharmProjects\python_new\file_directory\txt_log_files\sample.txt"
+# def len_file():
+#     with open(path) as file:
+#         for line in file:
+#             if line.strip():
+#                 yield line
+# lines = print(len_file)
+# print(lines)
+#
+# len = (len(line) for line in file if line.strip())
+# print(len)
+# print(list(len))
+
+
+# def g_greet():
+#     print("start execute")
+#     yield 'hih how'
+# res = g_greet()
+#
+# for item in res:
+#     print(item)
+# #
+# print(next(res))
+
+
+# def frange(start, end, step):
+#     while start < end:
+#         yield start
+#         start += step
+# print(frange(0,1,0.5))
+# print(list(frange(0,1,0.5)))
+
+
+
