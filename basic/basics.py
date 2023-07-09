@@ -10,7 +10,7 @@
 # of a class.
 
 #Without creating an Object
-# class python:
+class python:
 #     def designer():
 #         print("Guido van Rossum")
 # python.designer()
