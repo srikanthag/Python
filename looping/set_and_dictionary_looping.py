@@ -53,13 +53,14 @@
 # for key, value in d.items():
 #     print(value)
 
-#get method
+#get methodj
 # for key in d:
 #     print(d.get(key))
 
 
 #wap to print the items in a dictionary along with the indecies
 # d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+
 #apply enumerate on dictionary variable
 # for item, index in enumerate (d.items()):
 #     print(item, index)
@@ -93,7 +94,7 @@
 #     d[char] = count
 # print(d)
 
-#defaultdict()
+#defaultdict(): Defaultdict is a container like dictionaries present in the module collections. Defaultdict is a sub-class of the dictionary class that returns a dictionary-like object.
 # from collections import defaultdict
 # s = 'hello world'
 # dd = defaultdict(int)
