@@ -2,7 +2,7 @@
 # def prime(num):
 #     for item in range(2, num):
 #         if num % item == 0:
-#             return'prime not number'
+#             return 'not prime number'
 #     return 'prime number'
 #
 # print(prime(9))

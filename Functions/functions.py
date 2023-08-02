@@ -90,7 +90,7 @@
 # add_(1,2,c=3,d=4)
 
 
-#wa function to add two numbers and return the result
+#w a function to add two numbers and return the result
 # def add_(a,b):
 #     c = a + b
 #     return c

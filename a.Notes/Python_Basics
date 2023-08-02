@@ -1,0 +1,68 @@
+"Python"
+a. Python is programming language.
+b. Powerful object oriented programming language: Python supports object-oriented language and concepts of classes and objects
+    come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
+    programmer to write reusable code and develop applications in less code.
+c. Support dynamic memory allocation: In Python, we don't need to specify the data-type of the variable.
+    When we assign some value to the variable, it automatically allocates the memory to the variable at run time.
+    Suppose we are assigned integer value 15 to x, then we don't need to write int x = 15. Just write x = 15.
+d. Python is an interpreted language: it means the Python program is executed one line at a time.
+e. Cross-platform Language: Python can run equally on different platforms such as Windows, Linux, UNIX, and Macintosh, etc.
+    So, we can say that Python is a portable language.
+f. Large Standard Library: It provides a vast range of libraries for the various fields such as machine learning, web developer,
+    and also for the scripting. There are various machine learning libraries, such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc.
+    Django, flask, pyramids are the popular framework for Python web development.
+
+===================================================================================================================
+
+""" Python Compilation """
+Compilation − The source code in python is saved as a . py file which is then compiled into a format known as byte code,
+byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the
+source is updated.
+
+===================================================================================================================
+
+" Identifier"
+User defined name to represent a variable, functions, class, modules ect.
+
+Rules:
+a. Name can start "_" or "alphabet".
+b. can be alpha numeric but not start with number.
+c. No special character except "_".
+d. Kewords cannot be identifier.
+e. Max char is 79
+
+Note: To check weather python identifier is valid or not >>> "string".isidentifier
+
+==================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

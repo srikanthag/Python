@@ -115,7 +115,8 @@
 #         if char == index:
 #             print(index, item)
 # str('riksa')
-# list
+
+############################  List  ############################
 
 #Traverce through a list
 # def list(arg):
@@ -222,7 +223,7 @@
 # list(['python', 'dad', 'hai', 'malayalam', 'madam', 'mom'])
 
 
-#set
+############### Set #######################
 
 # wap to traverse through set and print each element
 # def set(arg):
@@ -230,7 +231,8 @@
 #         print(item)
 # set({'python', 'dad', 'hi'})
 
-#dictionary
+#################### Dictionary ################################
+
 #wap to create a dictionary with the character and its count pair in a string
 # def dict(arg):
 #     d = {}
@@ -238,7 +240,6 @@
 #         d[item] = arg.count(item)
 #     return d
 # print(dict("srikaainth"))
-
 
 #wap to create a dictionary with word and its count pair
 # def dict(arg):
