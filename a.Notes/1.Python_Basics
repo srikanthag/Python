@@ -3,6 +3,21 @@ a. Python is programming language.
 b. Powerful object oriented programming language: Python supports object-oriented language and concepts of classes and objects
     come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
     programmer to write reusable code and develop applications in less code.
+
+" Without creating an Object ""
+class python:
+     def designer():
+         print("Guido van Rossum")
+python.designer()
+
+" With creating an Object ""
+class python:
+     def designer():
+         print("Guido van Rossum")
+ p = python
+p.designer()
+
+
 c. Support dynamic memory allocation: In Python, we don't need to specify the data-type of the variable.
     When we assign some value to the variable, it automatically allocates the memory to the variable at run time.
     Suppose we are assigned integer value 15 to x, then we don't need to write int x = 15. Just write x = 15.
@@ -36,12 +51,60 @@ Note: To check weather python identifier is valid or not >>> "string".isidentifi
 
 ==================================================================================================================
 
+"Key words"
+
+Special words which having special meaning.
+Cant assign any value to the keyword.
+
+Note: To get all ketwords
+a. help("keyword"
+b. import keyword
+    print(keyword.kwlist)
+
+==================================================================================================================
+
+"Python Variable"
+Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
+
+a=10
+x=a
+print(id(x))
+
+"id" returns the memory location of an object
+
+==================================================================================================================
+
+"Memory allocation in variables"
+
+There are two parts of memory (RAM)
+a. Stack memory (Organized memory)
+b. Heap memory (Unorganized memory)
+
+In this method references are stored in Stack and values are stored in Heap.
+
+Eg: When a=10, 10 is created in heap and its reference is is assigned to variable 'a'. x=a, here will crete another refference variable if object
+already exist with same value.
+If we change the value of a (a=15) then link b/w 'a' and 10 disconnected. But 'x' still refer to 10.
+If we assign another value to 'x' (x=20). It is also disconnect link b/w 'x' and 10
+Now 10 does not have any reference link. The garbage collector automatically delete the object from heap memory.
+
+==========================================================================================================================
+
+"Print"
+Standard function used to print the output.
+
+Parameter
+a. end
+print(value end"string")
+default value:\n
+
+b. sep
+print(value, sep="string")
+
+"Input"
 
 
-
-
-
-
+=====================================================================================================================
 
 
 

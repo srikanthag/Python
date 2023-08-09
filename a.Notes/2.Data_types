@@ -1,0 +1,80 @@
+"" Data types ""
+Datatypes are represent the type of data ths is store in memory location.
+variable can hold the value and every value has a data type.
+
+type: returns the type of data
+d = "srikanth"
+print(type(d))
+
+dir(): returns the list of attributes.
+d = "srikanth"
+print(dir(d))
+
+============================================================================================================================
+"Integer"
+It specify the data stored inside. The memory allocation should be an integer.
+
+operators we can perform in Integer.
+a. Addition
+b. Subtraction
+c. Multiplication
+d. Division
+e. Floor division
+f. Exponent
+g. Modules
+h. Divmod
+i. abs
+
+** abs: Give only positive integer as the output.
+d =-1
+print(abs(d))
+
+** round num: round off the number
+d =1.95
+print(round(d))
+
+** Mathtrunc: Truncate removes the decimal point from a flooating point
+import math
+d =1.95
+print(math.trunc(d))
+
+=====================================================================================================================================
+"Float"
+It specify the data stored inside. The memory allocation should be an decimal.
+b=5.8
+x=float(9.2)
+x=9.2
+
+=====================================================================================================================
+"Complex  number"
+Written in the form of a+bj, When 'a' is the real part and 'b' is the imaginary part.
+
+a = 2+3j
+b = complex(a)
+print(b)
+
+=========================================================================================================================
+"Boolean"
+Boolean variables are defined on True or False keywords.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

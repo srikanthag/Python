@@ -1,0 +1,657 @@
+What is Python? What are the benefits of using Python?
+Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source.
+
+What are the key features of Python?
+• Python is an interpreted language. That means that, unlike languages like C and its variants, Python does not need to be compiled before it is run. Other interpreted languages include PHP and Ruby.
+• Python is dynamically typed, this means that you don’t need to state the types of variables when you declare them or anything like that. You can do things like x=111 and then x="I'm a string" without error
+• Python is well suited to object orientated programming in that it allows the definition of classes along with composition and inheritance. Python does not have access specifiers (like C++’s public, private).
+
+
+1. What is pickling and unpickling?
+“Pickling” is the process whereby a Python object hierarchy is converted into a byte stream, and “unpickling”
+is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into
+an object hierarchy
+
+2. difference between import os and from os
+import module: import the whole library.
+from: imports a specific member or members of the library.
+
+3. composite keys
+dictionary have tuple as key
+holidays = {(26,1):'rday',(15,8):'iday'}
+print(holidays.values())
+print(holidays.keys())
+
+4. extract value from dict
+d = {'a':1, 'b':2}
+print(d.values())
+
+5. self and cls
+using the self keyword, we can access both the instance variables and the class attributes
+Using the cls keyword, we can only access the members of the class
+
+6. difference between list and array
+list is a container object, i.e. each slot of the list points to smoother object. it holds the reference of other
+objects.
+But in case of arrays, the memory slot does not hold the reference of the other objects, but it holds the
+actual value.
+
+7. your frd sends a python file..  You don't have any pychram or vscode or any .. How you will execute python file'''
+you will execute the python script in command prompt using command python demo.py
+
+8. What is the difference between.py and .pyc file
+.py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program
+
+9. what are inbuilt data types?
+Numeric Types:	int , float , complex
+Sequence Types:	list , tuple , range
+Mapping Type:	dict
+Set Types:	set , frozenset
+
+10. what is monkey patching?
+the process of calling a function with different name
+
+11. collection  or container object'''
+Collections in Python are containers that are used to store collections of data
+example list, dict, set, tuple and Strings can be defined as sequential collections of characters
+
+12. Iterables and sequences
+An iterable is anything you can loop over with a for loop in Python. Iterables can be looped over, and anything
+that can be looped over is an iterable.
+
+Sequences are iterables that have a specific set of features. They can be indexed starting from 0 and ending at
+one less than the length of the sequence, they have a length, and they can be sliced. Lists, tuples, strings
+
+Sets, dictionaries, files, and generators are all iterables but none of these things are sequences.
+
+13. data structures
+data structures are “containers” that organize and group data according to type.
+The basic Python data structures in Python include list, set, tuples, and dictionary. Each of the data structures
+is unique in its own way. 
+
+14. function annotation
+it is only type of hint but it does not enforce type check
+
+15. Module
+A module is a file containing Python code.
+inbuilt modules
+math
+time
+statistics
+os
+
+16. packages
+A package is basically a directory with Python files and a file with the name __init__ . py.
+
+17. Exception
+to handle unexpected termination of the program
+The try block lets you test a block of code for errors.
+The except block lets you handle the error specific exception block
+finally block execute after normal termination of try block
+
+s = 'srikanth'
+try:
+    print(K)
+
+except NameError as msg:
+     print(NameError)
+     print(msg)
+
+except ZeroDivisionError:
+     print(ZeroDivisionError)
+
+ finally:
+     print('close')
+
+18. why do you used pass
+When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed
+
+19. what are iterators in python
+An iterator is an object that can be iterated upon, meaning that you can traverse through all the values.
+consist of the methods __iter__() and __next__()
+
+20. what you mean by list comprehension in python
+List comprehension is basically creating lists based on existing iterables.
+
+21. what is the difference between JSON and a dictionary?
+JSON is a serialization format. That is, JSON is a way of representing structured data in the form of a textual string
+A dictionary is a data structure. But they aren’t the same: dictionaries are for working with data in
+your program, and JSON is for storing it or sending it around between programs.
+
+22. What are the python modules did you use in your project?
+time
+webdriver
+
+23. What is property and why do we use that?
+Properties are special kind of attributes which have getter, setter and delete methods like __get__, __set__
+and __delete__ methods
+
+24. Can you check the presence of a folder on your system through a program'''
+os.path.isdir() method in Python is used to check whether the specified path is an existing directory or not
+
+25. Which are the libraries you used in python?
+Selenium
+
+26. os modules
+'''The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents,
+changing and identifying the current directory, etc.'''
+cwd = os.getcwd()
+c = os.mkdir('___python')
+c = os.chdir()
+r = os.rmdir('___python')
+e = os.listdir()
+r = os.path.getsize()
+r = os.path.exists()
+
+27. What are the opps concept you used in your project and why they are important?
+class and inheritance concepts are used in my project along with these concepts decorators are also used
+
+28. What is constructor?
+A constructor is a unique method used to create and initialize an object of a class.
+
+29. What is pylint.
+Pylint is a plugin or extension that checks for syntax errors. Also, it tries to enforce coding standards according to
+PEP8 style guide. It can give recommendations/suggestions/hints about types.
+
+30. What is the difference between while loop and for loop.
+The body of while loop gets executed until some condition is True. Once the condition if False, the control comes out
+of the while loop.
+
+The body of for loop get executed for some fixed number of iterations.
+
+31. What are magic methods?
+Magic methods are special methods which starts and ends with double underscores. It is internally called by python.
+can customise the behaviour of an object or class using magic methods. They are also called as protocols.
+e.g. when you ask for the length of the list len(names) internally python will call _len_ method on list object.
+E.g. when you check for membership "apple" in names python internally triggers _contains_("apple")
+
+32. docstring
+a docstring is a string literal specified in source code that is used, like a comment, to document a specific segment of code.
+The docstrings are declared using ”'triple single quotes”' or “””triple double quotes””” just below the class, method
+or function declaration.
+
+33. What is PEP (python enhancement propasal)
+PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
+
+34. How is Python interpreted?
+Python language is an interpreted language. 
+Python source code does not convert into machine code. it actually convert into byte code. byte code send to python vertual machine which is python interpretor. if any error occur during interpretation then conversion stopped.
+
+35. How is memory managed in Python?
+Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap, and the interpreter takes care of this Python private heap.
+The allocation of Python heap space for Python objects is done by the Python memory manager. The core API gives access to some tools for the programmer to code.
+Python also has an inbuilt garbage collector, which recycles all the unused memory and frees the memory and makes it available to the heap space
+
+36. What are the tools that help to find bugs or perform the static analysis?
+Pylint is tool that verifies whether the module meets the coding standard.
+
+37. How are arguments passed by value or by reference?
+Everything in Python is an object, and all variables hold references to the objects. The reference values are according to the functions. Therefore, you cannot change the value of the references. However, you can change the objects if it is mutable.
+
+38. What is Dict and List comprehensions are?
+They are syntax constructions to ease the creation of a Dictionary or List based on existing iterable.
+
+39. Explain namespace in Python
+Namespace is currently defined name along with information of object that each name refference.
+
+40. What is lambda in Python?
+It is a single expression anonymous function often used as inline function. function can have any number of arguments but just one statement.
+
+41. What is the unittest in Python?
+A unit testing framework in Python is known as unittest. It supports sharing of setups, automation testing, shutdown code for tests, aggregation of tests into collections, etc.
+
+42. Explain slicing in Python?
+A mechanism to select a range of items from sequence types like list, tuple, strings etc., is known as slicing.
+
+43. What are generators in Python?
+The way of implementing iterators are known as generators. It is a normal function except that it yields expression in the function.
+
+44. What is index in Python?
+Way to reffer individual item within iterable by its position.
+Python sequences can be index in positive and negative numbers. For positive index, 0 is the first index, 1 is the second index, and so forth. For the negative index, (-1) is the last index, and (-2) is the second last index, and so forth.
+
+45. What is module and package in Python?
+In Python, module is the way to structure a program. Each Python program file is a module, which imports other modules like objects and attributes.
+The folder of Python program is a package of modules. A package can have modules or subfolders.
+
+46. What are the rules for local and global variables in Python?
+Here are the rules for local and global variables in Python:
+Local variables: If a variable is assigned a new value anywhere within the function’s body, it’s assumed to be local.
+Global variables: Those variables that are only referenced inside a function are implicitly global.
+
+47. What is the use of // operator in Python?
+It is a Floor Division operator, which is used for dividing two operands with the result as a quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
+
+48. Mention the use of the split function in Python
+The use of the split function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of all words present in the string.
+
+49. What is Python If Statement?
+Python if Statement is used for decision-making operations. It contains a body of code that runs only when the condition given in the if statement is true. If the condition is false, then the optional else statement runs, which contains some code for the else condition.
+When you want to justify one condition while the other condition is not true, then you use Python if-else statement.
+
+50. What is enumerate() in Python?
+Enumerate() in Python is a built-in function used for assigning an index to each item of the iterable object. 
+
+51. Explain Dictionary in Python with example
+A Dictionary in Python is the unordered and changeable collection of data values that holds key-value pairs. Each key-value pair in the dictionary maps the key to its associated value making it more optimized. A Dictionary in python is declared by enclosing a comma-separated list of key-value pairs using curly braces({}). Python Dictionary is classified into two elements: Keys and Values.
+
+52. How can you Update Python Dictionary?
+You can update a dictionary by adding a new entry or a key-value pair to an existing entry or by deleting an existing entry. Here in the example, we will add another name, “Sarah” to our existing dictionary.
+
+Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}    
+Dict.update({"Sarah":9})
+print(Dict)
+
+53. Give example of dictionary items() method
+it returns list of tuples
+Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}    
+print("Students Name: %s" % list(Dict.items()))
+
+54. How can you sort elements in Python dictionary?
+In the dictionary, you can easily sort the elements. For example, if we want to print the name of the elements of our dictionary alphabetically, we have to use for loop. It will sort each element of the dictionary accordingly.
+
+Example:
+Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}
+Boys = {'Tim': 18,'Charlie':12,'Robert':25}
+Girls = {'Tiffany':22}
+Students = list(Dict.keys())
+Students.sort()
+for S in Students:
+      print(":".join((S,str(Dict[S]))))
+
+55. Give example of logical operators
+Example of logical operators:
+a = True
+b = False
+print(('a and b is',a and b))
+print(('a or b is',a or b))
+print(('not a is',not a))
+
+56. Explain membership operators with example
+These operators test for membership in a sequence such as lists, strings, or tuples. Two membership operators are used in Python. (in, not in). It gives the result based on the variable present in a specified sequence or string.
+
+57. Explain arrays in Pythons with example
+A Python Array is a collection of a common type of data structures having elements with the same data type. It is used to store collections of data. In Python programming, arrays are handled by the “array” module. If you create arrays using the array module, elements of the array must be of the same numeric type.
+
+58. Explain important Python errors
+The important Python errors are 1) ArithmeticError, 2) ImportError, and 3) IndexError.
+• ArithmeticError: ArithmeticError act as a base class for all arithmetic exceptions. It is raised for errors in arithmetic operations.
+• ImportError: ImportError is raised when you are trying to import a module which does not present. This kind of exception occurs if you have   made a typing mistake in the module name or the module which is not present in the standard path.
+• IndexError: An IndexError is raised when you try to refer a sequence which is out of range.
+
+59. map function
+Python map() applies a function on all the items of an iterator given as input.
+
+60. filter function in python
+The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not.
+
+61. 121.What is type conversion in Python?
+Type conversion refers to the conversion of one data type iinto another.
+int() – converts any data type into integer type
+float() – converts any data type into float type
+ord() – converts characters into integer
+hex() – converts integers to hexadecimal
+oct() – converts integer to octal
+tuple() – This function is used to convert to a tuple.
+set() – This function returns the type after converting to set.
+list() – This function is used to convert any data type to a list type.
+dict() – This function is used to convert a tuple of order (key,value) into a dictionary.
+str() – Used to convert integer into a string.
+complex(real,imag) – This functionconverts real numbers to complex(real,imag) number.
+
+61. Is indentation required in python?
+Indentation is necessary for Python. It specifies a block of code. All code within loops, classes, functions, etc is specified within an indented block. It is usually done using four space characters. If your code is not indented necessarily, it will not execute accurately and will throw errors as well.
+
+62. What are functions in Python?
+A function is a block of code which is executed only when it is called. To define a Python function, the def keyword is used.
+
+63.What is __init__?
+__init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance of a class is created. All classes have the __init__ method.
+
+64. How does break, continue and pass work?
+Break: Allows loop termination when some condition is met and the control is transferred to the next statement.
+Continue: Allows skipping some part of a loop when some specific condition is met and the control is transferred to the beginning of the loop
+Pass: Used when you need some block of code syntactically, but you want to skip its execution. This is basically a null operation. Nothing happens when this is executed.
+
+65. What is the usage of help() and dir() function in Python?
+1. Help() function: The help() function is used to display the documentation string and also facilitates you to see the help related to modules, keywords, attributes, etc.
+2. Dir() function: The dir() function is used to display the defined symbols.
+
+66. What does this mean: *args, **kwargs? And why would we use it?
+We use *args when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a stored list or tuple of arguments to a function. **kwargs is used when we don’t know how many keyword arguments will be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments.
+
+67. What is the difference between deep and shallow copy?
+In Shallow copy, a copy of the original object is stored and only the reference address is finally copied. 
+In Deep copy, the copy of the original object and the repetitive copies both are stored.
+
+68. What are Python libraries? Name a few of them.
+Python libraries are a collection of Python packages. Some of the majorly used python libraries are – Numpy, Pandas, Matplotlib, Scikit-learn and many more.
+
+69. range function
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+
+70. Python chr() and ord()
+Python's built-in function chr() is used for converting an Integer to a Character (return the character of specific ascii value) 
+while the function ord() is used to do the reverse, i.e, convert a Character to an Integer (return the ascii value of specific character ) 
+
+71. zip and zip_longest in python
+zip combines multiple iterators. if iterators have difference length, the iterator with least item will decide tha length of the new iterators. 
+zip_longest() will go through all entries, and if one of the iterators runs out early, it gets replaced with None. we have to import from itertools.
+
+==============================================================================================
+
+72. Python String Methods
+a. count(): Returns the number of times a specified value occurs in a string
+s= 'sriikanth'
+print(s.count('i'))
+
+b. endswith():	Returns true if the string ends with the specified value
+s= 'sriikanth'
+print(s.endswith('g')) ### False
+print(s.endswith('h')) ### True
+
+c. find():		Searches the string for a specified value and returns the position of where it was found
+s= 'sriikanth'
+print(s.find('p'))  ## returns -1 (return -1 if character not available)
+print(s.find('h'))  ## returns 8
+
+d. index():		Searches the string for a specified value and returns the position of where it was found
+s= 'sriikanth'
+print(s.index('z'))  ## returns value error
+print(s.index('h'))  ## returns 6
+
+e. isalnum():	Returns True if all characters in the string are alphanumeric
+s= 'sriikant456h'
+print(s.isalnum())  ##True
+
+f. isalpha():		Returns True if all characters in the string are in the alphabet
+s= '123'
+print(s.isalpha()) ## True
+
+g. isascii():		Returns True if all characters in the string are ascii characters
+print(s.isascii())
+
+h. isdecimal():	Returns True if all characters in the string are decimals
+
+i. isdigit():		Returns True if all characters in the string are digits
+s= '123'
+print(s.isdigit())
+
+j. isidentifier():	Returns True if the string is an identifier
+
+k. islower():		Returns True if all characters in the string are lower case
+l. isnumeric():	Returns True if all characters in the string are numeric
+m. isspace():		Returns True if all characters in the string are whitespaces
+n. isupper():		Returns True if all characters in the string are upper case
+o. join():		Converts the elements of an iterable into a string
+p. lower():		Converts a string into lower case
+q. lstrip():		Returns a left trim version of the string
+r. replace():		Returns a string where a specified value is replaced with a specified value
+s= ' Srikanth'
+print(s.replace('r','Z'))
+
+s. rfind():		Searches the string for a specified value and returns the last position of where it was found
+t. rindex():		Searches the string for a specified value and returns the last position of where it was found
+u. rsplit():		Splits the string at the specified separator, and returns a list
+v. rstrip():		Returns a right trim version of the string
+w. split()		Splits the string at the specified separator, and returns a list
+s= 'Srikanth is a student'
+print(s.split(' '))
+
+x. startswith()	Returns true if the string starts with the specified value
+y. strip():		Returns a trimmed version of the string
+
+z. swapcase():	Swaps cases, lower case becomes upper case and vice versa
+s= 'Srikanth'
+print(s.swapcase())
+
+aa. upper():		Converts a string into upper case
+
+===================================================================================
+
+73. Python List/Array Methods
+append():		Adds an element at the end of the list
+
+clear():		Removes all the elements from the list
+copy(): 		Returns a copy of the list
+count():		Returns the number of elements with the specified value
+extend():		Add the elements of a list (or any iterable), to the end of the current list
+index():		Returns the index of the first element with the specified value
+insert():		Adds an element at the specified position
+pop():			Removes the element at the specified position
+remove():		Removes the first item with the specified value
+reverse():		Reverses the order of the list
+sort():			Sorts the list
+
+74. Python Set Methods
+add():			Adds an element to the set
+clear():		Removes all the elements from the set
+copy():		Returns a copy of the set
+difference():		Returns a set containing the difference between two or more sets
+difference_update():	Removes the items in this set that are also included in another, specified set
+discard():		Remove the specified item but doesnot raise any error
+intersection():	Returns a set, that is the intersection of two or more sets
+intersection_update():	Removes the items in this set that are not present in other, specified set(s)
+isdisjoint():		Returns whether two sets have a intersection or not
+issubset():		Returns whether another set contains this set or not
+issuperset():	Returns whether this set contains another set or not
+pop():			Removes an rondom element from the set
+remove():		Removes the specified element
+symmetric_difference():	Returns a set with the symmetric differences of two sets
+symmetric_difference_update():	inserts the symmetric differences from this set and another
+union():		Return a set containing the union of sets
+update():		Update the set with another set, or any other iterable
+
+75. Python Dictionary Methods
+clear():		Removes all the elements from the dictionary
+copy():		Returns a copy of the dictionary
+fromkeys():	Returns a dictionary with the specified keys and value
+get():		Returns the value of the specified key
+items():		Returns a list containing a tuple for each key value pair
+keys():		Returns a list containing the dictionary's keys
+pop():		Removes the element with the specified key
+popitem():	Removes the last inserted key-value pair
+setdefault():	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update():		Updates the dictionary with the specified key-value pairs
+values():		Returns a list of all the values in the dictionary
+
+
+76. Python Operators
+The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a specific programming language. Python provides a variety of operators, which are described as follows.
+
+a. Arithmetic operators.
++ (Addition):	It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30
+- (Subtraction): It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10
+/ (divide):	It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0
+* (Multiplication):	It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200
+% (reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a%b = 0
+** (Exponent):	It is an exponent operator represented as it calculates the first operand power to the second operand.
+// (Floor division):	It gives the floor value of the quotient produced by dividing the two operands.
+
+b. Comparison operator
+Comparison operators are used to comparing the value of the two operands and returns Boolean true or false accordingly. 
+
+==	If the value of two operands is equal, then the condition becomes true.
+!=	If the value of two operands is not equal, then the condition becomes true.
+<=	If the first operand is less than or equal to the second operand, then the condition becomes true.
+>=	If the first operand is greater than or equal to the second operand, then the condition becomes true.
+>	If the first operand is greater than the second operand, then the condition becomes true.
+<	If the first operand is less than the second operand, then the condition becomes true.
+
+c. Assignment Operators
+The assignment operators are used to assign the value of the right expression to the left operand.
+=	It assigns the value of the right expression to the left operand.
++=	It increases the value of the left operand by the value of the right operand and assigns the modified value back to left 			operand. For example, if a = 10, b = 20 => a+ = b will be equal to a = a+ b and therefore, a = 30.
+-=	It decreases the value of the left operand by the value of the right operand and assigns the modified value back to left 			operand. For example, if a = 20, b = 10 => a- = b will be equal to a = a- b and therefore, a = 10.
+*=	It multiplies the value of the left operand by the value of the right operand and assigns the modified value back to then the l	eft 		operand. For example, if a = 10, b = 20 => a* = b will be equal to a = a* b and therefore, a = 200.
+%=	It divides the value of the left operand by the value of the right operand and assigns the reminder back to the left operand. 	For 		example, if a = 20, b = 10 => a % = b will be equal to a = a % b and therefore, a = 0.
+**=	a**=b will be equal to a=a**b, for example, if a = 4, b =2, a**=b will assign 4**2 = 16 to a.
+//=	A//=b will be equal to a = a// b, for example, if a = 4, b = 3, a//=b will assign 4//3 = 1 to a.
+
+d. Logical Operators
+The logical operators are used primarily in the expression evaluation to make a decision.
+and: 	If both the expression are true, then the condition will be true. If a and b are the two expressions.
+or:	If one of the expressions is true, then the condition will be true.
+not:	If an expression a is true, then not (a) will be false and vice versa.
+
+e. Membership Operators
+Python membership operators are used to check the membership of value inside a Python data structure. If the value is present in the data structure, then the resulting value is true otherwise it returns false.
+
+in:	It is evaluated to be true if the first operand is found in the second operand (list, tuple, or dictionary).
+not in:	It is evaluated to be true if the first operand is not found in the second operand (list, tuple, or dictionary).
+
+f. Identity Operators
+The identity operators are used to decide whether an element certain class or type.
+is:	It is evaluated to be true if the reference present at both sides point to the same object.
+is not:	It is evaluated to be true if the reference present at both sides do not point to the same object.
+
+77. What is the difference between defaultdict and normal dictionary.'''
+Defaultdict
+1. When each key is encountered for the first time, it will not be there in the mapping.
+2. So an entry is automatically created with default value (an empty list in case of defaultdict of list and zero in case of defaultdict int).
+3. When keys are encountered again, the look-up proceeds normally as like a normal dictionary.
+4. So, in defaultdict, creation of key, initialisation will happen simultaneously. 
+
+Normal Dictionary
+1. In case of normal dictionary, if the key does not exist, "KeyError" is raised. 
+2. In order to work on the value, first the key needs to be created and initialised.
+
+78. What is Mutable and Immutable datatypes.
+1. Mutable datatypes are objects whose value can be changed after creation. e.g. list, dict, set, user defined classes.
+2. Immutable datatypes are objects whose value can not be changed after creating. e.g. int, float, bool, tuple, namedtuple
+
+79. Explain get() method in dictionaries.
+point =  {'a': 1, 'b': 2}
+1. Values of dictionary can be accessed in two different ways. using square bracket syntax and the other one is using get() method.
+2. When we try to access a key of a dictionary which does not exist using square bracket syntax (point['c']), "KeyError" exception is raised.
+3. When we try to access a key of a dictionary which does not exist using get() method (point.get('c')), None is returned and no exception is raised.
+4. We can pass a positional argument to get() method as custom message, so that get() method returns the custom message if the key does not exist.
+           e.g. profile.get('c', 'Sorry the key does not exist')
+
+80. What is the difference between a list and a tuple'''
+1. The main difference between a list and a tuple is that list's are mutable and tuples are immutable.
+2. Python over allocates memory for lists. The reason for over allocation of memory is to support append operation.
+Where as in tuples, memory is not over allocated, as tuples does not support append operation.
+(Since tuples are immutable, it does not support append operation).
+3. Tuples are more memory efficient than lists. (because in tuples no extra memory is allocated. It is fixed).
+4. Tuples are negligibly faster than lists.
+
+81. What is the difference between append() and extend() method in list
+1. append() method appends one item at the end of the list.
+2. extend() method appends all the items of the iterable to the end of the list.
+3. Both append() and extend() method's mutates the existing list.
+
+82. errors in python
+ AssertionError: Raised when the assert statement fails.
+ AttributeError: Raised on the attribute assignment or reference fails.
+ GeneratorExit: Raised when a generator's close() method is called.
+ ImportError: Raised when the imported module is not found.
+ IndexError: Raised when the index of a sequence is out of range.
+ KeyError: Raised when a key is not found in a dictionary.
+ MemoryError: Raised when an operation runs out of memory.
+ NameError: Raised when a variable is not found in the local or global scope.
+ NotImplementedError: Raised by abstract methods.
+ OSError: Raised when a system operation causes a system-related error.
+ SyntaxError: Raised by the parser when a syntax error is encountered.
+ IndentationError: Raised when there is an incorrect indentation.
+ TabError: Raised when the indentation consists of inconsistent tabs and spaces.
+ SystemError: Raised when the interpreter detects internal error.
+ TypeError: Raised when a function or operation is applied to an object of an incorrect type.
+ UnicodeError: Raised when a Unicode-related encoding or decoding error occurs.
+ ValueError: Raised when a function gets an argument of correct type but improper value.
+ ZeroDivisionError: Raised when the second operand of a division or module operation is zero
+
+83. The setdefault() method
+d = {}
+d.setdefault('a') ---> {'a': None}
+The setdefault() method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value
+
+84. The enumerate() 
+The enumerate function in Python converts a data collection object into an enumerate object.
+The returned enumerate object contains tuples for each item in the iterable that includes an index and the values obtained from iterating over iterable.
+
+85. What is inline if statement Python?
+Python has an inline if ... else statement, which allows a compact version of the if ... else statement in a single line.
+
+86. objected oriented programm
+python is an objected oriented programming language. Everything in python is an object. Using python we can reate classes and objects.
+Objects: Objects are an instance of a class. With the help of objects, we can access the method and function of a class.
+
+* Without creating an Object:
+
+class python:
+     def designer():
+        print("Guido van Rossum")
+python.designer()
+
+* With creating an Object:
+
+class python:
+     def designer():
+         print("Guido van Rossum")
+p = python
+p.designer()
+
+87. merging
+ l = [1,2,3]
+ l1 = [5,6,7]
+ print([l,l1])       # packing
+ print([*l, *l1])   # unpacking
+
+88. Can we use the else block for for loop ?
+Python allows the else keyword to be used with the for and while loops too. it execute when the loop is finished without any break
+
+89. Difference between xrange and range
+python2- xrange
+python3- range
+1. xrange does not stop, start and step attributes. But range object has start, stop and step attributes.
+In Python-2 The above attributes are not supported.
+
+2. range Object supports slicing! But xrange does not support slicing
+3. range object has __contains__ method implemented. So it supports membership testing.
+But xrange does not implement __contains__ method.
+So Python will iterate over each and every item in the range xrange object until it finds a match.
+(So if you are searching for a number in range is faster than xrange)
+
+90. modes of files
+r (read):  for reading – The file pointer is placed at the beginning of the file. This is the default mode.
+w(write): Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing
+a (append): Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.
+x (create): open for exclusive creation, failing if the file already exists
+
+91. Reading from a file
+Read ( ): Returns the read bytes in the form of a string. read the dat from starting to end
+Readline ( ): Reads a line of the file and returns in the form of a string.
+Readlines ( ): Reads all the lines and returns them as a string element in a list. 
+tell: The tell() method returns the current file position in a file stream. Tip: You can change the current file position with the seek() method.
+seek: The seek() method sets the current file position in a file stream. The seek() method also returns the new postion.
+
+92. file attributes
+file.closed: Returns true if file is closed, false otherwise.
+file.mode: Returns access mode with which file was opened.
+file.name: Returns name of the file.
+file.writable: 
+file.readable:
+
+93. file count, isslice, deque 
+Counter: Counter is a sub-class that is used to count hashable objects.
+isslice: The islice() function works much the same way as slicing a list or tuple. 
+deque: deque, has the feature of adding and removing elements from either end.
+
+94. write and writelines in python
+The only difference between the write() and writelines() is that write() is used to write a string to an already opened file while writelines() method is used to write a list of strings in an opened file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
