@@ -639,7 +639,8 @@ isslice: The islice() function works much the same way as slicing a list or tupl
 deque: deque, has the feature of adding and removing elements from either end.
 
 94. write and writelines in python
-The only difference between the write() and writelines() is that write() is used to write a string to an already opened file while writelines() method is used to write a list of strings in an opened file.
+The only difference between the write() and writelines() is that write() is used to write a string to an already opened file while
+writelines() method is used to write a list of strings in an opened file.
 
 
 

@@ -57,6 +57,296 @@ print(b)
 "Boolean"
 Boolean variables are defined on True or False keywords.
 
+============================================================================================================================
+
+"String"
+
+* String is a set  or collection of characters. (" ", ' ', '" "')
+* It is a immutable datatype
+
+s =100
+d = str(s)
+print(type(d))
+==============================
+
+"" Raw string ""
+* String prefixed with "r" or "R"
+* Raw string do not treat backslash as a part of an escape sequence.
+
+Eg.
+In regular string consider backslash as special character
+s = "hello \world \gu"
+print(s)
+
+In raw string consider entire string as character.
+s = r"hello \world \gu"
+print(s)
+
+=================================
+
+""Indexing""
+* Process of extracting single character is called indexing.
+* It can start with positive or negative.
+
+""Slicing ""
+* Process of extracting multiple character.
+
+Eg.
+s = "hello world"
+print(s[-3])
+print(s[2])
+print(s[0:7:2])
+print(s[len(s):0:-2])
+print(s[len(s)::-1])
+
+==================================
+** Note
+String is immutable, Because once memory allocated to the string we can never modify original memory using any methods.
+When string inbuilt method is applied an any string the original string giving to the output of new string.
+
+s = "hello world"
+b = s.upper()
+print(b)
+print(id(s))   ## 2590597596080
+print(id(b))  ## 2590597595952
+===================================
+
+Python String Methods
+
+a. count(): Returns the number of times a specified value occurs in a string
+s= 'sriikanth'
+print(s.count('i'))
+
+b. endswith():	Returns true if the string ends with the specified value
+s= 'sriikanth'
+print(s.endswith('g')) ### False
+print(s.endswith('h')) ### True
+
+c. find():		Searches the string for a specified value and returns the position of where it was found
+s= 'sriikanth'
+print(s.find('p'))  ## returns -1 (return -1 if character not available)
+print(s.find('h'))  ## returns 8
+
+d. index():		Searches the string for a specified value and returns the position of where it was found
+s= 'sriikanth'
+print(s.index('z'))  ## returns value error
+print(s.index('h'))  ## returns 6
+
+e. isalnum():	Returns True if all characters in the string are alphanumeric
+s= 'sriikant456h'
+print(s.isalnum())  ##True
+
+f. isalpha():		Returns True if all characters in the string are in the alphabet
+s= '123'
+print(s.isalpha()) ## True
+
+g. isascii():		Returns True if all characters in the string are ascii characters
+print(s.isascii())
+
+h. isdecimal():	Returns True if all characters in the string are decimals
+
+i. isdigit():		Returns True if all characters in the string are digits
+s= '123'
+print(s.isdigit())
+
+j. isidentifier():	Returns True if the string is an identifier
+
+k. islower():		Returns True if all characters in the string are lower case
+
+l. isnumeric():	Returns True if all characters in the string are numeric
+
+m. isspace():		Returns True if all characters in the string are whitespaces
+
+n. isupper():		Returns True if all characters in the string are upper case
+
+o. join():		Converts the elements of an iterable into a string
+
+p. lower():		Converts a string into lower case
+
+q. lstrip():		Returns a left trim version of the string
+
+r. replace():		Returns a string where a specified value is replaced with a specified value
+s= ' Srikanth'
+print(s.replace('r','Z'))
+
+s. rfind():		Searches the string for a specified value and returns the last position of where it was found
+
+t. rindex():		Searches the string for a specified value and returns the last position of where it was found
+
+u. rsplit():		Splits the string at the specified separator, and returns a list
+
+v. rstrip():		Returns a right trim version of the string
+
+w. split()		Splits the string at the specified separator, and returns a list
+s= 'Srikanth is a student'
+print(s.split(' '))
+
+x. startswith()	Returns true if the string starts with the specified value
+
+y. strip():		Returns a trimmed version of the string
+
+z. swapcase():	Swaps cases, lower case becomes upper case and vice versa
+s= 'Srikanth'
+print(s.swapcase())
+
+aa. upper():		Converts a string into upper case
+
+============================================================================================================================
+"List"
+
+* Collection of homogenous and heterogeneous elements. Separated by comma.
+* Elements in the list is ordered.
+* It can hold duplicate elements.
+* It is a mutable data type.
+
+Var = [val1, val2, val3,......]
+len (Var)
+
+s = "hello world"
+Convert from string to list
+print(list(s))
+
+'index'
+print(s[8])  #r
+
+'slicing'
+p = list(s)
+print(p[::-1])
+print(p[-5:-3:])
+
+==================================================================
+
+"" Merging list""
+
+l1 = [1,2,3]
+l2 = [5,6,7]
+print(*l1+l2)
+print([*l1,*l2]    # For unpack
+
+======================================================================
+
+"Methods"
+
+a. append():		Adds an element at the end of the list
+a = [1,2,3]
+a.append([5.7])
+print(a)
+
+b. clear():		Removes all the elements from the list
+
+c. copy(): 		Returns a copy of the list
+
+d. count():		Returns the number of elements with the specified value
+a = [1,2,3]
+print(a.count(1))
+
+e. extend(): Add the elements of a list (or any iterable), to the end of the current list
+a.extend([8.7])
+print(a)
+
+f. index(): Returns the index of the first element with the specified value
+
+g. insert(): Adds an element at the specified position
+
+h. pop(): Removes the element at the specified position
+a = [1,2,3]
+a.pop(2)
+print(a)
+
+i. remove(): Removes the first item with the specified value
+
+j. reverse(): Reverses the order of the list
+
+k. sort(): Sorts the list
+* list.sort() ## sort based on alphabet
+* list.sort(reverse=True)   ## sort the list decending order
+* list.sort (key=len)  ## sort based on length
+
+==================================
+"" Converting list in to string ""
+
+s = "hello"
+b = list(s)
+print(b)
+print(s.split())
+print("".join(b))
+
+====================================================================================================================================
+
+Tuple"
+* Collection of homogenous and heterogeneous elements. Separated by comma.
+* Indexing and slicing are simmiller as string and list
+* Tupules are more faster and memory efficiency than list.
+
+" Methods ""
+a. Count
+a = (1,2,2,3)
+print(a.count(2))
+
+b. Index
+print(a.index(2))
+
+====================================================================================================================================
+
+ Sets"
+* Sets are built in dta type.
+* Data stored in un ordered.
+* Sets are mutable but elements in side the sets set must be hashable.
+* Sets cannot be index and slicing.
+
+===================
+"Methods"
+
+add(): Adds an element to the set
+clear(): Removes all the elements from the set
+copy(): Returns a copy of the set
+difference(): Returns a set containing the difference between two or more sets
+difference_update(): Removes the items in this set that are also included in another, specified set
+discard(): Remove the specified item but doesnot raise any error
+intersection(): Returns a set, that is the intersection of two or more sets
+intersection_update(): Removes the items in this set that are not present in other, specified set(s)
+isdisjoint(): Returns whether two sets have a intersection or not
+issubset(): Returns whether another set contains this set or not
+issuperset():	Returns whether this set contains another set or not
+pop(): Removes an rondom element from the set
+remove(): Removes the specified element
+symmetric_difference(): Returns a set with the symmetric differences of two sets
+symmetric_difference_update():	 inserts the symmetric differences from this set and another
+union(): Return a set containing the union of sets
+update(): Update the set with another set, or any other iterable
+
+
+===================================================================================================================
+"Dictionary"
+* Collections of key values pair.
+* Key cannot be duplicate
+* Values can be duplicate
+* Values can be access through the key.
+* Key must be immutable data type.
+* Values can be anything
+
+"Composite keys"
+* tuple as key
+
+Holidays = {(26,1):"Republic day", (15,8): Independence day}
+
+==========================
+"Methods"
+
+clear():	Removes all the elements from the dictionary
+copy(): Returns a copy of the dictionary
+fromkeys(): Returns a dictionary with the specified keys and value
+get(): Returns the value of the specified key
+items(): Returns a list containing a tuple for each key value pair
+keys(): Returns a list containing the dictionary's keys
+pop(): Removes the element with the specified key
+popitem(): Removes the last inserted key-value pair
+setdefault(): Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update(): Updates the dictionary with the specified key-value pairs
+values(): Returns a list of all the values in the dictionary
+
+
+
 
 
 

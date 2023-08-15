@@ -103,14 +103,99 @@ print(value, sep="string")
 
 "Input"
 
-
 =====================================================================================================================
 
+Python dir() Function
+The dir() function returns all properties and methods of the specified object, without the values. This function will return all
+the properties and methods, even built-in properties which are default for all object.
+
+a = 'srikantn'
+print(dir(a[3]))
+print(dir(a))
+
+=====================================================================================================================
+"Hashable object"
+*These objects which implements __hash__ magic method.
+* Only immutable have hash value. It is used to check mutable or immutable.
+* All immutable are hashble but all hashble are nit immutable.
+
+======================================================================================================================
+
+Mutable and Immutable data types
+
+** Mutable datatypes: It will allow modification on the original object
+List, set, dict
+** Immutable data type: Does not allow modification. even if the modification is done there will be create new object.
+string, tuple, int, floot
+
+======================================================================================================================
+Sequences and Iterable
+A sequence ia an object which can be indexed.
 
 
+==========================================================================================================================
+"" Python Operators ""
+
+The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a specific programming language. Python provides a variety of operators, which are described as follows.
+
+a. Arithmetic operators.
++ (Addition):	It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30
+- (Subtraction): It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10
+/ (divide):	It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0
+* (Multiplication):	It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200
+% (reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0
+** (Exponent):	It is an exponent operator represented as it calculates the first operand power to the second operand.
+// (Floor division):	It gives the floor value of the quotient produced by dividing the two operands.
+
+b. Comparison operator
+Comparison operators are used to comparing the value of the two operands and returns Boolean true or false accordingly.
+
+==	If the value of two operands is equal, then the condition becomes true.
+!=	If the value of two operands is not equal, then the condition becomes true.
+<=	If the first operand is less than or equal to the second operand, then the condition becomes true.
+>=	If the first operand is greater than or equal to the second operand, then the condition becomes true.
+>	If the first operand is greater than the second operand, then the condition becomes true.
+<	If the first operand is less than the second operand, then the condition becomes true.
+
+c. Assignment Operators
+The assignment operators are used to assign the value of the right expression to the left operand.
+=	It assigns the value of the right expression to the left operand.
++=	It increases the value of the left operand by the value of the right operand and assigns the modified value back to left 			operand. For example, if a = 10, b = 20 => a+ = b will be equal to a = a+ b and therefore, a = 30.
+-=	It decreases the value of the left operand by the value of the right operand and assigns the modified value back to left 			operand. For example, if a = 20, b = 10 => a- = b will be equal to a = a- b and therefore, a = 10.
+*=	It multiplies the value of the left operand by the value of the right operand and assigns the modified value back to then the l	eft 		operand. For example, if a = 10, b = 20 => a* = b will be equal to a = a* b and therefore, a = 200.
+%=	It divides the value of the left operand by the value of the right operand and assigns the reminder back to the left operand. 	For 		example, if a = 20, b = 10 => a % = b will be equal to a = a % b and therefore, a = 0.
+**=	a**=b will be equal to a=a**b, for example, if a = 4, b =2, a**=b will assign 4**2 = 16 to a.
+//=	A//=b will be equal to a = a// b, for example, if a = 4, b = 3, a//=b will assign 4//3 = 1 to a.
+
+d. Logical Operators
+The logical operators are used primarily in the expression evaluation to make a decision.
+and: 	If both the expression are true, then the condition will be true. If a and b are the two expressions.
+or:	If one of the expressions is true, then the condition will be true.
+not:	If an expression a is true, then not (a) will be false and vice versa.
+
+e. Membership Operators
+Python membership operators are used to check the membership of value inside a Python data structure. If the value is present in the data structure, then the resulting value is true otherwise it returns false.
+
+in:	It is evaluated to be true if the first operand is found in the second operand (list, tuple, or dictionary).
+not in:	It is evaluated to be true if the first operand is not found in the second operand (list, tuple, or dictionary).
+
+f. Identity Operators
+The identity operators are used to decide whether an element certain class or type.
+is:	It is evaluated to be true if the reference present at both sides point to the same object.
+is not:	It is evaluated to be true if the reference present at both sides do not point to the same object.
 
 
-
+====================================================================================================================
+"Default values"
+Int: 0/Int()
+Float: 0.0/float()
+Bool: False/bool()
+Complex: 0j/0+0j/complex()
+String: ' '/str
+List: []/list()
+Tuple: ()/tuple()
+Set: set()
+Dictionary: {}/dit()
 
 
 
