@@ -1,0 +1,34 @@
+"Python exception"
+
+*  When a Python program meets an error, it stops the execution of the rest of the program. An error in Python might be either an
+error in the syntax of an expression or a Python exception.
+* An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program's instructions.
+
+* In Python, we catch exceptions and handle them using try and except code blocks.
+* The try clause contains the code that can raise an exception, while the except clause contains the code lines that handle the exception.
+
+Example
+
+# Python code to catch an exception and handle it using try and except code blocks
+
+a = ["Python", "Exceptions", "try and except"]
+try:
+    # looping through the elements of the array a, choosing a range that goes beyond the length of the array
+    for i in range(4):
+        print("The index and element from the array is", i, a[i])
+    # if an error occurs in the try block, then except block will be executed by the Python interpreter
+except:
+    print("Index out of range")
+
+
+
+
+
+
+
+
+
+
+
+
+

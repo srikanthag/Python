@@ -2,17 +2,17 @@
 # d = {}
 # for name in names:
 #     d[name] = len(name)
-
+#
 # d = {}
-
+#
 # for name in names:
 #     if name[0] not in d:
 #         d[name[0]] = [name]
 #     else:
 #         d[name[0]] += [name]
 # print(d)
-
-
+#
+#
 # """ try except """
 # d = {}
 # for name in names:
@@ -25,10 +25,10 @@
 
 # a = 10
 # b = 0
-
-# default exception block
+#
+# # default exception block
 # try:
-#     print(a / b)
+#     # print(a / b)
 #     print(l.append(10))
 #
 # except:
@@ -65,7 +65,7 @@
 # print("hello")
 
 
-# Storing error message
+# # Storing error message
 # a = 10
 # b = 0
 
@@ -159,29 +159,3 @@
 #    print("username is matched")
 # else:
 #     raise UserNotAuthorizedException("username is not present")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
