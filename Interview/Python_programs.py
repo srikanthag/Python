@@ -1613,7 +1613,7 @@ and allows us to add more.'''
  else:
      print('prime number')
 
-147. genarate seris of prime number
+# 147. genarate seris of prime number
 # for n in range(15):
 #     if n > 1:
 #         for item in range(2, n):

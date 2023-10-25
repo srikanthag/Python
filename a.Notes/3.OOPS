@@ -1,0 +1,92 @@
+Python supports object-oriented language and concepts of classes and objects
+    come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
+    programmer to write reusable code and develop applications in less code.
+
+" Without creating an Object ""
+class python:
+     def designer():
+         print("Guido van Rossum")
+python.designer()
+
+" With creating an Object ""
+class python:
+     def designer():
+         print("Guido van Rossum")
+ p = python
+p.designer()
+================================================================================================================
+
+1.  CLASS
+The class can be defined as a collection of objects. It is a logical entity that has some specific attributes and methods.
+For example: if you have an employee class, then it should contain an attribute and method, i.e. an email id, name, age, salary, etc.
+
+=========
+
+a. Instance or Object: The object is an entity that has state and behavior.
+
+b. Method: A function written inside the class is called method and first parameter is "self".
+    * self: Holds the address of the instance which is invoking the method.
+
+c. Constructor: In a class "__init__" is called the constructor. It is used to construct object/instance with different variable.
+We can have multiple constructor but it will take latest one.
+
+
+
+eg:
+class car:
+    def __init__(self,modelname, year):
+        self.modelname = modelname
+        self.year = year
+    def display(self):
+        print(self.modelname,self.year)
+
+c1 = car("Toyota", 2016)
+c1.display()
+
+Explanation: In the above example, we have created the class named car, and it has two attributes model-name and year.
+We have created a c1 object to access the class attribute. The c1 object will allocate memory for these values.
+We will learn more about class and object in the next tutorial.
+
+===============================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
