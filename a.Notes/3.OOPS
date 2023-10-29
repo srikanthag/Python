@@ -1,6 +1,5 @@
-Python supports object-oriented language and concepts of classes and objects
-    come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
-    programmer to write reusable code and develop applications in less code.
+Python supports object-oriented language and concepts of classes and objects come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
+programmer to write reusable code and develop applications in less code.
 
 " Without creating an Object ""
 class python:
@@ -30,7 +29,7 @@ b. Method: A function written inside the class is called method and first parame
 c. Constructor: In a class "__init__" is called the constructor. It is used to construct object/instance with different variable.
 We can have multiple constructor but it will take latest one.
 
-
+d. __dict__: Dictionary or other mapping object used to store an object's (writable) attributes.
 
 eg:
 class car:
@@ -45,7 +44,6 @@ c1.display()
 
 Explanation: In the above example, we have created the class named car, and it has two attributes model-name and year.
 We have created a c1 object to access the class attribute. The c1 object will allocate memory for these values.
-We will learn more about class and object in the next tutorial.
 
 ===============================================================================================================
 

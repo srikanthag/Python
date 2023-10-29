@@ -30,6 +30,11 @@
 # for item in a[::-1]:
 #     print(item)
 
+# def recverce(any_string):
+#     for item in any_string:
+#         return any_string[::-1]
+# print(recverce("srikanth"))
+
 '''3. Write a program to replace one string with another. e.g. "Hello World" replace "World" with "Universe".'''
 s = 'Hello world'
 s.replace('world', 'universe')
@@ -1351,13 +1356,13 @@ It also includes ideas of inheritance of attributes and methods.'''
 ''' __init__ used to construct instance variable, and it will initialize the object'''
 '''self: it is a first parameter it holds the address of instance'''
 
- class Calculator:
-     def __init__(self, a, b):
-         self.a = a
-         self.b = b
+class Calculator:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-     def add(self):
-         return self.a + self.b
+    def add(self):
+        return self.a + self.b
 
      def sub(self):
          return self.a - self.b
@@ -1383,7 +1388,7 @@ It also includes ideas of inheritance of attributes and methods.'''
  print(b.__dict__)
 
 '''135. overload constructor'''
- we can have multiple constructors in class but latest will take
+we can have multiple constructors in class but latest will take
 
  class Student:
      def __init__(self, name1, class1):
@@ -1399,7 +1404,7 @@ It also includes ideas of inheritance of attributes and methods.'''
  print(s.__dict__)
 
 '''136. class decorator'''
- Class decorators should take class as an argument and modified that class
+# Class decorators should take class as an argument and modified that class
 
 def prices(cls):
     print('attaching class attribute')
@@ -1414,10 +1419,10 @@ c = ShoppingCart()
 print(c.demo())
 
 '''137. What is abstract class?'''
- An abstract class can be considered as a blueprint for other classes.
- In object-oriented programming, an abstract class is a class that cannot be instantiated. However, you can create
- classes that inherit from an abstract class. Typically, you use an abstract class to create a blueprint for other classes.
- Python comes with a module which provides the infrastructure for defining Abstract Base Classes (ABCs).
+An abstract class can be considered as a blueprint for other classes.
+In object-oriented programming, an abstract class is a class that cannot be instantiated. However, you can create
+classes that inherit from an abstract class. Typically, you use an abstract class to create a blueprint for other classes.
+Python comes with a module which provides the infrastructure for defining Abstract Base Classes (ABCs).
 
  import abc
  class Shape:
@@ -1444,7 +1449,7 @@ print(c.demo())
 and allows us to add more.'''
 
 '''139. single level inheritance'''
- class Parent:
+class Parent:
      def __init__(self, value):
          self.value = value
 
@@ -1455,45 +1460,45 @@ and allows us to add more.'''
          print("executing parent apple")
 
 '''Completely Independent Method'''
- class Child1(Parent):
+class Child1(Parent):
      def yahoo(self):
          print("executing yahoo child1")
 
 '''Overriding Parent class Method'''
- class Child2(Parent):
+class Child2(Parent):
      def apple(self):
          print("executing child2 apple")
 
 '''Overriding Parent class Method but reusing the original method in Parent'''
- class Child3(Parent):
+class Child3(Parent):
      def apple(self):
           print("executing child2 apple")
           super().apple()    # super is used to acces parent class attributes
 
- c3 = Child3(100)
- print(c3.apple())
+c3 = Child3(100)
+print(c3.apple())
 
 '''Adding a new Attribute'''
- class Child4(Parent):
+class Child4(Parent):
      def __init__(self, value, extra):
          self.extra_value = extra
          super().__init__(value)
 
- c4 = Child4(100, 'srikanth')
- print(c4.apple())
+c4 = Child4(100, 'srikanth')
+print(c4.apple())
 
 '''140. Multiple inheritance: class derived from more than one base class'''
- class Child5(Child1, Child2):
+class Child5(Child1, Child2):
      pass
- c5 = Child5(100)
- print(c5.yahoo())
+c5 = Child5(100)
+print(c5.yahoo())
 
 '''141. Multi-level inheritance: derived class derived from another derived class '''
- class a:
+class a:
      def demo(self):
          print("class a demo")
 
- class b(a):
+class b(a):
      def demo(self):
          print("class b demo")
          super().demo()
@@ -1504,17 +1509,17 @@ and allows us to add more.'''
          super().demo()
 
 '''142. encapsulation'''
- It describes the idea of wrapping data and the methods that work on data within one unit. This puts
- restrictions on accessing variables and methods directly and can prevent the accidental modification of data
+It describes the idea of wrapping data and the methods that work on data within one unit. This puts
+restrictions on accessing variables and methods directly and can prevent the accidental modification of data
 
 '''getter and setter in python'''
- getters are the methods which help access the private attributes or get the value of the private attributes
- and setters are the methods which help change or set the value of private attributes.
+getters are the methods which help access the private attributes or get the value of the private attributes
+and setters are the methods which help change or set the value of private attributes.
 
 '''protected : _ can be overriddn in child class'''
 '''Protected members of a class are accessible from within the class and are also available to its sub-classes.'''
- class Bankaccount:
-     _intrest = 4      # we can change it
+class Bankaccount:
+    _intrest = 4      # we can change it
 
      def deposite(self, amount):
          print('deposit amount:', amount)
@@ -1525,8 +1530,8 @@ and allows us to add more.'''
      def roi(self):
          print("ROI is:", self.__class__._intrest)
 
- class SBaccount(Bankaccount):
-     _intrest = 6.5
+class SBaccount(Bankaccount):
+    _intrest = 6.5
 
  s = SBaccount()
  p= s.roi()
@@ -1554,7 +1559,7 @@ and allows us to add more.'''
  print(p)
 
 143. '''what is polymorphism?'''
- same function by name but different behavior
+same function by name but different behavior
  class Polymarph:
      def __init__(self, a, b):
          self.a = a
@@ -1570,7 +1575,8 @@ and allows us to add more.'''
  print(pol.add())
 
 144. '''febnocii number seris'''
- def febonocii(num):
+"The Fibonacci Sequence is a set of steadily increasing numbers where each number is equal to the sum of the preceding two numbers."
+def febonocii(num):
      a = 0
      b = 1
      i = 0
@@ -1582,8 +1588,8 @@ and allows us to add more.'''
          i += 1
  febonocii(3)
 
- 145. waf that checks if the given number is fibonocii number or not
- def febonocii(num):
+145. waf that checks if the given number is fibonocii number or not
+def febonocii(num):
      a = 0
      b = 1
      while a <= num:

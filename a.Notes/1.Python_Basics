@@ -14,7 +14,7 @@ python.designer()
 class python:
      def designer():
          print("Guido van Rossum")
- p = python
+p = python
 p.designer()
 
 
@@ -132,7 +132,6 @@ string, tuple, int, floot
 Sequences and Iterable
 A sequence ia an object which can be indexed.
 
-
 ==========================================================================================================================
 "" Python Operators ""
 
@@ -196,9 +195,4 @@ List: []/list()
 Tuple: ()/tuple()
 Set: set()
 Dictionary: {}/dit()
-
-
-
-
-
 
