@@ -659,7 +659,7 @@ passed are more than 5'''
 # d = {item:names.count(item) for item in names if names.count(item) > 1}
 # print(d)
 #
-# '''71 Write a program to count the number of occurrences of each word in a file.'''
+'''71 Write a program to count the number of occurrences of each word in a file.'''
 # from collections import defaultdict
 # d = defaultdict(int)
 # with open (sample.text) as file:
@@ -757,7 +757,7 @@ passed are more than 5'''
 # print(d)
 
 '''77 Write a program to rotate items of the list'''
- names = ["apple", "google", "yahoo", "gmail", "facebook", "flipkart", "amazon"]
+names = ["apple", "google", "yahoo", "gmail", "facebook", "flipkart", "amazon"]
 
 def rotate(iterable, n):
     for item in range(n):
@@ -831,7 +831,6 @@ a = list(range(20))
 def _search(iterable, key):
       return any(item == key for item in iterable)
 print(_search(a, 17))
-
 print(_search(a, 21))
 
 '''87 Write a program to count no of capital letters in a string'''
@@ -1005,7 +1004,7 @@ print(dd[-1])
 
 '''105 Find the range from the following string'''
 sentence = '0-0, 4-8, 20-20, 43-45'
-Output Should be [0, 4, 5, 6, 7, 8, 20, 43, 44, 45, 46]
+# Output Should be [0, 4, 5, 6, 7, 8, 20, 43, 44, 45, 46]
 words = sentence.split(',')
 _range = []
 for word in words:

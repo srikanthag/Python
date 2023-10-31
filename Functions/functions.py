@@ -10,7 +10,7 @@
 #returning the value from the function
 # def spam(val1, val2):
 #     a = val1
-#     b= val2
+#     b = val2
 #     c = a + b
 #     return c
 # print(spam(2, 4))
