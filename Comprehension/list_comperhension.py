@@ -6,7 +6,7 @@
 #     res.append(i**2)
 # print(res)
 
-#comprehension method
+#Comprehension method
 # l= [1,2,3,4]
 # res = [i ** 2 for i in l]
 # print(res)
@@ -40,7 +40,7 @@
 #         l1.append(i)
 # print(l1)
 
-#comprehension
+#Comprehension
 # even = [item for item in l if item % 2 == 0]
 # print(even)
 
@@ -57,7 +57,7 @@
 # print(even)
 # print(odd)
 
-#comprehension
+#Comprehension
 # even = [item for item in l if item % 2 == 0]
 # odd = [item for item in l if item % 2 != 0]
 # print(even)
@@ -76,7 +76,7 @@
 #         l1.append(i[::-1])
 # print(l1)
 
-#comprehension
+#Comprehension
 # l1 = [item if len(item) % 2 == 0 else item[::-1] for item in l]
 # print(l1)
 
@@ -92,11 +92,11 @@
 #         l1.append(item)
 # print(l1)
 
-#comprehension
+#Comprehension
 # l1 = [str(item)[::-1] if not isinstance(item, str) else item for item in l]
 # print(l1)
 
-#wa list comprehension to create a list with strating with vowels
+#wa list Comprehension to create a list with strating with vowels
 # l = ['python', 'node js', 'english', 'selenium', 'javea2']
 #
 # l1 = [item for item in l if item[0] in 'aeiouAEIOU']

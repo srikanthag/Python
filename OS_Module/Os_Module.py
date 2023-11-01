@@ -19,11 +19,11 @@ print(cwd)
 # print(e)
 
 '''size of path'''
-# r = os.path.getsize(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\_python\comprehension\dictionary_comprenhension.py")
+# r = os.path.getsize(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\_python\Comprehension\dictionary_comprenhension.py")
 # print(r)
 
 '''Check exist or not'''
-# r = os.path.exists(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\_python\comprehension\dictionary_comprenhension.py")
+# r = os.path.exists(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\_python\Comprehension\dictionary_comprenhension.py")
 # print(r)
 
 

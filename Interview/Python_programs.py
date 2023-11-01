@@ -563,7 +563,7 @@ passed are more than 5'''
 #
 # print(d)
 
-'''59 Write a list comprehension to get a list of even numbers from 1-50'''
+'''59 Write a list Comprehension to get a list of even numbers from 1-50'''
 # evens = [item for item in range(1, 51) if item % 2 == 0]
 # print(evens)
 

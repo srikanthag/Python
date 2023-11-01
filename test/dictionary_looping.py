@@ -63,7 +63,7 @@
 # print(l)
 # print(l1)
 
-#creating dictionary city and population using comprehension
+#creating dictionary city and population using Comprehension
 # city = ['bangalore', 'mangalore', 'mysore', 'chikkaballapura']
 # pop = [100, 200, 300]
 # d = {}

@@ -1,4 +1,4 @@
-#wa set comprehension to create a set of squres from i to 10
+#wa set Comprehension to create a set of squres from i to 10
 #normal
 # r = set()
 # for i in range(0, 11):
