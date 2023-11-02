@@ -20,13 +20,3 @@ print(c)
 #     print(res)
 
 
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 import csv
-path = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\csv_files\employees.csv"
-path2 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\csv_files\test.csv"
-path3 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\csv_files\vaccination_data.csv"
+path = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\employees.csv"
+path2 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\test.csv"
+path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccination_data.csv"
 
 
 #wap to read all the names of the employees in the employee.csv file

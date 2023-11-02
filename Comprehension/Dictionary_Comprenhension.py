@@ -94,9 +94,9 @@
 # print(dict_)
 
 #wap to create a dictionary with index and word pair if word is of type string keep it as it is else reverse it
-list_ = ['sri', 10, 10.2, True, 'kanth']
-dict_ = {index: item if isinstance(item, str) else str(item)[::-1] for index, item in enumerate(list_)}
-print(dict_)
+# list_ = ['sri', 10, 10.2, True, 'kanth']
+# dict_ = {index: item if isinstance(item, str) else str(item)[::-1] for index, item in enumerate(list_)}
+# print(dict_)
 
 #wa comprension to flip or swap keys and values in a dictionary
 # d = {1:'a', 2:'b', 3:'c'}

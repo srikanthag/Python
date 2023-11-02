@@ -3,4 +3,4 @@ print(file)
 
 import os
 
-print(os.popen(file))
+print(os.open(file))

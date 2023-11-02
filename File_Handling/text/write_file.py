@@ -9,8 +9,8 @@ path = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_d
 
 
 #wap to copy the contet of sample.txt in to different file
-# with open(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\txt_log_files\sample.txt", "r") as file_read:
-#     with open(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\txt_log_files\file1.txt", "w") as file_write:
+# with open(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\File_Directory\txt_log_files\sample.txt", "r") as file_read:
+#     with open(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\File_Directory\txt_log_files\file1.txt", "w") as file_write:
 #         for line in file_read:
 #             file_write.write(line)
 
