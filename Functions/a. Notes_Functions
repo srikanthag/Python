@@ -1,0 +1,213 @@
+* Functions
+A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function.
+A function can return data as a result.
+
+Types of functions
+1. Built in function
+* print()
+* input()
+* id()
+* type()
+* dir()
+
+2. User define in function
+
+* Return statement
+It is used to get or return the value from the function
+
+
+===================================================================
+
+* Arguments
+Arguments are the variables passed to the function in the function call.
+Parameters are the variables used in the function definition.
+
+1. Positional argument
+
+def greet(name, age):
+     print(f"{name} is {age} year old")
+
+greet("srikanth", 34)
+greet(34, "srikanth")
+
+2. Keyword argument
+
+def greet(name, age):
+     print(f"{name} is {age} year old")
+
+greet(name="srikanth", age= 20)
+greet(age= 20, name="srikanth")
+
+3. Combination of Positional and Keyword arguments
+
+def add_(a, b, c, d):
+     print(a, b, c, d)
+
+add_(1, 2, 3, 4)
+add_(a=1, b=2, c=3, d=4)
+add_(1, 2, c=3, d=4)
+add_(a=1, b=2, 3, 4)   #syntax error
+
+4. Positional only argument: '/' represent the Positional only argument. Before / only accept positional argument and after / it
+can accept positional oe keyword argument.
+
+def add_(a, b, c, d, /):
+     print(a, b, c, d)
+
+add_(1,2,3,4)
+add_(a=1, b=2, c=3, d=4)
+
+def add_(a, b, /, c, d, ):
+     print(a, b, c, d)
+add_(1, 2, c=3, d=4)
+add_(1, b=2, 3, 4)
+
+5. Keyword only argument: '*' represent the Keyword only argument. After * only accept keyword argument and before * it
+can accept positional oe keyword argument.
+
+def add_(*, a, b, c, d, ):
+    print(a, b, c, d)
+add_(a=1, b=2, c=3, d=4)
+add_(1, b=2, c=3, d=4)
+
+def add_(a, b, *, c, d):
+    print(a, b, c, d)
+# add_(a=1, b=2, c=3, d=4)
+add_(1, 2, c=3, d=4)
+add_(1, 2, 3, d=4) #type error
+
+
+6. Variable positional argument (*args): USer doesn't know how many argument pass to the function.
+*args are pack the data in the form of tuple
+
+7. Keyword positional argument (**kwargs): *kwargs are pack the data in the form of dictionary.
+
+
+** Default parameter: It indicate the function argument will take the value if user not passes the any value during
+function call. Default value assigned by using assignment (=) operator.
+
+#default parameters
+# def add_(a,b,c=0):
+#     return a+b+c
+#
+# print(add_(10, 20))
+
+
+
+** Packing and Unpacking
+
+* Packing
+The * operator is the tuple (or iterables) unpacking operator. It allows packing multiple values into a single variable.
+
+# def spam(*args):           #packing
+#     print(args)
+#
+# spam(1, 2, 3)
+
+
+* Unpacking
+Python provides the ** operator to unpack the dictionary. This operator is also known as the dictionary unpacking operator.
+
+d = dict(a=1, b=2, c=3)
+print(*d)
+print({**d})
+
+def keyword_arg(**kwargs):
+    return kwargs
+print(keyword_arg(a=1, b= 2, c=3))
+
+=======================================================================================================
+
+Lambda function
+Anonymous function is a function that is defined without name.
+Syntax:
+lambda arguments: Expression
+
+eg: add = lambda a,b: a+b
+      print(add)
+
+=======================================================================================================
+
+Filter function
+Pass each element in iterable and return only the once that evaluate to true'
+
+syntax:
+filter (function, iterable)
+
+eg:
+l = [1,2,3,4,5,6]          # Iterable
+ev = lambda item: item % 2 ==0      # Function
+re = filter(ev, l)
+print(list(re))
+
+=======================================================================================================
+Map function
+Map function applies to the all the item in input list
+
+eg:
+l = ['hi', 'mom']
+pali = lambda string: 'paliondrom' if string == string[::-1] else 'not paliondrome'
+res = map(pali, l)
+print(list(res))
+
+===========================================================================================================
+Sorted function
+
+* Default sorting the collection datatype
+
+# s = 'srikanth'
+# print(sorted(s))
+
+# l = [5,7,4,6,9,3]
+# print(sorted(l))
+
+# l = ['hi', 'python', 'how']
+# print(sorted(l))
+
+# t = ('python', 'java', 'ruby')
+# print(sorted(t))
+# print(sorted(t, reverse=true))
+
+# set_ = {'hi', 'python', 'how'}
+# print(sorted(set_))
+
+# d = {'hi': 5, 'python': 6, 'how': 3}
+# print(sorted(d.items()))
+
+
+* Custom sorting
+t = ('python', 'java', 'ruby')
+print(sorted(t, key=len))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
