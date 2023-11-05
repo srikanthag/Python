@@ -1,6 +1,6 @@
 # # #basics
 # #
-# class employee:
+# Class employee:
 #     def __init__(self, fname, lname, pay):
 #         self.first_name = fname       #instance variable
 #         self.last_name = lname
@@ -14,7 +14,7 @@
 #     def email(self):
 #         return f"{self.first_name}.{self.last_name}@gmail.com"
 #
-# emp1 = employee("srikanth", "jobs", 1000)     #inside storing as dictionary   #class
+# emp1 = employee("srikanth", "jobs", 1000)     #inside storing as dictionary   #Class
 # emp2 = employee("srikanth1", "jobs1", 2000)
 # # print(emp1.__dict__)
 # #print(emp2.__dict__)
@@ -38,7 +38,7 @@
 # # print(emp2.email())
 
 
-# class calculator:
+# Class calculator:
 #     def __init__(self, a, b):
 #         self.a = a
 #         self.b = b
@@ -68,7 +68,7 @@
 # # print(c3.mul())
 # # print(c3.div())
 
-# class player:
+# Class player:
 #     def __init__(self, x, y):
 #         self.x = x
 #         self.y = yield
@@ -86,7 +86,7 @@
 # p2 = player(5,6)
 
 
-# class demo:
+# Class demo:
 #     count = 0
 #     def __init__(self, a, b):
 #         self.a = a
@@ -94,7 +94,7 @@
 #         demo.count = demo.count + 1
 
 
-# class dog:
+# Class dog:
 #     attr1 = 'bird'
 #     def __init__(self, name):
 #         self.name = name
@@ -107,7 +107,7 @@
 
 
 #callable
-# class squre:
+# Class squre:
 #     def __call__(self, num):
 #         self.num = num
 #         for numer in num:
@@ -119,7 +119,7 @@
 
 
 
-# class emp():
+# Class emp():
 #     def __init__(self, name, sal):
 #         self.name = name
 #         self.sal = sal

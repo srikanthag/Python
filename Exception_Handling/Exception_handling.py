@@ -132,7 +132,7 @@
 
 # custom exceptions
 
-# class UserNotAuthorizedException(Exception):
+# Class UserNotAuthorizedException(Exception):
 #     pass
 
 

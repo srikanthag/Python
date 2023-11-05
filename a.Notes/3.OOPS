@@ -13,6 +13,7 @@ class python:
          print("Guido van Rossum")
  p = python
 p.designer()
+
 ================================================================================================================
 
 1.  CLASS
@@ -33,9 +34,9 @@ d. __dict__: Dictionary or other mapping object used to store an object's (writa
 
 eg:
 class car:
-    def __init__(self,modelname, year):
-        self.modelname = modelname
-        self.year = year
+    def __init__(self,modelname, year):     # This is the constructor method
+        self.modelname = modelname           # This is an instance variable
+        self.year = year                        # This is an instance variable
     def display(self):
         print(self.modelname,self.year)
 
@@ -47,20 +48,101 @@ We have created a c1 object to access the class attribute. The c1 object will al
 
 ===============================================================================================================
 
+a. Static Method
+
+Python has a static method that belongs to the class. It is just like a static variable that bounds to the class rather than the
+class's object. A static method can be called without creating an object for the class. It means we can directly call the static
+method with the reference of the class name.
+The staticmethod cannot access the class attributes or the instance attributes.
+
+A staticmethod() is a built-in function in Python that is used to return a given function as a static method.
+
+Using the @staticmethod Decorator
+A @staticmethod is an inbuilt decorator that defines the static method inside the class. It does not receive any argument as a
+reference to a class instance or a class calling the static method itself.
+
+Syntax:
+
+class Abc:
+@staticmethod
+def function_name (arg1, arg2, ?):
+# Statement to be executed
+Returns: a static method for function function_name
 
 
+b.Classmethod() in Python
+Python has a built-in function called classmethod() that gives a class method of the specified function.
+
+The first parameter must be cls, which can be used to access class attributes.
+The class method can only access the class attributes but not the instance attributes.
+
+Syntax
+@classmethod
+def function(cls, arg1, arg2, arg3...):
+
+=============================================================================================================
+
+Class Decorator in Python
+Decorators are an important and useful tool of Python. It allows us to modify the behavior of the function or class.
+
+To define the class decorator, we need to use a __call__() method of classes. When we need to create an object
+that behaves like a function, the function decorator must return an object that behaves like a function.
 
 
+class NewDocorator:
+    def __init__(self, function):
+        self.function = function
+
+    def __call__(self):
+        # can add some more code
+        self.function()
+
+@NewDocorator
+def function():
+    print("WelCome to JavaTpoint")
+function()
+
+=============================================================================================================
+=============================================================================================================
+
+2. ENCAPSULATION
+
+It describes the idea of wrapping data and the methods that work on data within one unit. This puts
+restrictions on accessing variables and methods directly and can prevent the accidental modification of data
+
+a. Protected members:  Protected members are members of a class that can only be accessed within the class but cannot
+be accessed by anyone outside it.
+'_' can be overriddn in child Class''''''(protected)'''
 
 
+b. Private method: Private members are the same as protected members. The difference is that class members who have
+been declared private should not be accessed by anyone outside the class or any base classes. Python does not have
+Private instance variable variables that can be accessed outside of a class.
+
+'__' can not be overridden in child Class""" '''private'''
+'''we cant out side the Class'''
 
 
+=============================================================================================================
+=============================================================================================================
+
+3. INHERITANCE
+Inheritance enables us to define a Class that takes all the functionality from a parent Class and allows us to add more
 
 
+a. Python Multi-Level inheritance
+Multi-Level inheritance is possible in python like other object-oriented languages.
+Multi-level inheritance is archived when a derived class inherits another derived class.
+
+b. Python Multiple inheritance
+Python provides us the flexibility to inherit multiple base classes in the child class.
 
 
+=============================================================================================================
+=============================================================================================================
+4. POLYMORPHISM
 
-
+same function by name but different behavior
 
 
 

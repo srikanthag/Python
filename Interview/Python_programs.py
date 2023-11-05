@@ -211,8 +211,8 @@ from itertools import islice
 #
 # print(sub(1, 5))
 
-'''19 How to get the count of number of instances of a class that is being created.'''
-# class Login:
+'''19 How to get the count of number of instances of a Class that is being created.'''
+# Class Login:
 #     login_count = 0  # Class Variable that keeps count of login counts
 #
 #     def __init__(self):
@@ -239,8 +239,8 @@ if the item is integer of float it should reverse it.'''
 #
 # spam(['apple', 'yahoo', '1234', 100, 123.76, '26.23'])
 
-'''21 Write a class named Simple and it should have iteration capability.'''
-# class Simple:
+'''21 Write a Class named Simple and it should have iteration capability.'''
+# Class Simple:
 #     def __init__(self, items):
 #         self._items = items
 #
@@ -251,8 +251,8 @@ if the item is integer of float it should reverse it.'''
 # for item in s:
 #     print(item)
 
-'''22 Write a Custom class which can access the values of dictionaries using d['a'] and d.a'''
-# class MyDict:
+'''22 Write a Custom Class which can access the values of dictionaries using d['a'] and d.a'''
+# Class MyDict:
 #     def __init__(self, d):
 #         self._dict = d
 #
@@ -1209,7 +1209,7 @@ keys = list(d.keys())
 list = [item for item in keys[1::2]]
 print(list)
 
-'''129 Can we have multiple init methods in a class'''
+'''129 Can we have multiple init methods in a Class'''
 class Point:
     def __init__(self, a, b):
         self.a = a
@@ -1322,7 +1322,7 @@ print(sub(5,7))
  The static method cannot access the class attributes or the instance attributes.
 
  class Student:
-     name = 'unknown'  # class attribute
+     name = 'unknown'  # Class attribute
 
      def __init__(self):
          self.age = 20  # instance attribute
@@ -1337,7 +1337,7 @@ print(sub(5,7))
  The class method can only access the class attributes but not the instance attributes.
 
  class Student:
-     name = 'unknown' # class attribute
+     name = 'unknown' # Class attribute
      def __init__(self):
          self.age = 20  # instance attribute
 
@@ -1349,7 +1349,7 @@ print(sub(5,7))
 
 '''133. OOPS: Object-oriented programming (OOP) is a style of programming characterized by the identification of 
 classes of objects closely linked with the methods (functions) with which they are associated. 
-It also includes ideas of inheritance of attributes and methods.'''
+It also includes ideas of Inheritance of attributes and methods.'''
 
 '''134. Class: Class is a object constructor consist set of functions '''
 ''' __init__ used to construct instance variable, and it will initialize the object'''
@@ -1402,11 +1402,11 @@ we can have multiple constructors in class but latest will take
  s = Student('srikanth', 10, 16)
  print(s.__dict__)
 
-'''136. class decorator'''
-# Class decorators should take class as an argument and modified that class
+'''136. Class decorator'''
+# Class decorators should take Class as an argument and modified that Class
 
 def prices(cls):
-    print('attaching class attribute')
+    print('attaching Class attribute')
     return cls
 
 @prices
@@ -1417,7 +1417,7 @@ class ShoppingCart:
 c = ShoppingCart()
 print(c.demo())
 
-'''137. What is abstract class?'''
+'''137. What is abstract Class?'''
 An abstract class can be considered as a blueprint for other classes.
 In object-oriented programming, an abstract class is a class that cannot be instantiated. However, you can create
 classes that inherit from an abstract class. Typically, you use an abstract class to create a blueprint for other classes.
@@ -1440,14 +1440,14 @@ Python comes with a module which provides the infrastructure for defining Abstra
  r = Rectangle(10,20)
  print ('area: ',r.area())
 
- ''' The main difference between abstraction and inheritance is that abstraction allows hiding the internal details and
- displaying only the functionality to the users, while inheritance allows using properties and methods of an already
- existing class.'''
+ ''' The main difference between abstraction and Inheritance is that abstraction allows hiding the internal details and
+ displaying only the functionality to the users, while Inheritance allows using properties and methods of an already
+ existing Class.'''
 
-'''138. Inheritance: Inheritance enables us to define a class that takes all the functionality from a parent class 
+'''138. Inheritance: Inheritance enables us to define a Class that takes all the functionality from a parent Class 
 and allows us to add more.'''
 
-'''139. single level inheritance'''
+'''139. single level Inheritance'''
 class Parent:
      def __init__(self, value):
          self.value = value
@@ -1463,16 +1463,16 @@ class Child1(Parent):
      def yahoo(self):
          print("executing yahoo child1")
 
-'''Overriding Parent class Method'''
+'''Overriding Parent Class Method'''
 class Child2(Parent):
      def apple(self):
          print("executing child2 apple")
 
-'''Overriding Parent class Method but reusing the original method in Parent'''
+'''Overriding Parent Class Method but reusing the original method in Parent'''
 class Child3(Parent):
      def apple(self):
           print("executing child2 apple")
-          super().apple()    # super is used to acces parent class attributes
+          super().apple()    # super is used to acces parent Class attributes
 
 c3 = Child3(100)
 print(c3.apple())
@@ -1486,28 +1486,28 @@ class Child4(Parent):
 c4 = Child4(100, 'srikanth')
 print(c4.apple())
 
-'''140. Multiple inheritance: class derived from more than one base class'''
+'''140. Multiple Inheritance: Class derived from more than one base Class'''
 class Child5(Child1, Child2):
      pass
 c5 = Child5(100)
 print(c5.yahoo())
 
-'''141. Multi-level inheritance: derived class derived from another derived class '''
+'''141. Multi-level Inheritance: derived Class derived from another derived Class '''
 class a:
      def demo(self):
-         print("class a demo")
+         print("Class a demo")
 
 class b(a):
      def demo(self):
-         print("class b demo")
+         print("Class b demo")
          super().demo()
 
  class c(b):
      def demo(self):
-         print("class c demo")
+         print("Class c demo")
          super().demo()
 
-'''142. encapsulation'''
+'''142. Encapsulation'''
 It describes the idea of wrapping data and the methods that work on data within one unit. This puts
 restrictions on accessing variables and methods directly and can prevent the accidental modification of data
 
@@ -1515,8 +1515,8 @@ restrictions on accessing variables and methods directly and can prevent the acc
 getters are the methods which help access the private attributes or get the value of the private attributes
 and setters are the methods which help change or set the value of private attributes.
 
-'''protected : _ can be overriddn in child class'''
-'''Protected members of a class are accessible from within the class and are also available to its sub-classes.'''
+'''protected : _ can be overriddn in child Class'''
+'''Protected members of a Class are accessible from within the Class and are also available to its sub-classes.'''
 class Bankaccount:
     _intrest = 4      # we can change it
 
@@ -1536,7 +1536,7 @@ class SBaccount(Bankaccount):
  p= s.roi()
  print(p)
 
-'''private : __ can not be overridden in child class'''
+'''private : __ can not be overridden in child Class'''
 '''Python doesn't have any mechanism that effectively restricts access to any instance variable or method.'''
  class Bankaccount:
      __intrest = 4     # we can't change it

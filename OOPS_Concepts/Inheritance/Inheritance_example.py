@@ -23,8 +23,8 @@ class bank_account:
 # b = bank_account('srikanth', 20000)
 
 
-# class SBAaccount(bank_account):
-#     intrerest_rate = 0.05   #redefining class variable
+# Class SBAaccount(bank_account):
+#     intrerest_rate = 0.05   #redefining Class variable
 #     def withdraw(self, amount):
 #         if amount > 1000:
 #             raise ValueError("caanot withdraw more than 10k")
@@ -36,7 +36,7 @@ class bank_account:
 # print(sa.balance)
 
 
-# class salary_acount(bank_account):
+# Class salary_acount(bank_account):
 #     def withdraw(self, name):
 #         self.is_first_month_sal = True
 #         self. max_draft_amount = 0.0
@@ -65,7 +65,7 @@ class bank_account:
 # print(sal.overdraft())
 
 
-# class senior_citizen(bank_account):
+# Class senior_citizen(bank_account):
 #     intrerest_rate = 0.06
 #     def withdraw(self, amount):
 #         if amount > 2000:

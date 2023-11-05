@@ -67,3 +67,37 @@
 #                 l.append(n)
 #     return l
 # print(prime(start=1, end=30))
+
+
+
+#prime numbers
+
+#print whether prime or not
+# n = 10
+# for item in range(2, n):
+#     if n % item == 0:
+#         print('not a prime number')
+#         break
+# else:
+#     print('prime number')
+
+#genarate seris of prime number
+
+# for n in range(15):
+#     if n > 1:
+#         for item in range(2, n):
+#             if n % item == 0:
+#                 break
+#         else:
+#             print(n)
+
+# 20. wap to print the prime number in the given sequence
+# l = [1, 2, 3, 4, 5, 6, 98, 45]
+# for item in l:
+#     if item > 1:
+#         for i in range(2, item):
+#             if item % i == 0:
+#                 print(item, 'not a prime number')
+#                 break
+#         else:
+#             print(item, 'prime number')

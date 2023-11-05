@@ -1,4 +1,4 @@
-#Traverce through a list
+# 1. Traverce through a list
 # l = ['python', 10, 3.2,'java']
 # for item in l:
 #      print(item)
@@ -8,7 +8,7 @@
 #     print(index, l[index])
 
 
-#wap to print index and its corresponding item in the list
+# 2. wap to print index and its corresponding item in the list
 # l = ['python', 10, 3.2,'java']
 # for item, index in enumerate(l):
 #     print(index, item)
@@ -16,7 +16,7 @@
 # for item in range (0,len(l)):
 #     print(item, l[item])
 
-#wap to print elements in the list in reverce order
+# 3. wap to print elements in the list in reverse order
 # l = ['python', 10, 3.2,'java']
 
 #using range function
@@ -31,8 +31,7 @@
 # for item in reversed(l):
 #     print(item)
 
-
-#wap to print alternate elements in a list
+# 4. wap to print alternate elements in a list
 # l = ['python', 10, 3.2, 'selenium', 'java']
 
 #range function
@@ -53,7 +52,7 @@
 #     if i % 2 == 0:
 #         print(l[i])
 
-#wap to print integers present in the list
+# 5. wap to print integers present in the list
 # l = ['python', 10, 3.2, 'selenium', 'java']
 
 #using isinstance function
@@ -61,31 +60,30 @@
 #     if isinstance(item, int):
 #         print(item)
 
-#print all numeric datatypes by using isinstance
+# 6. print all numeric datatypes by using isinstance
 # l = ['python', 10, 3.2, 'selenium', 1+5j, True, 'java']
 # for item in l:
 #     if isinstance(item, (int, float, complex)):
 #         print(item)
 
-
-#wap to print length of each string in the list
+# 7. wap to print length of each string in the list
 # l = ['python', 'selenium', 'java']
 # for item in l:
 #     print(item, len(item))
 
-#wap to print the strings which are of even length in the list
+# 8. wap to print the strings which are of even length in the list
 # l = ['python', 'selenium', 'True', 'java', 'sri', 'for']
 # for item in l:
 #     if len(item) % 2 ==0:
 #         print(item,len(item))
 
-#wap to print the strings which are of odd length in the list
+# 9. wap to print the strings which are of odd length in the list
 # l = ['python', 'selenium', 'True', 'java', 'sri', 'for']
 # for item in l:
 #     if len(item) % 2 == 1:
 #         print(item,len(item))
 
-#wap print to create a list which are even length string  (store insde list)
+# 10. wap print to create a list which are even length string  (store inside list)
 # l = ['python', 'selenium', 'True', 'java', 'sri', 'for']
 # d = []
 # for item in l:
@@ -93,8 +91,7 @@
 #         d.append(item)
 # print(d)
 
-# wap to print the elements in the list if the element is of even length print as it is, if it is odd then
-# reverse and print
+# 11. wap to print the elements in the list if the element is of even length print as it is, if it is odd then reverse and print
 # l = ['python', 'selenium', 'True', 'java', 'sri', 'for']
 # for item in l:
 #     if len(item) % 2 == 0:
@@ -102,7 +99,7 @@
 #     else:
 #         print(item[::-1])
 
-# wap to print the elements in the list if the element is of even length store inside list
+# 12. wap to print the elements in the list if the element is of even length store inside list
 # l = ['python', 'selenium', 'True', 'java', 'sri', 'for']
 # d = []
 # for item in l:
@@ -113,7 +110,7 @@
 # print(d)
 
 
-#wap to reverse the elements inside the list if the elements of type string or else keep it as it is
+# 13. wap to reverse the elements inside the list if the elements of type string or else keep it as it is
 # l = ['python', 10, 2.2, True, 'selenium', 'True', 'java', 'sri', 'for']
 # sl = []
 # for item in l:
@@ -124,21 +121,21 @@
 # print(sl)
 
 
-#wap to print the element which have starting with vowel
+# 14. wap to print the element which have starting with vowel
 # files = ["Amezon", "Flipcart", "walmart", "gmail", "yahoo"]
 # for item in files:
 #     if item[0] in 'AEIOUaeiou':
 #         print(item)
 
 
-#wap print all the extensions in the followig list
+# 15. wap print all the extensions in the followig list
 # files = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipcart.in']
 # l1 = []
 # for item in files:
 #     print(item.split('.')[1])
 
-#wap to print the file name if the file name is of odd length
-# files = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipcart.in']
+# 16. wap to print the file name if the file name is of odd length
+# files = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipkart.in']
 #
 # for item in files:
 #     a = item.split('.')
@@ -148,14 +145,14 @@
 #         print(a[0])
 
 
-#wap to return index of the first occurance of the given element
+# 17. wap to return index of the first occurrence of the given element
 # number = [10, 20, 30, 40, 50, 40, 80, 30]
 # num = 80
 
 # using index
 # print(number.index(num))
 
-#using 'break' statement
+# 18. using 'break' statement
 # for index, item in enumerate(number):
 #     if item == num:
 #         print(num, 'present in the', index)
@@ -163,29 +160,7 @@
 # else:
 #     print('element is not found')
 
-#prime numbers
-
-#print whether prime or not
-# n = 10
-# for item in range(2, n):
-#     if n % item == 0:
-#         print('not a prime number')
-#         break
-# else:
-#     print('prime number')
-
-#genarate seris of prime number
-
-# for n in range(15):
-#     if n > 1:
-#         for item in range(2, n):
-#             if n % item == 0:
-#                 break
-#         else:
-#             print(n)
-
-
-#wap to print all the elements other than given element
+# 19. wap to print all the elements other than given element
 # number = [10, 20, 30, 40, 50, 40, 30]
 # n = 20
 # for num in number:
@@ -193,19 +168,7 @@
 #         continue
 #     print(num)
 
-# to print the prime number in the given sequence
-# l = [1, 2, 3, 4, 5, 6, 98, 45]
-# for item in l:
-#     if item > 1:
-#         for i in range(2, item):
-#             if item % i == 0:
-#                 print(item, 'not a prime number')
-#                 break
-#         else:
-#             print(item, 'prime number')
-
-
-#wap print all the paliondrome in the given list
+# 20. wap print all the palindrome in the given list
 # l = ['python', 'dad', 'hai', 'malayalam', 'madam', 'mom']
 # for item in l:
 #     if item == item[::-1]:

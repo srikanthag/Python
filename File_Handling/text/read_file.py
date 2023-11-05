@@ -122,7 +122,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #                 d[words[0]] += 1
 #     print(d)
 
-#counter class
+#counter Class
 # from collections import Counter
 # with open(path2) as file:
 #     l = []

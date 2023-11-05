@@ -1,4 +1,4 @@
-# class parent:
+# Class parent:
 #     def __init__(self, value):
 #         self.value = value
 #
@@ -14,9 +14,9 @@
 # print(p.google())
 # print(p.apple())
 #
-# #child1 class having separate method called demo
+# #child1 Class having separate method called demo
 
-# class child1(parent):
+# Class child1(parent):
 #     def demo(self):
 #         print("execute demo")
 # c1 = child1(10)
@@ -26,9 +26,9 @@
 # print(c1.__init__)
 #
 
-# #overriding parent class method
+# #overriding parent Class method
 
-# class child2(parent):
+# Class child2(parent):
 #     def demo(self):
 #         print("execute demo")
 #
@@ -40,34 +40,34 @@
 # print(c2.apple())
 #
 # #child adding extra functionality and reused original functionality of parent
-# class child3(parent):
+# Class child3(parent):
 #     def google(self):
 #         print("executing child 3 google")
-#         super().google()                #   super is used to acces parent class attributes
+#         super().google()                #   super is used to acces parent Class attributes
 #
 # c3 = child3(10)
 # print(child3.__mro__)                      #mro -method resalution order
 # print(c3.google())
 # print(c3.apple())
 #
-# #child class having extra attributes
-# class child4(parent):
+# #child Class having extra attributes
+# Class child4(parent):
 #     def __init__(self, value, name):
 #         self.name = name
-#         super().__init__(value)              #calling parent class constructor
+#         super().__init__(value)              #calling parent Class constructor
 #
 # c4 = child4(10, 'srikanth')
 # print(c4.name)
 # print(c4.value)
 #
 #
-# class facebook:
+# Class facebook:
 #     def spam(self):
 #         print("executing facebook spam")
 #
 #
-# #child inheriting from multiple inheritance
-# class child5(parent, facebook):
+# #child inheriting from multiple Inheritance
+# Class child5(parent, facebook):
 #     pass
 #
 # c5 = child5(10)
@@ -78,40 +78,40 @@
 
 
 
-#multi-level inheritance
-# class a:
+#multi-level Inheritance
+# Class a:
 #     def demo(self):
-#         print("class a demo")
+#         print("Class a demo")
 #
-# class b(a):
+# Class b(a):
 #     def demo(self):
-#         print("class b demo")
+#         print("Class b demo")
 #         super().demo()
 #
-# class c(b):
+# Class c(b):
 #     def demo(self):
-#         print("class c demo")
+#         print("Class c demo")
 #         super().demo()
 
 
 
-# class parent:
+# Class parent:
 #     def demo(self):
-#         print("class parent demo")
+#         print("Class parent demo")
 #
-# class child1(parent):
+# Class child1(parent):
 #     def demo(self):
-#         print("class child1 demo")
+#         print("Class child1 demo")
 #         super().demo()
 #
 #
-# class child2(parent):
+# Class child2(parent):
 #     def demo(self):
-#         print("class child2 demo")
+#         print("Class child2 demo")
 #         super().demo()
 #
-# #multiple inheritance
-# class parent2(child1, child2):
+# #multiple Inheritance
+# Class parent2(child1, child2):
 #     pass
 
 

@@ -1,30 +1,6 @@
-# sets
-# wap to traverse through set and print each element
-# s = {'python', 'dad', 'hi'}
-# for item in s:
-#     print(item)
-
-# wap to print the elements in the sets reversed order
-# not possible
-
-# wap to remove the given element from the set
-# s = {'python', 'dad', 'hi'}
-# s.discard('hi')
-# print(s)
-
-# wap to create a set with the elements in the list if the elemnt is paliandrome
-# l = ['python', 'dad', 'hi', 'malayalam', 'java', 'mom']
-# s = set()
-# for item in l:
-#     if item == item[::-1]:
-#         s.add(item)
-# print(s)
-
-
-#Dictionary
-
-#wap to print the keys in a dictionary
+# 1. wap to print the keys in a dictionary
 # d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+
 #traversing through the directli
 # for key in d:
 #     print(key)
@@ -39,7 +15,7 @@
 # for key, value in d.items():
 #     print(value, end=',')
 
-#wap to print only the values form the dictionary
+# 2. wap to print only the values form the dictionary
 #d.values()
 # for value in d:
 #     d.values()
@@ -58,7 +34,7 @@
 #     print(d.get(key))
 
 
-#wap to print the items in a dictionary along with the indecies
+# 3. wap to print the items in a dictionary along with the indexes
 # d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
 
 #apply enumerate on dictionary variable
@@ -70,7 +46,7 @@
 # for index, (key, value) in enumerate (d.items()):
 #     print(index, value, key)
 
-#wap to create a dictionary with the character and its count pair in a string
+# 4. wap to create a dictionary with the character and its count pair in a string
 # string = "srikaainth"
 # d = {}
 # for char in string:
@@ -94,7 +70,8 @@
 #     d[char] = count
 # print(d)
 
-#defaultdict(): Defaultdict is a container like dictionaries present in the module collections. Defaultdict is a sub-class of the dictionary class that returns a dictionary-like object.
+# defaultdict(): Defaultdict is a container like dictionaries present in the module collections. Defaultdict is a sub-Class of
+# the dictionary Class that returns a dictionary-like object.
 # from collections import defaultdict
 # s = 'hello world'
 # dd = defaultdict(int)
@@ -103,7 +80,7 @@
 #         dd[char] += 1
 # print(dd)
 
-#wap to create a dictionary with word and its count pair
+# 5. wap to create a dictionary with word and its count pair
 # s = 'hi how are you hi dude'
 # d = {}
 #counting
@@ -131,7 +108,7 @@
 #     dd[word] += 1
 # print(dd)
 
-#wap to create a dictionary with word and its length pair
+# 6. wap to create a dictionary with word and its length pair
 # s = 'hi how are you hi dude'
 # d = {}
 # list_ = s.split()
@@ -139,7 +116,7 @@
 #     d[word] = len(word)
 # print(d)
 
-#wap to create a dictionary with word and its length pair only if the word of even length
+# 7. wap to create a dictionary with word and its length pair only if the word of even length
 # s = 'hi dude how are you'
 # d = {}
 # list_ = s.split()
@@ -148,7 +125,7 @@
 #         d[word] = len(word)
 # print(d)
 
-#wap to create a dictionary with word and its length pair only if the word is starting with vowel
+# 8. wap to create a dictionary with word and its length pair only if the word is starting with vowel
 # s = 'hi dude how are you'
 # d = {}
 # list_ = s.split()
@@ -157,7 +134,7 @@
 #         d[word] = len(word)
 # print(d)
 
-#wap to create a dictionary with word and its count only if the word not repeated
+# 9. wap to create a dictionary with word and its count only if the word not repeated
 # s = 'hi dude hi how are how you'
 # d = {}
 # list_ = s.split()
@@ -166,15 +143,15 @@
 #         d[word] = list_.count(word)
 # print(d)
 
-#wap to reverse the values in the dictionary if the value is of type string
+# 10. wap to reverse the values in the dictionary if the value is of type string
 # d = {'a': 'hello', 'b': 100, 'c': 10.2, 'd': 'world'}
 # for key, value in d.items():
 #     if isinstance(value, str):
 #         d[key] =  value[::-1]
 # print(d)
 
-#wap to get duplicate items and the number od times the repeated in the list
-# names = ['apple', 'google', 'yahoo', 'gamil', 'apple', 'gmail', 'google']
+# 11. wap to get duplicate items and the number od times the repeated in the list
+# names = ['apple', 'google', 'yahoo', 'gmail', 'apple', 'gmail', 'google']
 # d = {}
 # for name in names:
 #     count = names.count(name)
@@ -182,7 +159,7 @@
 #         d[name] = count
 # print(d)
 
-#wap to get the following output
+# 12. wap to get the following output
 # sentence = "hello world welcome to python programming hi there"
 # op = {"h":["hello", "hi"], "w":["world", "welcome"], "t":["to", "there"], "p":["python", "programming"]}
 # d= {}
@@ -202,7 +179,7 @@
 #         dd[word[0]] += [word] #or# dd[word[0]].append(word)
 # print(dd)
 
-#wap to create the dictionary with element and its index pair in the given list
+# 13. wap to create the dictionary with element and its index pair in the given list
 # names = ['apple', 'google', 'yahoo', 'gmail', 'apple', 'gmail', 'google']
 # d = {}
 #normal dictionary
@@ -221,7 +198,7 @@
 #     dd[item] += [index]
 # print(dd)
 
-#wap to flip key and values (swap case)
+# 14. wap to flip key and values (swap case)
 # d = {'a': 'hello', 'b': 100, 'c': 10.2, 'd': 'world'}
 # d1 ={}
 # for key in d:
@@ -229,7 +206,7 @@
 #     d1[value] = key
 # print(d1)
 
-#wap to create a dictionary to count the no of occurance of each char
+# 15. wap to create a dictionary to count the number of occurrence of each char
 # s = 'srikaanth'
 # d = {}
 # for char in s:

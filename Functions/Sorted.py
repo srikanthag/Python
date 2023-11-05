@@ -86,12 +86,12 @@
 # res = sorted(d.items(), key=lambda item: item[-1])
 # print(res[-1])
 
-# 14. wap sort based on the names, class, age
-# l = [{'name': 'Ram', 'class': 6, 'age': 12 },
-#     {'name': 'Sham', 'class': 12, 'age': 18 },
-#     {'name': 'John', 'class': 8, 'age': 13 } ]
+# 14. wap sort based on the names, Class, age
+# l = [{'name': 'Ram', 'Class': 6, 'age': 12 },
+#     {'name': 'Sham', 'Class': 12, 'age': 18 },
+#     {'name': 'John', 'Class': 8, 'age': 13 } ]
 
-# print(sorted(l, key=lambda item: item['class']))
+# print(sorted(l, key=lambda item: item['Class']))
 # print(sorted(l, key=lambda item: item['age']))
 # print(sorted(l, key=lambda item: item['name']))
 
