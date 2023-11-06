@@ -102,6 +102,26 @@ def function():
     print("WelCome to JavaTpoint")
 function()
 
+
+========================================================================================
+
+Overload constructor
+we can have multiple constructors in class but latest will take
+
+ class Student:
+     def __init__(self, name1, class1):
+         self.name1 = name1
+         self.clas1 = class1
+
+     def __init__(self, name2, class2, age):
+         self.name2 = name2
+         self.clas2 = class2
+         self.age = age
+
+ s = Student('srikanth', 10, 16)
+ print(s.__dict__)
+
+
 =============================================================================================================
 =============================================================================================================
 

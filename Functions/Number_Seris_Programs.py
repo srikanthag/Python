@@ -101,3 +101,58 @@
 #                 break
 #         else:
 #             print(item, 'prime number')
+
+
+144. '''febnocii number seris'''
+"The Fibonacci Sequence is a set of steadily increasing numbers where each number is equal to the sum of the preceding two numbers."
+def febonocii(num):
+     a = 0
+     b = 1
+     i = 0
+     while i <= num:
+         print(a)
+         c = a + b
+         a = b
+         b = c
+         i += 1
+ febonocii(3)
+
+145. waf that checks if the given number is fibonocii number or not
+def febonocii(num):
+     a = 0
+     b = 1
+     while a <= num:
+         c = a + b
+         a = b
+         b = c
+         if a == num:
+             print(num, 'is a febenocii number')
+             break
+     else:
+         print(num, 'not febenocii number')
+ febonocii(10)
+
+146. ''' factorial number '''
+ def fact(n):
+     if n == 0:
+         return 1
+     return n * fact(n-1)
+ print(fact(5))
+
+'''prime number'''
+ n = 10
+ for item in range(2, n):
+     if n % item == 0:
+         print('not a prime number')
+         break
+ else:
+     print('prime number')
+
+# 147. genarate seris of prime number
+# for n in range(15):
+#     if n > 1:
+#         for item in range(2, n):
+#             if n % item == 0:
+#                 break
+#        else:
+#             print(n)

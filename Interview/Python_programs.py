@@ -1,6 +1,6 @@
 '''Programs'''
 
-'''1 Write a program to find the length of the string without using inbuilt function (len)'''
+'''1. Write a program to find the length of the string without using inbuilt function (len)'''
 # def _len(iterable):
 #     _count = 0
 #     for item in iterable:
@@ -813,12 +813,12 @@ for item in s:
         print(item)
 
 '''83 Write a program to count the number of commented (#) lines in a text file'''
-with open(sample.text) as f:
-    count = 0
-    for line in f:
-        if line.startswith('#'):
-            count += 1
-print(count)
+# with open(sample.text) as f:
+#     count = 0
+#     for line in f:
+#         if line.startswith('#'):
+#             count += 1
+# print(count)
 
 '''84 Write a program to check if the year is leap year or not'''
 import calendar
@@ -1014,7 +1014,7 @@ for word in words:
 print(_range)
 
 '''106 Can we override a static method in python?'''
-no
+# no
 class Parent:
     @staticmethod
     def demo():
@@ -1038,7 +1038,7 @@ def len_itb(*args):
     return total
 print(len_itb([1,2],[3,4,5]))
 
-no of arguments
+# no of arguments
 def len_(*args):
     return len(args)
 print(len_(['srss'], 's'))
@@ -1061,7 +1061,7 @@ with open (sample.text) as file:
         print(nl)
 
 '''111 Maximum sum of 3 numbers and Minimum sum of 3 numbers'''
- numbers = [10, 15, 20, 25, 30, 35, 40, 15, 15]
+numbers = [10, 15, 20, 25, 30, 35, 40, 15, 15]
 s = sorted(numbers)
 min_num= sum(numbers[:3])
 max_num = sum(numbers[-3:])
@@ -1070,7 +1070,7 @@ print(max_num)
 
 '''112 Write a program to get the output as below'''
 s = "python@#$%pool"
-o/p should be ['PYTHON', 'POOL']
+# o/p should be ['PYTHON', 'POOL']
 import re
 e = re.findall(r'\w+', s)
 l = [item.upper() for item in e]
@@ -1138,6 +1138,11 @@ for number in numbers:
     num = re.findall(r'^8', number)
     if num:
         print(number)
+
+# or
+d = [item for item in numbers if int(item[0]) == 8]
+print(d)
+
 
 '''121 Write a program to remove duplicates from the list without using set or empty list'''
 l1 = [1, 2, 3, 4, 1, 2, 3, 4, 3, 4, 4]
@@ -1209,438 +1214,20 @@ keys = list(d.keys())
 list = [item for item in keys[1::2]]
 print(list)
 
-'''129 Can we have multiple init methods in a Class'''
-class Point:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-
-    def __init__(self, a, b, c):
-        self.a = a
-        self.b = b
-        self.c = c
-
-p = Point(1, 2, 3)
-print(p.a)
-print(p.b)
-print(p.c)
-
- Since Python is dynamically typed language, it takes the latest __init__ method.
-
-'''130. Have you used any version control tool in your project?'''
-
- Git: Git is a free and open source distributed code management and Version control system.
-
- config: This command sets the author name and email address respectively to be used with your commits.
- git config – global user.name “[name]”
- git config – global user.email “[email address]”
-
- init: This command is used to start a new repository.
- git init [repository name]
-
- add: This command adds a file to the staging area.
- git add (file name)
-
- commit: This command records or snapshots the file permanently in the version history.
- git commit -m “[ Type in the commit message]”
-
- remote: This command is used to connect your local repository to the remote server.
- git remote add origin https://github.com/srikanthag/TYSS.git
-
- push: This command sends the committed changes of master branch to your remote repository.
- git push -u origin master
-
- version
- git --version
-
- clone: This command is used to obtain a repository from an existing URL.
- git clone [url]
-
- status: This command lists all the files that have to be committed.
- git status
-
- git log: This command is used to list the version history for the current branch
- git log
-
- git pull: This command fetches and merges changes on the remote server to your working directory.
- git pull [Repository Link]
-
- merge: This command merges the specified branch’s history into the current branch.
- git merge [branch name]
-
- branch: This command lists all the local branches in the current repository.
- git branch <branch-name>
-
- Viewing branches
- git branch
-
- git checkout: This command creates a new branch and also switches to it.
- git checkout <name-of-your-branch>
-
- revert(undo)
- git revert
-
- reset
- git reset [file]
-
- delete: This command deletes the file from your working directory and stages the deletion.
- git rm [file]
-
- show: show current changes
- git show [commit]
-
-'''git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/srikanthag/new.git
-git push -u origin main'''
-
-'''131. decorators'''
- Decorator is a function it takes another function and add extra functionality without alter the main function
- when function is decorate using @deccorator function.
- when interpreter execute @decorator 2 major thing will happen
- outer function parameter func takes address of main function
- the main function will take address of wraper function
-
-def outer(func):
-    def wrapper(*args, **kwargs):
-        result = func(*args, **kwargs)
-        return abs(result)
-    return wrapper
-
-@outer
-def sub(a,b):
-    return a - b
-print(sub(5,7))
-
-'''132. Class method vs Static Method'''
-'''static method'''
- The @staticmethod is a built-in decorator that defines a static method in the class in Python.
- Declares a static method in the class.
- It cannot have cls or self parameter.
- The static method cannot access the class attributes or the instance attributes.
-
- class Student:
-     name = 'unknown'  # Class attribute
-
-     def __init__(self):
-         self.age = 20  # instance attribute
-
-     @staticmethod
-     def tostring():
-         print('Student Class')
-
-'''classmethod'''
- A class method receives the class as an implicit first argument, just like an instance method receives the instance
- The first parameter must be cls, which can be used to access class attributes.
- The class method can only access the class attributes but not the instance attributes.
-
- class Student:
-     name = 'unknown' # Class attribute
-     def __init__(self):
-         self.age = 20  # instance attribute
-
-     @classmethod
-     def tostring(cls):
-         print('Student Class Attributes: name=',cls.name)
-
- A class method can access or modify the class state while a static method can’t access or modify it.
-
-'''133. OOPS: Object-oriented programming (OOP) is a style of programming characterized by the identification of 
-classes of objects closely linked with the methods (functions) with which they are associated. 
-It also includes ideas of Inheritance of attributes and methods.'''
-
-'''134. Class: Class is a object constructor consist set of functions '''
-''' __init__ used to construct instance variable, and it will initialize the object'''
-'''self: it is a first parameter it holds the address of instance'''
-
-class Calculator:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-
-    def add(self):
-        return self.a + self.b
-
-     def sub(self):
-         return self.a - self.b
-
- c = Calculator(2,3)
- print(c.add())
- print(c.sub())
-
- class Bankaccount:
-     def __init__(self, name, amount):
-         self.name = name
-         self.amount= amount
-
-     def deposit(self, cash):
-         self.amount += cash
-
-     def withdraw(self, cash):
-         self.amount -= cash
-
- b = Bankaccount('srikanth', 700)
- res1 = b.deposit(300)
- res= b.withdraw(200)
- print(b.__dict__)
-
-'''135. overload constructor'''
-we can have multiple constructors in class but latest will take
-
- class Student:
-     def __init__(self, name1, class1):
-         self.name1 = name1
-         self.clas1 = class1
-
-     def __init__(self, name2, class2, age):
-         self.name2 = name2
-         self.clas2 = class2
-         self.age = age
-
- s = Student('srikanth', 10, 16)
- print(s.__dict__)
-
-'''136. Class decorator'''
-# Class decorators should take Class as an argument and modified that Class
-
-def prices(cls):
-    print('attaching Class attribute')
-    return cls
-
-@prices
-class ShoppingCart:
-    def demo(self):
-        print('apple')
-                  
-c = ShoppingCart()
-print(c.demo())
-
-'''137. What is abstract Class?'''
-An abstract class can be considered as a blueprint for other classes.
-In object-oriented programming, an abstract class is a class that cannot be instantiated. However, you can create
-classes that inherit from an abstract class. Typically, you use an abstract class to create a blueprint for other classes.
-Python comes with a module which provides the infrastructure for defining Abstract Base Classes (ABCs).
-
- import abc
- class Shape:
-   @abc.abstractmethod
-   def area(self):
-      pass
-
- class Rectangle(Shape):
-   def __init__(self, x,y):
-      self.l = x
-      self.b = y
-
-   def area(self):
-      return self.l*self.b
-
- r = Rectangle(10,20)
- print ('area: ',r.area())
-
- ''' The main difference between abstraction and Inheritance is that abstraction allows hiding the internal details and
- displaying only the functionality to the users, while Inheritance allows using properties and methods of an already
- existing Class.'''
-
-'''138. Inheritance: Inheritance enables us to define a Class that takes all the functionality from a parent Class 
-and allows us to add more.'''
-
-'''139. single level Inheritance'''
-class Parent:
-     def __init__(self, value):
-         self.value = value
-
-     def google(self):
-         print("executing parent google")
-
-     def apple(self):
-         print("executing parent apple")
-
-'''Completely Independent Method'''
-class Child1(Parent):
-     def yahoo(self):
-         print("executing yahoo child1")
-
-'''Overriding Parent Class Method'''
-class Child2(Parent):
-     def apple(self):
-         print("executing child2 apple")
-
-'''Overriding Parent Class Method but reusing the original method in Parent'''
-class Child3(Parent):
-     def apple(self):
-          print("executing child2 apple")
-          super().apple()    # super is used to acces parent Class attributes
-
-c3 = Child3(100)
-print(c3.apple())
-
-'''Adding a new Attribute'''
-class Child4(Parent):
-     def __init__(self, value, extra):
-         self.extra_value = extra
-         super().__init__(value)
-
-c4 = Child4(100, 'srikanth')
-print(c4.apple())
-
-'''140. Multiple Inheritance: Class derived from more than one base Class'''
-class Child5(Child1, Child2):
-     pass
-c5 = Child5(100)
-print(c5.yahoo())
-
-'''141. Multi-level Inheritance: derived Class derived from another derived Class '''
-class a:
-     def demo(self):
-         print("Class a demo")
-
-class b(a):
-     def demo(self):
-         print("Class b demo")
-         super().demo()
-
- class c(b):
-     def demo(self):
-         print("Class c demo")
-         super().demo()
-
-'''142. Encapsulation'''
-It describes the idea of wrapping data and the methods that work on data within one unit. This puts
-restrictions on accessing variables and methods directly and can prevent the accidental modification of data
-
-'''getter and setter in python'''
-getters are the methods which help access the private attributes or get the value of the private attributes
-and setters are the methods which help change or set the value of private attributes.
-
-'''protected : _ can be overriddn in child Class'''
-'''Protected members of a Class are accessible from within the Class and are also available to its sub-classes.'''
-class Bankaccount:
-    _intrest = 4      # we can change it
-
-     def deposite(self, amount):
-         print('deposit amount:', amount)
-
-     def withdraw(self, withdraw):
-         print('deposit withdraw:', withdraw)
-
-     def roi(self):
-         print("ROI is:", self.__class__._intrest)
-
-class SBaccount(Bankaccount):
-    _intrest = 6.5
-
- s = SBaccount()
- p= s.roi()
- print(p)
-
-'''private : __ can not be overridden in child Class'''
-'''Python doesn't have any mechanism that effectively restricts access to any instance variable or method.'''
- class Bankaccount:
-     __intrest = 4     # we can't change it
- 
-     def deposite(self, amount):
-         print('deposit ammount:', amount)
-
-     def withdraw(self, withdraw):
-         print('deposit withdraw:', withdraw)
- 
-     def roi(self):
-         print("ROI is:", self.__class__.__intrest)
- 
- class SBaccount(Bankaccount):
-     __intrest = 6.5
-
- s = SBaccount()
- p= s.roi()
- print(p)
-
-143. '''what is polymorphism?'''
-same function by name but different behavior
- class Polymarph:
-     def __init__(self, a, b):
-         self.a = a
-         self.b = b
-
-     def add(self):
-         return self.a + self.b
-
- pol = Polymarph([1,2],[3,4])
- print(pol.add())
-
- pol = Polymarph(3,4)
- print(pol.add())
-
-144. '''febnocii number seris'''
-"The Fibonacci Sequence is a set of steadily increasing numbers where each number is equal to the sum of the preceding two numbers."
-def febonocii(num):
-     a = 0
-     b = 1
-     i = 0
-     while i <= num:
-         print(a)
-         c = a + b
-         a = b
-         b = c
-         i += 1
- febonocii(3)
-
-145. waf that checks if the given number is fibonocii number or not
-def febonocii(num):
-     a = 0
-     b = 1
-     while a <= num:
-         c = a + b
-         a = b
-         b = c
-         if a == num:
-             print(num, 'is a febenocii number')
-             break
-     else:
-         print(num, 'not febenocii number')
- febonocii(10)
-
-146. ''' factorial number '''
- def fact(n):
-     if n == 0:
-         return 1
-     return n * fact(n-1)
- print(fact(5))
-
-'''prime number'''
- n = 10
- for item in range(2, n):
-     if n % item == 0:
-         print('not a prime number')
-         break
- else:
-     print('prime number')
-
-# 147. genarate seris of prime number
-# for n in range(15):
-#     if n > 1:
-#         for item in range(2, n):
-#             if n % item == 0:
-#                 break
-#        else:
-#             print(n)
-
-# 148. numbers = [10, 20, 30, 40, 50]
-# largest = 0
-# for item in numbers:
-# 	if item > largest:
-#  		largest = item
-# print(largest)
-
-
-# 149. Move 0 to the corner of list
-# list = [-1,0,9,0,1,5,6,9,8,0,0,1,5]
-# def test(list):
-#     result = sorted(list, key=lambda x: not x)
-#     return result
-# print(test(list))
+''' 128. numbers = [10, 20, 30, 40, 50] '''
+largest = 0
+for item in numbers:
+    if item > largest:
+        largest = item
+print(largest)
+
+
+''' 129. Move 0 to the corner of list '''
+list = [-1,0,9,0,1,5,6,9,8,0,0,1,5]
+def test(list):
+    result = sorted(list, key=lambda x: not x)
+    return result
+print(test(list))
 
 
 
