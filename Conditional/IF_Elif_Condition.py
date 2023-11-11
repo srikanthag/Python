@@ -1,4 +1,4 @@
-""" WAP to check if the given input number is even or odd"""
+# 1. wap to check if the given input number is even or odd
 # number = 3
 #
 # if number % 2 == 0:
@@ -6,7 +6,7 @@
 # else:
 #     print(f"{number} is an odd number")
 
-""" WAP to check if the character is lowercase or uppercase"""
+# 2. to check if the character is lowercase or uppercase
 
 # char = "r"
 
@@ -29,7 +29,7 @@
 # else:
 #     print(f"{char} is not an alphabet")
 
-""" WAP to check if the given iterable is empty or not """
+# 3. to check if the given iterable is empty or not
 # iterable = "hai"
 # if len(iterable) > 0:
 #     print("the iterable is not empty")
@@ -47,7 +47,7 @@
 # else:
 #     print("empty")
 
-""" WAP to check if the given value is default or non default value"""
+# 4. to check if the given value is default or non default value
 # value = []
 # if value:
 #     print("It is non default value")
@@ -55,8 +55,7 @@
 #     print("default value")
 
 
-#############################################################
-""" WAP to convert lowercase to uppercase and vice-versa """
+# 5. wap to convert lowercase to uppercase and vice-versa
 
 # char = "N"
 #
@@ -101,7 +100,7 @@
 #     print(f"{number} is not a palindrome")
 
 ###############################################################
-""" WAP to check if the iterable has even number of elements """
+# 7.wap to check if the iterable has even number of elements """
 # list_ = [10, 20, 30, 40]
 #
 # if len(list_) % 2 == 0:
@@ -109,8 +108,7 @@
 # else:
 #     print("iterable has odd numbered elements")
 
-###############################################################
-""" WAP to check if the first digit in the given number is even or odd """
+# 8. to check if the first digit in the given number is even or odd """
 # number = 1234
 # str_num = str(number)
 
@@ -121,7 +119,7 @@
 
 # print("number is even" if int(str_num[0]) % 2 == 0 else "number is odd")
 
-############################################################################
+
 
 # char = "a"
 # d = {}

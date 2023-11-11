@@ -1,25 +1,26 @@
-#wap to check if the given number is number
+# 1. wap to check if the given number is number
 
 #number = int(input('enter a number:'))
 #print(type(number))
 #if int(number) % 2 ==0:
 #    print('number is even')
 
-#wap to check the given string character is in lowercase or not
+# 2. wap to check the given string character is in lowercase or not
 # character = input('enter the character:')
 # if 'a'<=character<='z':
 #    print(f"{character} is lower character")
 
-#wap to check if character.is lower == True then print character is
+# 3. wap to check if character.is lower == True then print character is
 # char = input('enter the character:')
 # if char.islower():
 #    print(f"{char} is lowercase character")
 
-#wap to check if the given element present in collection or not
+# 4. wap to check if the given element present in collection or not
 # a = 'srikanth'
 # if 'i' in a:
 #    print('yes')
 
+# 5. wap to  check given element present in the list
 # list = ['python','java', 'linux','ruby', 'nodejs']
 # element='python'
 # if element in list:
@@ -32,8 +33,3 @@
 #     print('palindrome')
 # else:
 #     print('not palindrome')
-
-
-# a = 'sriKANth'
-# if a.isalpha():
-#     print(a.swapcase())
