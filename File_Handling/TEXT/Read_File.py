@@ -3,19 +3,19 @@ path2 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 path3 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\txt_log_files\sample.log"
 path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\txt_log_files\football.txt"
 
-#wap to read all the lines in a file without loading the file into memory
+# 1. wap to read all the lines in a file without loading the file into memory
 # with open(path) as file:
 #     for line in file:
 #         print(line)
 
-#wap to count the number of lines present in the file
+# 2. wap to count the number of lines present in the file
 # with open(path) as file:
 #     count = 0
 #     for line in file:
 #         count += 1
 #     print(count)
 
-#wap to print line number and line from the file
+# 3. wap to print line number and line from the file
 # with open(path) as file:
 #     count = 0
 #     for line in file:
@@ -29,7 +29,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #         print(line_no, line)
 
 
-#wap to count the number of words in the given file
+# 4. wap to count the number of words in the given file
 # with open(path) as file:
 #     count = 0
 #     for line in file:
@@ -46,13 +46,13 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #         count += len(d)
 #     print(count)
 
-#wap to print the lines from the last of file
+# 5. wap to print the lines from the last of file
 # with open(path) as file:
 #     res = reversed(list(file))
 #     for line in file:
 #         print(line)
 
-#wap to count the number of spaces in the given file
+# 6. wap to count the number of spaces in the given file
 # with open(path) as file:
 #     count = 0
 #     for line in file:
@@ -68,7 +68,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #         count += spaces
 #     print(count)
 
-#wap to count the number of words that are starting with vowels
+# 7. wap to count the number of words that are starting with vowels
 # with open(path) as file:
 #     count = 0
 #     for line in file:
@@ -77,7 +77,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #                 count += 1
 #     print(count)
 
-#wap to create a dictionary of word and its count pair in the given file
+# 8. wap to create a dictionary of word and its count pair in the given file
 
 # with open(path) as file:
 #     d = {}
@@ -100,7 +100,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #             dd[word] += 1
 #     print(dd)
 
-#wap to extract all the ip address from asscess.log.txt file (list of ip address)
+# 9. wap to extract all the ip address from asscess.log.txt file (list of ip address)
 # with open(path2) as file:
 #     l = []
 #     for line in file:
@@ -109,7 +109,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #             l.append(s[0])
 #     # print(l)
 
-#wap to create a dictionary of ip adress and and their count pair
+# 10. wap to create a dictionary of ip adress and their count pair
 #
 # with open(path2) as file:
 #     d = {}
@@ -146,7 +146,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 # ip_ = Counter(l)
 # print(ip_.most_common(5))
 
-# wap to print n th line in a file
+# 11. wap to print n th line in a file
 # with open(path) as file:
 #     n = 3
 #     for line_no, line in enumerate(file, start=1):
@@ -170,7 +170,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #     res = islice(file, n, n+1)
 #     print(list(res))
 
-#wap to print first n lines
+# 12. wap to print first n lines
 #using isslice
 # from itertools import islice
 # n = 3
@@ -185,7 +185,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #         if lineno <= n:
 #             print(line)
 
-#wap to print last n lines
+# 13. wap to print last n lines
 # from itertools import islice
 # n= 3
 # with open(path) as file:
@@ -203,18 +203,18 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #     lines = deque(file, n)
 #     print(list(lines))
 
-#finding the length of each line in the text file
+# 14. finding the length of each line in the TEXT file
 # with open(path) as file:
 #     for line in file:
 #         print(line, len(line))
 
-#extracting message from sample.log
+# 15. extracting message from sample.log
 # with open(path3) as file:
 #     for line in file:
 #         s = line.split()
 #         print(s[2])
 
-#counting number of INFO, WARN, TRACE messages
+# 16. counting number of INFO, WARN, TRACE messages
 # with open(path3) as file:
 #     count = 0
 #     for line in file:
@@ -232,14 +232,14 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 # res = Counter(l)
 # print(res)
 
-#reading countries from football.txt
+# 17. reading countries from football.txt
 # with open(path4, encoding="UTF-8") as file:
 #     for line in file:
 #         if line.strip():
 #             s = line.split("\t")
 #             print(s[1])
 
-#least and most occurance of the word
+# 18. least and most occurrence of the word
 # from collections import Counter
 # from collections import defaultdict
 # with open(path) as file:
@@ -255,7 +255,7 @@ path4 = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_
 #
 # print(most, least)
 
-#tell and seek
+# 19. tell and seek
 # with open(path) as file:
 #     data = file.readlines()
 #     print(data)

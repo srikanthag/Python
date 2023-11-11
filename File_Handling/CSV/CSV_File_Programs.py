@@ -1,16 +1,16 @@
 import csv
-path = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\employees.csv"
-path2 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\test.csv"
-path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccination_data.csv"
+path = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\employees.csv"
+path2 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\test.csv"
+path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\vaccination_data.csv"
 
 
-#wap to read all the names of the employees in the employee.csv file
+# 1. wap to read all the names of the employees in the employee.CSV file
 # with open(path) as csv_file:
 #     emp = csv.reader(csv_file)
 #     for row in emp:
 #         print(row[0])
 
-#wap to print only the salary that are >70000 their names
+# 2. wap to print only the salary that are >70000 their names
 # with open(path) as csv_file:
 #     emp = csv.reader(csv_file)
 #     header = next(emp)
@@ -19,7 +19,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #         if int(row[3]) > 70000:
 #             print(row[0])
 
-#wap to group male and female employee from group
+# 3. wap to group male and female employee from group
 # with open(path) as csv_file:
 #     emp = csv.reader(csv_file)
 #     header = next(emp)
@@ -44,7 +44,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #         dd[row[1]] += [row[0]]
 # print(dd)
 
-#wap to group employees based on their team
+# 4. wap to group employees based on their team
 # from collections import defaultdict
 # with open(path) as csv_file:
 #     emp = csv.reader(csv_file)
@@ -55,7 +55,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #         dd[row[2]] += [row[0]]
 # print(dd)
 
-#normal
+# normal
 # with open(path) as csv_file:
 #     emp = csv.reader(csv_file)
 #     header = next(emp)
@@ -68,14 +68,14 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #             d[row[2]] += [row[0]]
 #     print(d)
 
-#wap to sort the shares in test.csv file based on the share price
+# 5. wap to sort the shares in test.CSV file based on the share price
 # with open(path2) as csv_file:
 #     share = csv.DictReader(csv_file)
 #     l = list(share)
 #     res = sorted(l, key=lambda d: float(d["price"]))
 #     print(list(res))
 
-#wap add all the shares in test.csv file
+# 6. wap add all the shares in test.CSV file
 # with open(path2) as csv_file:
 #     share = csv.reader(csv_file)
 #     next(share)
@@ -84,8 +84,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #         sum += int(amount[1])
 #     print(sum)
 
-#analysing vaccination data
-#total vaccination of all the countries
+# 7. total vaccination of all the countries
 # with open(path3) as file:
 #     vac = csv.reader(file)
 #     header = next(vac)
@@ -103,7 +102,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 
 
 
-#total vaccination by country
+# 8. total vaccination by country
 # with open(path3) as file:
 #     vac = csv.reader(file)
 #     d = {}
@@ -113,7 +112,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #     print(d)
 
 
-#names of countries and WHO region
+# 9. names of countries and WHO region
 # with open(path3) as file:
 #     vac = csv.reader(file)
 #     d = {}
@@ -123,9 +122,9 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #     print(d)
 
 
-#country and persons vaccinated per 100 and top 3 contreies with most vaccinated countries
-# from collections import Counter
-# from collections import defaultdict
+# 10. country and persons vaccinated per 100 and top 3 contreies with most vaccinated countries
+from collections import Counter
+from collections import defaultdict
 # with open(path3) as csv_file:
 #     emp = csv.reader(csv_file)
 #     header = next(emp)
@@ -138,7 +137,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 # print(res[-3:])
 
 
-#countries with less than 10k vaccinated people
+# 11. countries with less than 10k vaccinated people
 # with open(path3) as csv_file:
 #     emp = csv.DictReader(csv_file)
 #     header = next(emp)
@@ -150,10 +149,10 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Directory\csv_files\vaccinat
 #                 print(row["COUNTRY"])
 
 
-#get the latest updated country with its total vaccination and number people vaccinated
+# 12. get the latest updated country with its total vaccination and number people vaccinated
 # from collections import defaultdict
 # with open(path3) as csv_file:
-#     emp = csv.DictReader(csv_file)
+#     emp = CSV.DictReader(csv_file)
 #     header = next(emp)
 #     d = defaultdict(list)
 #     for row in emp:

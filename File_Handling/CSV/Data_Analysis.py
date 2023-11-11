@@ -1,10 +1,10 @@
 import csv
-path = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\python_class\file_directory\csv_files\WHO-COVID-19-global-data.csv"
+path = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\WHO-COVID-19-global-data.csv"
 
 #countrywise covid cases
 from collections import defaultdict
 # with open(path) as csv_file:
-#     row = csv.reader(csv_file)
+#     row = CSV.reader(csv_file)
 #     header = next(row)
 #     dd = {}
 #
@@ -14,7 +14,7 @@ from collections import defaultdict
 
 #add all covid cases
 # with open(path) as csv_file:
-#     share = csv.reader(csv_file)
+#     share = CSV.reader(csv_file)
 #     next(share)
 #     sum = 0
 #     for cases in share:

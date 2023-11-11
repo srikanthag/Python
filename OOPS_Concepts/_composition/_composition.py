@@ -29,7 +29,7 @@ class CSVfileloger:
 # print(l.log('hello world'))
 # print(l.log('hello universe'))
 
-# f = open('_test.csv', 'w')
+# f = open('_test.CSV', 'w')
 # print(f)
 # l = CSVfileloger(f)
 # print(l.log('hello world'))

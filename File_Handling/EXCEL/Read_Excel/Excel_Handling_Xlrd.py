@@ -1,6 +1,6 @@
 import xlrd
 
-f_path = r"C:\Users\srikanth\Desktop\IT\Python\python_practice\_python\file_handling\excel\student.xlsx"
+f_path = r"/File_Handling/EXCEL/student.xlsx"
 
 #working the book
 xl_obj = xlrd.open_workbook(f_path)

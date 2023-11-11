@@ -1,9 +1,9 @@
-import pickle
-#serilize
-a = "hi"
-b = pickle.dumps(a)
-print(b)
-print(type(b))
+# import pickle
+# #serilize
+# a = "hi"
+# b = pickle.dumps(a)
+# print(b)
+# print(type(b))
 #
 #deserilize
 c = pickle.loads(b)

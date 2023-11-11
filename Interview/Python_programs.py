@@ -662,7 +662,7 @@ passed are more than 5'''
 '''71 Write a program to count the number of occurrences of each word in a file.'''
 # from collections import defaultdict
 # d = defaultdict(int)
-# with open (sample.text) as file:
+# with open (sample.TEXT) as file:
 #     for line in file:
 #         words = file.split()
 #         for word in words:
@@ -672,7 +672,7 @@ passed are more than 5'''
 '''72 Write a program to count the number of occurrences of vowels in a file.'''
 #  from collections import defaultdict
 # d = defaultdict(int)
-# with open (sample.text) as f:
+# with open (sample.TEXT) as f:
 #     for line in f:
 #         for c in f:
 #             if c in 'aeiouAEIOU':
@@ -731,7 +731,7 @@ passed are more than 5'''
 '''75 Write a program count the occurrence of a particular word in the file'''
 # def occ(word):
 #     count = 0
-#     with open(sample.text) as file:
+#     with open(sample.TEXT) as file:
 #         for line in file:
 #             count += ss
 #         return count
@@ -812,8 +812,8 @@ for item in s:
     if item not in 'AEIOUaeiou':
         print(item)
 
-'''83 Write a program to count the number of commented (#) lines in a text file'''
-# with open(sample.text) as f:
+'''83 Write a program to count the number of commented (#) lines in a TEXT file'''
+# with open(sample.TEXT) as f:
 #     count = 0
 #     for line in f:
 #         if line.startswith('#'):

@@ -1,0 +1,53 @@
+1. Counters
+Counters are referred to as the container that holds the count of each of the elements that are available in the container.
+They allow us to access the stored object. The dictionary class holds the Counter as the sub-class.
+Counter helps us to count the key-value pairs in an object.
+
+Eg:
+from collections import Counter
+List1 = ['a', 'b', 'a', 'a', 'c', 'd', 'e', 'c', 'd', 'f']
+Str = "sriakknjdkfhdf"
+# Print count of the variable
+print(Counter(List1))
+print(Counter(Str))
+
+
+==================================================================================================================
+
+2. Itertools
+
+In Python, Itertools is the inbuilt module that allows us to handle the iterators in an efficient way.
+They make iterating through the iterables like lists and strings very easily. One such itertools function is islice().
+Note: For more information, refer to Python Itertools
+
+** islice(iterable,start,stop,step) - It slices the given iterable according to given position.
+It accepts four arguments respectively and these are iterable, container, starting pos., ending position and step(optional).
+
+==================================================================================================================
+
+3. A Deque, also known as a Double-ended queue, has the attribute of inserting and deleting data elements from either end.
+The deque module is a segment of the library known as collections. It contains the attributes to add and remove data elements
+that can be invoked directly with parameters. In order to declare a deque, we have to import the collections library first.
+
+==================================================================================================================
+
+4. This method returns the most common elements from the counter. If we don't provide value of 'n' then sorted dictionary
+is returned from most common the least common elements.
+
+
+5. Tell() and Seek()
+The tell() method returns the current file position in a file stream
+seek() function is used to change the position of the File Handle to a given specific position.
+
+
+
+
+
+
+
+
+
+
+
+
+

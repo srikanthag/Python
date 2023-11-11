@@ -47,7 +47,7 @@
 # print(list(vow_))
 
 #wag function expression to yield lenth of eachline in file only if the line is not empty
-# path = r"C:\Users\srikanth\PycharmProjects\python_new\File_Directory\txt_log_files\sample.txt"
+# path = r"C:\Users\srikanth\PycharmProjects\python_new\File_Directory\Text_File_Sample\sample.txt"
 # def len_file():
 #     with open(path) as file:
 #         for line in file:
