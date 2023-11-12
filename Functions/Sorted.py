@@ -79,7 +79,7 @@
 # res = sorted(d_len, key=lambda item: len(item))
 # print(res[-1], len(res[-1]))
 
-# 13. wap longest non repeated word
+# 13. wap the longest non repeated word
 # sentance = 'hi python python langiage programming programming hi howfdd are you you'
 # s = sentance.split()
 # d = {item: len(item) for item in s if s.count(item)==1}

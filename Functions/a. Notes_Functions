@@ -146,7 +146,7 @@ Map function applies to the all the item in input list
 
 eg:
 l = ['hi', 'mom']
-pali = lambda string: 'paliondrom' if string == string[::-1] else 'not paliondrome'
+pali = lambda string: 'palindrome' if string == string[::-1] else 'not palindrome'
 res = map(pali, l)
 print(list(res))
 

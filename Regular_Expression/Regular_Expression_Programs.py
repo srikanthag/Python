@@ -1,45 +1,45 @@
 import re
 # print(dir(re))
 
-from re import findall
+# from re import findall
 
-# e=re.findall(r"[aeiou]", "hi how are you")
+# e = re.findall(r"[aeiou]", "hi how are you")
 # print(e)
-#
+
 # e = re.findall(r"aeiou", "hi how are you")
 # print(e)
 
-# e=re.findall(r"[how]", "hi how are you")
+# e = re.findall(r"[how]", "hi how are you")
 # print(e)
 
-# e=re.findall(r"how", "hi how are you")
+# e = re.findall(r"how", "hi how are you")
 # print(e)
 
-#find number
+# find number
 # e = re.findall(r"[0-9]", "hi how 99 are 100 you")
 # print(e)
 
-#find number 0 to 5
+# 1. find number 0 to 5
 # e = re.findall(r"[0-5]", "hi how 99 are 100 you")
 # print(e)
 
-#find entire number (+)
+# 2. find entire number (+)
 # e = re.findall(r"[0-9]+", "hi how are 100 you")
 # print(e)
 
-#find only lower char in string
+# 3. find only lower char in string
 # e = re.findall(r"[a-z]", "hi HOW 99 are 100 you")
 # print(e)
 
-#find only upper char in string
+# 4. find only upper char in string
 # e = re.findall(r"[A-Z]", "hi HOW 99 are 100 you")
 # print(e)
 
-#find only upper and lower char in string
+# 5. find only upper and lower char in string
 # e = re.findall(r"[A-Za-z]", "hi HOW 99 are 100 you")
 # print(e)
 
-#afind all except number
+# 6. find all except number
 # e = re.findall(r"[^0-9]", "hi HOW@#$ 99 are 100 you")
 # print(e)
 

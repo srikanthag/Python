@@ -1,6 +1,6 @@
 # 1. waf that checks if given list of items are palindrome or not
 # l = ['hi', 'mom']
-# pali = lambda string: 'paliondrom' if string == string[::-1] else 'not paliondrome'
+# pali = lambda string: 'palindrome' if string == string[::-1] else 'not palindrome'
 # res = map(pali, l)
 # print(list(res))
 
@@ -56,7 +56,7 @@
 # print(list(res))
 
 
-# 7. waf that returns the list of numbers raised to the power of their indeces using maps
+# 7. waf that returns the list of numbers raised to the power of their indexes using maps
 # l = [10, 20, 30, 40]
 # def index_(item):
 #     return item[1] ** item[0]
@@ -67,10 +67,6 @@
 
 # 8. waf that returns all the words in lower case in the given sentance
 # l = ['APPLE', 'GMAIL', 'YAHOO', 'FLOPCART']
-# # def lower(char):
-# #         return char.lower()
-# # res = map(lower, l)
-# # print(list(res))
 
 # s = lambda item: item.lower()
 # res = map(s,l)

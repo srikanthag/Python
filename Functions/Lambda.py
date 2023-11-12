@@ -1,5 +1,3 @@
-#lambda
-
 # 1. waf lambda expression to check if the given number is even or not
 # even = lambda num: num % 2 == 0
 # print(even(5))

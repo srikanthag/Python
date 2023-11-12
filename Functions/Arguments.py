@@ -12,7 +12,7 @@
 #     return count
 # print(fun(1,2,3,4))
 
-# 2. waf that takes variable number of positional arguments and return all iteger values
+# 2. waf that takes variable number of positional arguments and return all integer values
 # def int_data(*args):
 #     for item in args:
 #         if isinstance(item, int):
@@ -21,7 +21,7 @@
 # int_data(1, 2, 3, 3.5, True)
 
 
-# 3. waf tah takes multiple arguments and returns the string in reversed order
+# 3. waf that takes multiple arguments and returns the string in reversed order
 
 # def str_data(*args):
 #     for item in args:
@@ -31,7 +31,7 @@
 # str_data(1, 2, 'sri', 'kanth', 3, 3.5, True)
 
 
-# 4. waf that reurns no of positional arguments and number of keyword arguments
+# 4. waf that returns no of positional arguments and number of keyword arguments
 # def count_(*args, **kwargs):
 #     return len(args), len(kwargs)
 #
