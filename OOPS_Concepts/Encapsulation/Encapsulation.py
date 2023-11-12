@@ -5,6 +5,7 @@ class BankAccount:
     def __init__(self, name, balance):
         self.name = name
         self.balance = balance
+
      #internal purpose only
     def _spam(self):
         print("bank account executiong _spam")

@@ -12,27 +12,22 @@ Python.algo()
 # ==========================================================================================
 
 # Using @classmethod() method
-from datetime import date
 
 # Creating a class
 class Student:
-    def __init__(self, name, age):
+    school = 'Balwin'       #class variable
+
+    def __int__(self, name, age):       #constructor
         self.name = name
         self.age = age
 
-    # Using the class method decorator to make the years of alumni class a class method class
-    # Creating a class method.
     @classmethod
-    def alumniYear(cls, name, year):
-        return cls(name, date.today().year - year)
+    def change_school(cls, name):
+        print(Student.school)   #access variable
+        Student.school = name      # modifying the class variable
 
-# Creating an instance of the class
-person1 = Student.alumniYear('Louis', 1999)
-
-print(person1.age)
-
-
-
+sri = Student('sro', 10)
+Student.change_school("vidyavikas")
 
 
 

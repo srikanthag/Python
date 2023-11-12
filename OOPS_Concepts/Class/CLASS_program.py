@@ -1,5 +1,4 @@
-# # #basics
-# #
+
 # Class employee:
 #     def __init__(self, fname, lname, pay):
 #         self.first_name = fname       #instance variable
@@ -38,6 +37,8 @@
 # # print(emp2.email())
 
 
+# ============================================================================================================
+
 # Class calculator:
 #     def __init__(self, a, b):
 #         self.a = a
@@ -68,6 +69,8 @@
 # # print(c3.mul())
 # # print(c3.div())
 
+# =============================================================================================================
+
 # Class player:
 #     def __init__(self, x, y):
 #         self.x = x
@@ -85,41 +88,9 @@
 # p2 = player(3,4)
 # p2 = player(5,6)
 
+# =============================================================================================================
 
-# Class demo:
-#     count = 0
-#     def __init__(self, a, b):
-#         self.a = a
-#         self.b = b
-#         demo.count = demo.count + 1
-
-
-# Class dog:
-#     attr1 = 'bird'
-#     def __init__(self, name):
-#         self.name = name
-#
-# Rodger = dog("Rodger")
-# Tommy = dog("Tommy")
-# print(Rodger.__class__.attr1)
-# print("Tommy is a {}".format(Tommy.__class__.attr1))
-# print("My name is {}".format(Rodger.name))
-
-
-#callable
-# Class squre:
-#     def __call__(self, num):
-#         self.num = num
-#         for numer in num:
-#             return num ** 2
-# s = squre([1,2,3])
-# print(s)
-
-
-
-
-
-# Class emp():
+# class emp():
 #     def __init__(self, name, sal):
 #         self.name = name
 #         self.sal = sal

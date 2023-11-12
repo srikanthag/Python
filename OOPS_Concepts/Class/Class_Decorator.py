@@ -2,13 +2,12 @@ class CubeDecorator:
     def __init__(self, function):  
         self.function = function  
   
-    def __call__(self, *args, **kwargs):  
-  
+    def __call__(self, *args, **kwargs):
         # before function  
-        result = self.function(*args, **kwargs)  
-  
+        result = self.function(*args, **kwargs)
         # after function  
-        return result  
+        return result
+
 # adding class decorator to the function
 
 @CubeDecorator  
