@@ -1,6 +1,6 @@
 \d	It matches any digit and is equivalent to [0-9].
 \D	It matches any non-digit character and is equivalent to [^0-9].
-\s	It matches any white space character and is equivalent to [\t\n\r\f\v]
+\s	     It matches any white space character and is equivalent to [\t\n\r\f\v]
 \S	It matches any character except the white space character and is equivalent to [^\t\n\r\f\v]
 \w	It matches any alphanumeric character and is equivalent to [a-zA-Z0-9]
 \W	It matches any characters except the alphanumeric character and is equivalent to [^a-zA-Z0-9]

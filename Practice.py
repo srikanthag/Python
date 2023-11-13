@@ -1,10 +1,30 @@
+def squres(l):
+    for item in l:
+        yield item**2
+
+r = squres([5,6,7])
+print(r)        # Returns generator object (<generator object squres at 0x000001EBD2882260>)
+
+for t in r:
+    print(t)
 
 
-sentance = "hi hello and python is a programming language"
-ss = sentance.split()
-for item in ss:
-    if len(item) >= 3:
-        print(item)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,34 @@
+Python Generators
+In Python, a generator is a function that returns an iterator that produces a sequence of values when iterated over.
+
+Generators are useful when we want to produce a large sequence of values, but we don't want to store all of them in memory at once.
+
+Here, the yield keyword is used to produce a value from the generator.
+
+When the generator function is called, it does not execute the function body immediately. Instead, it returns a generator object
+that can be iterated over to produce the values.
+
+def squres(l):
+    for item in l:
+        yield item**2
+
+r = squres([5,6,7])
+print(r)        # Returns address of object (<generator object squres at 0x000001EBD2882260>)
+
+for t in r:
+    print(t)
+
+
+
+====================================================================================================
+
+Difference between yield and return
+
+The yield statement produces a generator object and can return multiple values to the caller without terminating the program, whereas a return statement is used to return a value to the caller from within a function and it terminates the program
+
+====================================================================================================
+
+Difference Between Generator Function & Normal Function
+
+In generator functions, there are one or more yield functions, whereas, in Normal functions, there is only one function
+When the generator function is called, the normal function pauses its execution, and the call is transferred to the generator function.
