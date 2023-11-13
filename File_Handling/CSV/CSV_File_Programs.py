@@ -68,14 +68,14 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_
 #             d[row[2]] += [row[0]]
 #     print(d)
 
-# 5. wap to sort the shares in test.CSV file based on the share price
+# 5. wap to sort the shares in Test.CSV file based on the share price
 # with open(path2) as csv_file:
 #     share = csv.DictReader(csv_file)
 #     l = list(share)
 #     res = sorted(l, key=lambda d: float(d["price"]))
 #     print(list(res))
 
-# 6. wap add all the shares in test.CSV file
+# 6. wap add all the shares in Test.CSV file
 # with open(path2) as csv_file:
 #     share = csv.reader(csv_file)
 #     next(share)
