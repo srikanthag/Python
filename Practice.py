@@ -1,13 +1,12 @@
-def squres(l):
-    for item in l:
-        yield item**2
+a=2
+b=0
 
-r = squres([5,6,7])
-print(r)        # Returns generator object (<generator object squres at 0x000001EBD2882260>)
+try:
+    print(a/b)
 
-for t in r:
-    print(t)
-
+except ZeroDivisionError as error_message:
+    print("in except block")
+    print(error_message)
 
 
 

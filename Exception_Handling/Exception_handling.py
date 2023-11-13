@@ -1,17 +1,7 @@
+'''Exception handling'''
+
+'''1. Exception handling 01'''
 # names = ["john", "eve", "bob", "emma", "ana"]
-# d = {}
-# for name in names:
-#     d[name] = len(name)
-#
-# d = {}
-#
-# for name in names:
-#     if name[0] not in d:
-#         d[name[0]] = [name]
-#     else:
-#         d[name[0]] += [name]
-# print(d)
-#
 #
 # """ try except """
 # d = {}
@@ -23,12 +13,12 @@
 #         print("in except block")
 
 
+''' 2. Exception handling 02 '''
 # a = 10
 # b = 0
 #
-# # default exception block
 # try:
-#     # print(a / b)
+#     print(a / b)
 #     print(l.append(10))
 #
 # except:
@@ -36,6 +26,8 @@
 #
 # print("hello")
 
+
+''' 3. Exception handling 03 '''
 # specific exception block
 # a = 10
 # b = 0
@@ -49,7 +41,7 @@
 # print("hello")
 
 
-# multiple except block
+''' 4. Exception handling 04 (Multiple except error) '''
 # a = 10
 # b = 0
 # try:
@@ -65,7 +57,7 @@
 # print("hello")
 
 
-# # Storing error message
+''' 5. Exception handling 05 (Store error message) '''
 # a = 10
 # b = 0
 
@@ -78,7 +70,9 @@
 #     print(error_msg)
 
 
-# generic exception block
+''' 6. Exception handling 06 (Base exception) '''
+# BaseException --> Exception --> all the other exceptions
+
 # a = 10
 # b = 0
 # try:
@@ -89,10 +83,8 @@
 #     print("In except block")
 #     print(error_msg)
 
-# BaseException --> Exception --> all the other exceptions
 
-
-# else block
+''' 7. Exception handling 07 (Else block) '''
 
 # username = "johnny"
 #
@@ -111,10 +103,11 @@
 #     print("in home page")
 
 
-# finally block
+''' 8. Exception handling 08 (Finally block) '''
+
 # username = "John"
 # try:
-#     if username == "John":
+#     if username == "Sri":
 #        print("username is matched")
 #     else:
 #         raise NameError("username is not present")
@@ -130,12 +123,11 @@
 #     print("closing the browser")
 
 
-# custom exceptions
+''' 9. Exception handling 09 (Custom exception)'''
 
-# Class UserNotAuthorizedException(Exception):
+# class UserNotAuthorizedException(Exception):
 #     pass
-
-
+#
 # username = "Johnny"
 # try:
 #     if username == "John":
@@ -154,8 +146,4 @@
 #     print("closing the browser")
 
 
-# username = "j"
-# if username == "John":
-#    print("username is matched")
-# else:
-#     raise UserNotAuthorizedException("username is not present")
+

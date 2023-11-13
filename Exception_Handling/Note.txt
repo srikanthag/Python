@@ -20,15 +20,11 @@ try:
 except:
     print("Index out of range")
 
+=============================================================================================================
 
+1.  Try and Except:
+Try and except statements are used to catch and handle exceptions in Python. Statements that can raise exceptions are kept inside the try clause and the statements that handle the exception are written inside except clause.
 
-
-
-
-
-
-
-
-
-
+2. Finally,
+Python provides a keyword finally, which is always executed after the try and except blocks. The final block always executes after the normal termination of the try block or after the try block terminates due to some exception.
 
