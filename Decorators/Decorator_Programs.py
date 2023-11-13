@@ -1,10 +1,5 @@
-'''decorators'''
-# decorators takes in function add some functionality and return it
 
-'''uses'''
-# allow the extension of an existing function, without any modification to the original function source code.
-
-#wa decorator that prints or that logs a message before executiong any function
+# 1. wa decorator that prints or that logs a message before execution any function
 # def log (func):
 #     def wrapper(*args, **kwargs):
 #         print("in decorator function")
@@ -17,7 +12,7 @@
 # print(display())
 
 
-#lower case to upper
+# 2. wa decorator to convert lower case to upper
 # def upper(func):
 #     def wrapper(*args, **kwargs):
 #         res = func(*args, **kwargs)
@@ -30,7 +25,7 @@
 #     return "srikanth"
 # print(greet())
 
-#wad to input some delay before executing any function
+# 3. wad to input some delay before executing any function
 # import time
 # def delay (func):
 #     def wrapper(*args, **kwargs):
@@ -43,7 +38,7 @@
 #     return 'its delay'
 # print(display())
 
-#wad which takes a string and reversed
+# 4. wad which takes a string and reversed
 # def str_rev(func):
 #     def wrapper(*args, **kwargs):
 #         res = func(*args, **kwargs)
@@ -52,19 +47,19 @@
 #                 return res[::-1]
 #     return wrapper
 #
-#
 # @str_rev
 # def spam(string):
 #     return string
 # print(spam('hello world'))
 
-#wad to execute a function for 3 times
+# 5. wad to execute a function for 3 times
 
 # def str_rev(func):
 #     def wrapper(*args, **kwargs):
 #         for i in range(3):
 #             func(*args, **kwargs)
 #     return wrapper
+
 # @str_rev
 # def add(a,b):
 #     print(a+b)
@@ -81,19 +76,20 @@
 # mul(2,6)
 
 
-#wad function to count the number of arguments passed to a function
+# 6. wad function to count the number of arguments passed to a function
 # def count(func):
 #     def wrapper(*args, **kwargs):
 #         print(len(args))
 #         func(*args, **kwargs)
 #     return wrapper
+
 # @count
 # def add(a, b):
 #     print(a + b)
 # add(1, 2)
 
 
-#wadf to return only possitive value after subtraction
+# 7. wad to return only positive value after subtraction
 # def positive(func):
 #     def wrapper(*args, **kwargs):
 #         res = func(*args, **kwargs)
@@ -106,7 +102,7 @@
 #     return a-b
 # print(sub(5,7))
 
-#reversed decorator
+# 8. wad to reverse the value if it is string
 # def reverse (func):
 #     def wrapper(*args, **kwargs):
 #         result = func(*args, **kwargs)
@@ -130,7 +126,7 @@
 #     print(a-b)
 # sub(1,3)
 
-#if positive return positive if negetive abs of result
+# 9. if positive return positive if negative abs of result
 # def positive (func):
 #     def wrapper(*args, **kwargs):
 #         result = func(*args, **kwargs)
@@ -155,7 +151,7 @@
 # print(sub(1,3))
 
 
-#wad function count the number of calls     #confuse
+# 10. wad function count the number of calls     #confuse
 # from collections import defaultdict
 # count_ = defaultdict(int)
 # def func_count(func):
@@ -185,59 +181,7 @@
 #     return a * b
 # print(mul(10, 30))
 
-
-# max counts        #confuse
-
-# def max(func):
-#     func.count = 0
-#     def wrapper(*args, **kwargs):
-#         func(*args, **kwargs)
-#         func.count += 1
-#         if func.count > 1:
-#             raise ValueError(f"max call{func.__name__} exceed")
-#     return wrapper
-#
-# @max
-# def greet():
-#     return "hello world"
-# print(greet())
-#
-# @max
-# def add(a,b):
-#     return a+b
-# print(add(1,3))
-#
-# @max
-# def sub(c,d):
-#     return c-d
-# print(sub(10,-30))
-
-# @max
-# def mul(a, b):
-#     return a * b
-# print(mul(10, 30))
-#
-
-
-# print log
-# def log (func):
-#     def wrapper(*args, **kwargs):            #original function exicuting add and greet
-#         print(f"you calling {func.__name__}")
-#         return func(*args, **kwargs)
-#     return wrapper
-#
-# @log    #display = log(display)
-# def greet():
-#     print("hello world")
-# greet()
-#
-# @log
-# def add(a,b):   #add = log(add)
-#     print(a+b)
-# add(1,3)
-
-
-#cache the argument and return dictionary
+# 11. cache the argument and return dictionary
 # def cache_(func):
 #     d = {}
 #     def wrapper(*args, **kwargs):

@@ -1,4 +1,4 @@
-#wad which inputs delay of n seconds
+# 1. wad which inputs delay of n seconds
 # import time
 # def outer(n):
 #     def delay(func):
@@ -19,7 +19,7 @@
 # add(1,3)
 
 
-#execution time of the function
+# 2. execution time of the function
 
 # from time import time, sleep
 # def delay(func):
@@ -52,7 +52,7 @@
 # mul(10, 30)
 
 
-#wad function that calculates time of execution of a function
+# 3. wad function that calculates time of execution of a function
 # import time
 # def outer(n):
 #     def delay(func):
@@ -74,35 +74,4 @@
 # def add(a,b):
 #     print(a-b)
 # add(1,3)
-
-
-#each function own dictionary
-
-# from time import sleep, time
-# def cache(func):
-#     func._cache = {}
-#     def wrapper(*args, **kwargs):
-#         if args in func._cache:
-#             print('executing func for the first cache')
-#             return func._cache[args]
-#         print('executing func for the first time')
-#         result = func(*args, **kwargs)
-#         func._cache[args] = result
-#         return result
-#     return wrapper
-#
-#
-# @cache
-# def add(a,b):
-#     sleep(5)
-#     return a+b
-# print(add(1,3))
-#
-# @cache
-# def sub(c, d):
-#     sleep(7)
-#     return c-d
-# print(sub(10,-30))
-
-
 

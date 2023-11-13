@@ -45,5 +45,9 @@ def sub(a,b):
 print(sub(5,7))
 
 
+==============================================================================================================
+'Parameterized decorator' or 'Decorators with parameters'
 
+There are cases where you may need to pass parameters to a decorator. The way around this is to pass parameters to the wrapper
+function, which are then passed down to the decorated function.
 

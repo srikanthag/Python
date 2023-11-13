@@ -1,6 +1,5 @@
-#parameterized decorator
 
-#wad which execute a function for n times
+# 1. wad which execute a function for n times
 # def outer(n):
 #     def str_rev(func):
 #         def wrapper(*args, **kwargs):
@@ -14,9 +13,9 @@
 # def sub(a, b):
 #     print(a-b)
 # sub(1,2)
+#
 
-
-#wadf print "hello world" message if the user has not given input
+# 2. wad print "hello world" message if the user has not given input
 # def outer(n='krishna'):
 #     def msg(func):
 #         def wrapper(*args, **kwargs):
