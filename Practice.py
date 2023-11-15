@@ -1,33 +1,7 @@
-a=2
-b=0
-
-try:
-    print(a/b)
-
-except ZeroDivisionError as error_message:
-    print("in except block")
-    print(error_message)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+d.update(f = 99)
+d.update(a = 100)
+print(d)
 
 
 

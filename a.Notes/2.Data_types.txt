@@ -1,6 +1,6 @@
 "" Data types ""
 Datatypes are represent the type of data ths is store in memory location.
-variable can hold the value and every value has a data type.
+Variable can hold the value and every value has a data type.
 
 type: returns the type of data
 d = "srikanth"
@@ -10,8 +10,7 @@ dir(): returns the list of attributes.
 d = "srikanth"
 print(dir(d))
 
-============================================================================================================================
-"Integer"
+================================================================================================================="1. Integer
 It specify the data stored inside. The memory allocation should be an integer.
 
 operators we can perform in Integer.
@@ -33,33 +32,30 @@ print(abs(d))
 d =1.95
 print(round(d))
 
-** Mathtrunc: Truncate removes the decimal point from a flooating point
+** Mathtrunc: Truncate removes the decimal point from a floating point
 import math
 d =1.95
 print(math.trunc(d))
 
-=====================================================================================================================================
-"Float"
+================================================================================================================
+2. Float
 It specify the data stored inside. The memory allocation should be an decimal.
 b=5.8
 x=float(9.2)
 x=9.2
 
-=====================================================================================================================
-"Complex  number"
+===============================================================================================================
+3. Complex  number
 Written in the form of a+bj, When 'a' is the real part and 'b' is the imaginary part.
 
 a = 2+3j
 b = complex(a)
 print(b)
 
-=========================================================================================================================
-"Boolean"
+=================================================================================================================4. Boolean
 Boolean variables are defined on True or False keywords.
 
-============================================================================================================================
-
-"String"
+================================================================================================================="5. String
 
 * String is a set  or collection of characters. (" ", ' ', '" "')
 * It is a immutable datatype
@@ -73,7 +69,7 @@ print(type(d))
 * String prefixed with "r" or "R"
 * Raw string do not treat backslash as a part of an escape sequence.
 
-Eg.
+E.g.
 In regular string consider backslash as special character
 s = "hello \world \gu"
 print(s)
@@ -152,14 +148,20 @@ print(s.isdigit())
 j. isidentifier():	Returns True if the string is an identifier
 
 k. islower():		Returns True if all characters in the string are lower case
+string = "sriKanth"
+print(string.lower())
 
 l. isnumeric():	Returns True if all characters in the string are numeric
 
 m. isspace():		Returns True if all characters in the string are whitespaces
 
 n. isupper():		Returns True if all characters in the string are upper case
+string = "sriKanth"
+print(string.upper())
 
 o. join():		Converts the elements of an iterable into a string
+string = "hello eworld"
+print('-'.join(string))
 
 p. lower():		Converts a string into lower case
 
@@ -175,7 +177,9 @@ t. rindex():		Searches the string for a specified value and returns the last pos
 
 u. rsplit():		Splits the string at the specified separator, and returns a list
 
-v. rstrip():		Returns a right trim version of the string
+v. rstrip():		Returns a right trim version of the
+string = "***hello eworld"
+print(string.lstrip('*'))
 
 w. split()		Splits the string at the specified separator, and returns a list
 s= 'Srikanth is a student'
@@ -191,8 +195,8 @@ print(s.swapcase())
 
 aa. upper():		Converts a string into upper case
 
-============================================================================================================================
-"List"
+=================================================================================================================
+6. List
 
 * Collection of homogenous and heterogeneous elements. Separated by comma.
 * Elements in the list is ordered.
@@ -259,7 +263,7 @@ j. reverse(): Reverses the order of the list
 
 k. sort(): Sorts the list
 * list.sort() ## sort based on alphabet
-* list.sort(reverse=True)   ## sort the list decending order
+* list.sort(reverse=True)   ## sort the list descending order
 * list.sort (key=len)  ## sort based on length
 
 ==================================
@@ -271,12 +275,12 @@ print(b)
 print(s.split())
 print("".join(b))
 
-====================================================================================================================================
+================================================================================================================
 
-Tuple"
+7. Tuple
 * Collection of homogenous and heterogeneous elements. Separated by comma.
-* Indexing and slicing are simmiller as string and list
-* Tupules are more faster and memory efficiency than list.
+* Indexing and slicing are similler as string and list
+* Tupules are faster and memory efficiency than list.
 
 " Methods ""
 a. Count
@@ -286,38 +290,38 @@ print(a.count(2))
 b. Index
 print(a.index(2))
 
-====================================================================================================================================
+=================================================================================================================
 
- Sets"
+ 8. Sets
 * Sets are built in dta type.
 * Data stored in un ordered.
 * Sets are mutable but elements in side the sets set must be hashable.
-* Sets cannot be index and slicing.
+* Sets cannot be indexed and slicing.
 
 ===================
 "Methods"
 
-add(): Adds an element to the set
-clear(): Removes all the elements from the set
-copy(): Returns a copy of the set
-difference(): Returns a set containing the difference between two or more sets
-difference_update(): Removes the items in this set that are also included in another, specified set
-discard(): Remove the specified item but doesnot raise any error
-intersection(): Returns a set, that is the intersection of two or more sets
-intersection_update(): Removes the items in this set that are not present in other, specified set(s)
-isdisjoint(): Returns whether two sets have a intersection or not
-issubset(): Returns whether another set contains this set or not
-issuperset():	Returns whether this set contains another set or not
-pop(): Removes an rondom element from the set
-remove(): Removes the specified element
-symmetric_difference(): Returns a set with the symmetric differences of two sets
-symmetric_difference_update():	 inserts the symmetric differences from this set and another
-union(): Return a set containing the union of sets
-update(): Update the set with another set, or any other iterable
+* add(): Adds an element to the set
+* clear(): Removes all the elements from the set
+* copy(): Returns a copy of the set
+* difference(): Returns a set containing the difference between two or more sets
+* difference_update(): Removes the items in this set that are also included in another, specified set
+* discard(): Remove the specified item but doesn't raise any error
+* intersection(): Returns a set, that is the intersection of two or more sets
+* intersection_update(): Removes the items in this set that are not present in other, specified set(s)
+* isdisjoint(): Returns whether two sets have a intersection or not
+* issubset(): Returns whether another set contains this set or not
+* issuperset():	Returns whether this set contains another set or not
+* pop(): Removes an rondom element from the set
+* remove(): Removes the specified element
+* symmetric_difference(): Returns a set with the symmetric differences of two sets
+* symmetric_difference_update():	 inserts the symmetric differences from this set and another
+* union(): Return a set containing the union of sets
+* update(): Update the set with another set, or any other iterable
 
 
 ===================================================================================================================
-"Dictionary"
+9. Dictionary
 * Collections of key values pair.
 * Key cannot be duplicate
 * Values can be duplicate
@@ -333,18 +337,54 @@ Holidays = {(26,1):"Republic day", (15,8): Independence day}
 ==========================
 "Methods"
 
-clear():	Removes all the elements from the dictionary
-copy(): Returns a copy of the dictionary
-fromkeys(): Returns a dictionary with the specified keys and value
-get(): Returns the value of the specified key
-items(): Returns a list containing a tuple for each key value pair
-keys(): Returns a list containing the dictionary's keys
-pop(): Removes the element with the specified key
-popitem(): Removes the last inserted key-value pair
-setdefault(): Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
-update(): Updates the dictionary with the specified key-value pairs
-values(): Returns a list of all the values in the dictionary
+* clear():	Removes all the elements from the dictionary
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.clear())
+print(d)
 
+* fromkeys(): Returns a dictionary with the specified keys and value
+list = ['a', 'b', 'c']
+# print(dict(list))           # Value error
+d = {}
+print(d.fromkeys(list))             # {'a': None, 'b': None, 'c': None}
+print(d.fromkeys('hello', 'hi'))        # {'h': 'hi', 'e': 'hi', 'l': 'hi', 'o': 'hi'}
+
+
+* get(): Returns the value of the specified key
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.get('a'))
+
+* items(): Returns a list containing a tuple for each key value pair
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+# for key, value in d.items():
+#     print(value, end=',')
+
+keys(): Returns a list containing the dictionary's keys
+#d.keys()
+# for key in d:
+#     d.key()
+#     print(key)
+
+* pop(): Removes the element with the specified key
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.pop('a'))           # Will return deleted item
+
+* popitem(): Removes the last inserted key-value pair
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.popitem('a'))           # Will return deleted item
+print(d.popitem())          # Delete last item
+
+* update(): Updates the dictionary with the specified key-value pairs
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+d.update(f = 99)
+d.update(a = 100)
+print(d)
+
+* values(): Returns a list of all the values in the dictionary
+#d.values()
+# for value in d:
+#     d.values()
+#     print(value)
 
 
 
