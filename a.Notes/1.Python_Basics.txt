@@ -91,7 +91,7 @@ If we change the value of a (a=15) then link b/w 'a' and 10 disconnected. But 'x
 If we assign another value to 'x' (x=20). It is also disconnect link b/w 'x' and 10
 Now 10 does not have any reference link. The garbage collector automatically delete the object from heap memory.
 
-==========================================================================================================================
+==================================================================================================================
 
 "Print"
 Standard function used to print the output.
@@ -187,7 +187,7 @@ is:	It is evaluated to be true if the reference present at both sides point to t
 is not:	It is evaluated to be true if the reference present at both sides do not point to the same object.
 
 
-====================================================================================================================
+=================================================================================================================
 "Default values"
 Int: 0/Int()
 Float: 0.0/float()

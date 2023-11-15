@@ -31,12 +31,10 @@ using the self keyword, we can access both the instance variables and the class 
 Using the cls keyword, we can only access the members of the class
 
 6. difference between list and array
-list is a container object, i.e. each slot of the list points to smoother object. it holds the reference of other
-objects.
-But in case of arrays, the memory slot does not hold the reference of the other objects, but it holds the
-actual value.
+list is a container object, i.e. each slot of the list points to smoother object. it holds the reference of other objects.
+But in case of arrays, the memory slot does not hold the reference of the other objects, but it holds the actual value.
 
-7. your frd sends a python file..  You don't have any pychram or vscode or any .. How you will execute python file'''
+7. your frd sends a python file.  You don't have any pychram or vscode or any .. How you will execute python file'''
 you will execute the python script in command prompt using command python demo.py
 
 8. What is the difference between.py and .pyc file
@@ -56,23 +54,20 @@ Collections in Python are containers that are used to store collections of data
 example list, dict, set, tuple and Strings can be defined as sequential collections of characters
 
 12. Iterables and sequences
-An iterable is anything you can loop over with a for loop in Python. Iterables can be looped over, and anything
-that can be looped over is an iterable.
+* An iterable is anything you can loop over with a for loop in Python. Iterables can be looped over, and anything that can be looped over is an iterable.
 
-Sequences are iterables that have a specific set of features. They can be indexed starting from 0 and ending at
-one less than the length of the sequence, they have a length, and they can be sliced. Lists, tuples, strings
+* Sequences are iterables that have a specific set of features. They can be indexed starting from 0 and ending at one less than the length of the sequence, they have a length, and they can be sliced. Lists, tuples, strings
 
 Sets, dictionaries, files, and generators are all iterables but none of these things are sequences.
 
-13. Data structures
+13. Data structures ?
 data structures are “containers” that organize and group data according to type.
-The basic Python data structures in Python include list, set, tuples, and dictionary. Each of the data structures
-is unique in its own way. 
+The basic Python data structures in Python include list, set, tuples, and dictionary. Each of the data structures is unique in its own way.
 
-14. function annotation
-it is only type of hint but it does not enforce type check
+14. Function annotation ?
+it is only type of hint, but it does not enforce type check
 
-15. Module
+15. Module ?
 A module is a file containing Python code.
 inbuilt modules
 math
@@ -80,7 +75,7 @@ time
 statistics
 os
 
-16. packages
+16. Packages ?
 A package is basically a directory with Python files and a file with the name __init__ . py.
 
 17. Exception
@@ -103,7 +98,7 @@ except ZeroDivisionError:
  finally:
      print('close')
 
-18. why do you used pass
+18. why do you use pass
 When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed
 
 19. what are iterators in python
@@ -113,18 +108,21 @@ consist of the methods __iter__() and __next__()
 20. what you mean by list comprehension in python
 List comprehension is basically creating lists based on existing iterables.
 
-21. what is the difference between JSON and a dictionary?
+21. What is the difference between JSON and a dictionary?
 JSON is a serialization format. That is, JSON is a way of representing structured data in the form of a textual string
-A dictionary is a data structure. But they aren’t the same: dictionaries are for working with data in
-your program, and JSON is for storing it or sending it around between programs.
+A dictionary is a data structure. But they aren’t the same: dictionaries are for working with data in your program, and JSON is for storing it or sending it around between programs.
 
 22. What are the python modules did you use in your project?
 time
 webdriver
 
 23. What is property and why do we use that?
-Properties are special kind of attributes which have getter, setter and delete methods like __get__, __set__
-and __delete__ methods
+Properties are special kind of attributes which have getter, setter and delete methods
+E.g. __get__, __set__, __delete__ methods
+
+a = 'srikantn'
+print(dir(a[3]))
+print(dir(a))
 
 24. Can you check the presence of a folder on your system through a program'''
 os.path.isdir() method in Python is used to check whether the specified path is an existing directory or not
@@ -132,9 +130,9 @@ os.path.isdir() method in Python is used to check whether the specified path is 
 25. Which are the libraries you used in python?
 Selenium
 
-26. os modules
-'''The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents,
-changing and identifying the current directory, etc.'''
+26. OS modules
+The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents,
+changing and identifying the current directory, etc.
 cwd = os.getcwd()
 c = os.mkdir('___python')
 c = os.chdir()
@@ -150,42 +148,36 @@ class and inheritance concepts are used in my project along with these concepts 
 A constructor is a unique method used to create and initialize an object of a class.
 
 29. What is pylint.
-Pylint is a plugin or extension that checks for syntax errors. Also, it tries to enforce coding standards according to
-PEP8 style guide. It can give recommendations/suggestions/hints about types.
+Pylint is a plugin or extension that checks for syntax errors. Also, it tries to enforce coding standards according to PEP8 style guide. It can give recommendations/suggestions/hints about types.
 
 30. What is the difference between while loop and for loop.
-The body of while loop gets executed until some condition is True. Once the condition if False, the control comes out
-of the while loop.
-
-The body of for loop get executed for some fixed number of iterations.
+* The body of while loop gets executed until some condition is True. Once the condition if False, the control comes out of the while loop.
+* The body of for loop get executed for some fixed number of iterations.
 
 31. What are magic methods?
-Magic methods are special methods which starts and ends with double underscores. It is internally called by python.
-can customise the behaviour of an object or class using magic methods. They are also called as protocols.
-e.g. when you ask for the length of the list len(names) internally python will call _len_ method on list object.
+Magic methods are special methods which starts and ends with double underscores. It is internally called by python. can customise the behaviour of an object or class using magic methods. They are also called as protocols.
+E.g. when you ask for the length of the list len(names) internally python will call _len_ method on list object.
 E.g. when you check for membership "apple" in names python internally triggers _contains_("apple")
 
-32. docstring
+32. What is Docstring ?
 a docstring is a string literal specified in source code that is used, like a comment, to document a specific segment of code.
-The docstrings are declared using ”'triple single quotes”' or “””triple double quotes””” just below the class, method
-or function declaration.
+The docstrings are declared using ”'triple single quotes”' or “””triple double quotes””” just below the class, method or function declaration.
 
 33. What is PEP (python enhancement proposal)
 PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
 
 34. How is Python interpreted?
-Python language is an interpreted language. 
-Python source code does not convert into machine code. it actually converts into byte code.
-byte code send to python virtual machine which is python interpreter.
-if any error occur during interpretation then conversion stopped.
+* Python language is an interpreted language.
+* Python source code does not convert into machine code. it actually converts into byte code.
+* Byte code send to python virtual machine which is python interpreter.
+* If any error occur during interpretation then conversion stopped.
 
 35. How is memory managed in Python?
-Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap.
-The programmer does not have access to this private heap, and the interpreter takes care of this Python private heap.
-The allocation of Python heap space for Python objects is done by the Python memory manager.
-The core API gives access to some tools for the programmer to code.
-Python also has an inbuilt garbage collector, which recycles all the unused memory and frees the memory and makes
-it available to the heap space
+* Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap.
+* The programmer does not have access to this private heap, and the interpreter takes care of this Python private heap.
+* The allocation of Python heap space for Python objects is done by the Python memory manager.
+* The core API gives access to some tools for the programmer to code.
+* Python also has an inbuilt garbage collector, which recycles all the unused memory and frees the memory and makes it available to the heap space
 
 36. What are the tools that help to find bugs or perform the static analysis?
 Pylint is tool that verifies whether the module meets the coding standard.
@@ -222,8 +214,8 @@ The folder of Python program is a package of modules. A package can have modules
 
 46. What are the rules for local and global variables in Python?
 Here are the rules for local and global variables in Python:
-Local variables: If a variable is assigned a new value anywhere within the function’s body, it’s assumed to be local.
-Global variables: Those variables that are only referenced inside a function are implicitly global.
+* Local variables: If a variable is assigned a new value anywhere within the function’s body, it’s assumed to be local.
+* Global variables: Those variables that are only referenced inside a function are implicitly global.
 
 47. What is the use of // operator in Python?
 It is a Floor Division operator, which is used for dividing two operands with the result as a quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
@@ -285,25 +277,25 @@ The important Python errors are 1) ArithmeticError, 2) ImportError, and 3) Index
 • ImportError: ImportError is raised when you are trying to import a module which does not present. This kind of exception occurs if you have   made a typing mistake in the module name or the module which is not present in the standard path.
 • IndexError: An IndexError is raised when you try to refer a sequence which is out of range.
 
-59. map function
+59. Map function in python ?
 Python map() applies a function on all the items of an iterator given as input.
 
-60. filter function in python
+60. Filter function in python ?
 The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not.
 
 61.What is type conversion in Python?
 Type conversion refers to the conversion of one data type iinto another.
-int() – converts any data type into integer type
-float() – converts any data type into float type
-ord() – converts characters into integer
-hex() – converts integers to hexadecimal
-oct() – converts integer to octal
-tuple() – This function is used to convert to a tuple.
-set() – This function returns the type after converting to set.
-list() – This function is used to convert any data type to a list type.
-dict() – This function is used to convert a tuple of order (key,value) into a dictionary.
-str() – Used to convert integer into a string.
-complex(real,imag) – This functionconverts real numbers to complex(real,imag) number.
+* int() – converts any data type into integer type
+* float() – converts any data type into float type
+* ord() – converts characters into integer
+* hex() – converts integers to hexadecimal
+* oct() – converts integer to octal
+* tuple() – This function is used to convert to a tuple.
+* set() – This function returns the type after converting to set.
+* list() – This function is used to convert any data type to a list type.
+* dict() – This function is used to convert a tuple of order (key,value) into a dictionary.
+* str() – Used to convert integer into a string.
+* complex(real, imag) – This function converts real numbers to complex(real,imag) number.
 
 61. Is indentation required in python?
 Indentation is necessary for Python. It specifies a block of code. All code within loops, classes, functions, etc is specified within an indented block. It is usually done using four space characters. If your code is not indented necessarily, it will not execute accurately and will throw errors as well.
@@ -315,16 +307,31 @@ A function is a block of code which is executed only when it is called. To defin
 __init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance of a class is created. All classes have the __init__ method.
 
 64. How does break, continue and pass work?
-Break: Allows loop termination when some condition is met and the control is transferred to the next statement.
-Continue: Allows skipping some part of a loop when some specific condition is met and the control is transferred to the beginning of the loop
-Pass: Used when you need some block of code syntactically, but you want to skip its execution. This is basically a null operation. Nothing happens when this is executed.
+* Break: Allows loop termination when some condition is met and the control is transferred to the next statement.
+for i in range(10):
+	print(i)
+	if i == 2:
+		break
+
+* Continue: The continue statement is used to skip the current iteration of the loop and the control flow of the program goes to the next iteration.
+for var in "Geeksforgeeks":
+    if var == "e":
+        continue
+    print(var)          # Print all iterables except "e"
+
+* Pass: This is basically a null operation. Nothing happens when this is executed. In Python programming, the pass statement is a null statement which can be used as a placeholder for future code.
+n = 10
+# use pass inside if statement
+if n > 10:
+    pass
+print('Hello')
 
 65. What is the usage of help() and dir() function in Python?
 1. Help() function: The help() function is used to display the documentation string and also facilitates you to see the help related to modules, keywords, attributes, etc.
 2. Dir() function: The dir() function is used to display the defined symbols.
 
 66. What does this mean: *args, **kwargs? And why would we use it?
-We use *args when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a stored list or tuple of arguments to a function.
+*args is when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a stored list or tuple of arguments to a function.
 **kwargs is used when we don’t know how many keyword arguments will be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments.
 
 67. What is the difference between deep and shallow copy?
@@ -334,12 +341,19 @@ In Deep copy, the copy of the original object and the repetitive copies both are
 68. What are Python libraries? Name a few of them.
 Python libraries are a collection of Python packages. Some of the majorly used python libraries are – Numpy, Pandas, Matplotlib, Scikit-learn and many more.
 
-69. range function
+69. Range function
 The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
 70. Python chr() and ord()
-Python's built-in function chr() is used for converting an Integer to a Character (return the character of specific ascii value) 
-while the function ord() is used to do the reverse, i.e, convert a Character to an Integer (return the ascii value of specific character ) 
+* Python's built-in function chr() is used for converting an Integer to a Character (return the character of specific ascii value)
+value = ord("A")
+print(chr(value)
+
+* while the function ord() is used to do the reverse, i.e, convert a Character to an Integer (return the ascii value of specific character )
+print(ord('2'))
+print(ord('g'))
+print(ord('&'))
+
 
 71. zip and zip_longest in python
 zip combines multiple iterators. if iterators have difference length, the iterator with least item will decide tha length of the new iterators. 
@@ -502,9 +516,9 @@ The assignment operators are used to assign the value of the right expression to
 
 d. Logical Operators
 The logical operators are used primarily in the expression evaluation to make a decision.
-and: 	If both the expression are true, then the condition will be true. If a and b are the two expressions.
-or:	If one of the expressions is true, then the condition will be true.
-not:	If an expression a is true, then not (a) will be false and vice versa.
+and: If both the expression are true, then the condition will be true. If a and b are the two expressions.
+or: If one of the expressions is true, then the condition will be true.
+not: If an expression a is true, then not (a) will be false and vice versa.
 
 e. Membership Operators
 Python membership operators are used to check the membership of value inside a Python data structure. If the value is present in the data structure, then the resulting value is true otherwise it returns false.
@@ -573,19 +587,19 @@ Where as in tuples, memory is not over allocated, as tuples does not support app
  ValueError: Raised when a function gets an argument of correct type but improper value.
  ZeroDivisionError: Raised when the second operand of a division or module operation is zero
 
-83. The setdefault() method
+83. The setdefault() method ?
 d = {}
 d.setdefault('a') ---> {'a': None}
 The setdefault() method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value
 
-84. The enumerate() 
+84. The enumerate() ?
 The enumerate function in Python converts a data collection object into an enumerate object.
 The returned enumerate object contains tuples for each item in the iterable that includes an index and the values obtained from iterating over iterable.
 
 85. What is inline if statement Python?
 Python has an inline if ... else statement, which allows a compact version of the if ... else statement in a single line.
 
-86. objected oriented programm
+86. What is objected oriented program
 python is an objected oriented programming language. Everything in python is an object. Using python we can reate classes and objects.
 Objects: Objects are an instance of a class. With the help of objects, we can access the method and function of a class.
 
@@ -645,26 +659,12 @@ file.name: Returns name of the file.
 file.writable: 
 file.readable:
 
-93. file count, isslice, deque 
-Counter: Counter is a sub-class that is used to count hashable objects.
-isslice: The islice() function works much the same way as slicing a list or tuple. 
-deque: deque, has the feature of adding and removing elements from either end.
+93. File count, isslice, deque
+* Counter: Counter is a sub-class that is used to count hashable objects.
+* isslice: The islice() function works much the same way as slicing a list or tuple.
+* deque: deque, has the feature of adding and removing elements from either end.
 
 94. write and writelines in python
 The only difference between the write() and writelines() is that write() is used to write a string to an already opened file while
 writelines() method is used to write a list of strings in an opened file.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
