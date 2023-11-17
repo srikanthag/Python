@@ -1,6 +1,6 @@
 "Pandad"
 
-# Pandas is defined as an open-source library which is built on the top of the NumPy library. It provides fast analysis, data cleaning,
+# Pandas are defined as an open-source library which is built on the top of the NumPy library. It provides fast analysis, data cleaning,
 # and preparation of the data for the user and supports both xls and xlsx extensions from the URL.
 
 import pandas as pd

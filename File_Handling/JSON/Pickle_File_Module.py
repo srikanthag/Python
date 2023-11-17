@@ -6,8 +6,8 @@
 # print(type(b))
 #
 #deserilize
-c = pickle.loads(b)
-print(c)
+# c = pickle.loads(b)
+# print(c)
 
 #serilize
 # data = "hello"

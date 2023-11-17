@@ -1,4 +1,4 @@
-# Class parent:
+# class parent:
 #     def __init__(self, value):
 #         self.value = value
 #
@@ -10,13 +10,12 @@
 #         self.google()
 #
 # p = parent(10)
-#
 # print(p.google())
 # print(p.apple())
 #
-# #child1 Class having separate method called demo
-
-# Class child1(parent):
+# # #child1 Class having separate method called demo
+#
+# class child1(parent):
 #     def demo(self):
 #         print("execute demo")
 # c1 = child1(10)
@@ -24,11 +23,11 @@
 # print(c1.apple())
 # print(c1.demo())
 # print(c1.__init__)
+# #
 #
-
 # #overriding parent Class method
-
-# Class child2(parent):
+#
+# class child2(parent):
 #     def demo(self):
 #         print("execute demo")
 #
@@ -38,9 +37,9 @@
 # c2 = child2(10)
 # print(c2.google())
 # print(c2.apple())
-#
-# #child adding extra functionality and reused original functionality of parent
-# Class child3(parent):
+# #
+# # #child adding extra functionality and reused original functionality of parent
+# class child3(parent):
 #     def google(self):
 #         print("executing child 3 google")
 #         super().google()                #   super is used to acces parent Class attributes
@@ -49,9 +48,9 @@
 # print(child3.__mro__)                      #mro -method resalution order
 # print(c3.google())
 # print(c3.apple())
-#
-# #child Class having extra attributes
-# Class child4(parent):
+# #
+# # #child Class having extra attributes
+# class child4(parent):
 #     def __init__(self, value, name):
 #         self.name = name
 #         super().__init__(value)              #calling parent Class constructor
@@ -79,21 +78,26 @@
 
 
 #multi-level Inheritance
-# Class a:
-#     def demo(self):
-#         print("Class a demo")
-#
-# Class b(a):
-#     def demo(self):
-#         print("Class b demo")
-#         super().demo()
-#
-# Class c(b):
-#     def demo(self):
-#         print("Class c demo")
-#         super().demo()
+class a:
+    def demo(self):
+        print("Class a demo")
 
+class b(a):
+    def demo(self):
+        print("Class b demo")
+        super().demo()
 
+class c(b):
+    def demo(self):
+        print("Class c demo")
+        super().demo()
+
+c1= a()
+print(c1.demo())
+c2 = b()
+print(c2.demo())
+c3 = c()
+print(c3.demo())
 
 # Class parent:
 #     def demo(self):
