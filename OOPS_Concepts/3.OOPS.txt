@@ -28,7 +28,7 @@ b. Method: A function written inside the class is called method and first parame
     * self: Holds the address of the instance which is invoking the method.
 
 c. Constructor: In a class "__init__" is called the constructor. It is used to construct object/instance with different variable.
-We can have multiple constructor but it will take latest one.
+We can have multiple constructor but it will take the latest one.
 
 d. __dict__: Dictionary or other mapping object used to store an object's (writable) attributes.
 
@@ -42,7 +42,8 @@ class car:
         print(self.modelname,self.year)
 
 c1 = car("Toyota", 2016)
-c1.display()
+print(c1.display())
+print(c1.__dict__)
 
 Explanation: In the above example, we have created the class named car, and it has two attributes model-name and year.
 We have created a c1 object to access the class attribute. The c1 object will allocate memory for these values.
@@ -56,11 +57,31 @@ class's object. A static method can be called without creating an object for the
 method with the reference of the class name.
 The staticmethod cannot access the class attributes or the instance attributes.
 
-A staticmethod() is a built-in function in Python that is used to return a given function as a static method.
+** staticmethod()
+staticmethod() is a built-in function in Python that is used to return a given function as a static method.
+Syntax:
+staticmethod(function)
 
-Using the @staticmethod Decorator
+E.g.
+class Calculator:
+
+  def add_numbers(num1, num2):
+    return num1 + num2
+
+Calculator.add_numbers = staticmethod(Calculator.add_numbers)           # convert add_numbers() to static method
+
+sum = Calculator.add_numbers(5, 7)
+print('Sum:', sum)          # Output: Sum: 12
+
+
+
+** @staticmethod
 A @staticmethod is an inbuilt decorator that defines the static method inside the class. It does not receive any argument as a
 reference to a class instance or a class calling the static method itself.
+
+* Declares a static method in the class.
+* It cannot have cls or self parameter.
+* The static method cannot access the class attributes or the instance attributes.
 
 Syntax:
 
@@ -70,16 +91,89 @@ def function_name (arg1, arg2, ?):
 # Statement to be executed
 Returns: a static method for function function_name
 
+E.g.1
 
-b.Classmethod() in Python
+class Student:
+    name = 'unknown' # class attribute
+
+    def __init__(self):
+        self.age = 20  # instance attribute
+
+    @staticmethod
+    def tostring():
+        print('Student Class')
+
+std = Student()
+print(std.tostring())
+
+
+E.g. 2
+
+The static method cannot access the class attributes or instance attributes. It will raise an error if try to do so.
+
+class Student:
+    name = 'unknown' # class attribute
+
+    def __init__(self):
+        self.age = 20  # instance attribute
+
+    @staticmethod
+    def tostring():
+        print('name=',name,'age=',self.age)
+
+Student.tostring()   #error
+
+
+=============================================================================================================
+
+b. Class method
+
+** classmethod()
 Python has a built-in function called classmethod() that gives a class method of the specified function.
-
 The first parameter must be cls, which can be used to access class attributes.
 The class method can only access the class attributes but not the instance attributes.
 
-Syntax
-@classmethod
-def function(cls, arg1, arg2, arg3...):
+E.g.
+class Person:
+    age = 25
+
+    def Age(cls):
+        print('The age is:', cls.age)
+
+# create printAge class method
+Person.Age = classmethod(Person.Age)
+print(Person.Age())
+
+
+** @classmethod
+@classmethod decorator is used to declare a method in the class as a class method that can be called using
+ClassNam .MethodName().
+
+
+E.g.1, The first parameter must be cls, which can be used to only access class attributes not instance attributes.
+class Student:
+    name = 'srikanth' # class attribute
+    def __init__(self, age):
+        self.age = 20  # instance attribute
+
+    @classmethod
+    def tostring(cls):
+        print('Student Class Attributes: name=',cls.name)
+
+Student.tostring()  # Student Class Attributes: name=srikanth
+
+E.g.2, The class method can only access the class attributes but not the instance attributes.
+class Student:
+    name = 'unknown' # class attribute
+    def __init__(self):
+        self.age = 20  # instance attribute
+
+    @classmethod
+    def tostring(cls):
+        print('Student Class Attributes: name=',cls.name,', age=', cls.age)
+
+
+Student.tostring() # calling class method  # User will get error
 
 =============================================================================================================
 
