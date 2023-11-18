@@ -1,4 +1,3 @@
-
 "Local variacle"
 # The variables that are declared within the function and have scope within the function are known as local variables
 

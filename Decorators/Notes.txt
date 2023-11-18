@@ -1,14 +1,12 @@
 Decorators
 
 Decorator is a function it takes another function and add extra functionality without alter the main function
-when function is decorate using @deccorator function. when interpreter execute @decorator 2 major thing will happen
-outer function parameter func takes address of main function
-the main function will take address of wraper function
+when function is decorate using @decorator function. when interpreter execute @decorator 2 major thing will happen outer function parameter func takes address of main function the main function will take address of wrapper function
 
 Uses
 Allow the extension of an existing function, without any modification to the original function source code.
 
-
+E.g.1
 def str_rev(func):                            # here, we are creating a function and passing the parameter
     def wrapper(*args, **kwargs):      # here, we are creating a function and passing the parameter
         for i in range(3):
@@ -31,8 +29,7 @@ def mul(a,b):
 mul(2,6)
 
 
-
-
+E.g.2
 def outer(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)

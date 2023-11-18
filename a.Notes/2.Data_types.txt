@@ -40,9 +40,9 @@ print(math.trunc(d))
 ================================================================================================================
 2. Float
 It specify the data stored inside. The memory allocation should be an decimal.
-b=5.8
-x=float(9.2)
-x=9.2
+b = 5.8
+x = float(9.2)
+x = 9.2
 
 ===============================================================================================================
 3. Complex  number
@@ -52,7 +52,8 @@ a = 2+3j
 b = complex(a)
 print(b)
 
-=================================================================================================================4. Boolean
+==============================================================================================================
+4. Boolean
 Boolean variables are defined on True or False keywords.
 
 ================================================================================================================="5. String
@@ -80,11 +81,14 @@ print(s)
 
 =================================
 
-""Indexing""
+"" Indexing ""
 * Process of extracting single character is called indexing.
 * It can start with positive or negative.
+s = 'sri'
+print(s.index('r'))
 
-""Slicing ""
+
+"" Slicing ""
 * Process of extracting multiple character.
 
 Eg.
@@ -320,7 +324,7 @@ print(a.index(2))
 * update(): Update the set with another set, or any other iterable
 
 
-===================================================================================================================
+=============================================================================================================
 9. Dictionary
 * Collections of key values pair.
 * Key cannot be duplicate

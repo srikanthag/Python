@@ -8,48 +8,47 @@ What are the key features of Python?
 
 
 1. What is pickling and unpickling?
-“Pickling” is the process whereby a Python object hierarchy is converted into a byte stream, and “unpickling”
-is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into
-an object hierarchy
+“Pickling” is the process whereby a Python object hierarchy is converted into a binary stream
+“unpickling” is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into an python object hierarchy
 
-2. difference between import os and from os
+2. Difference between import os and from os
 import module: import the whole library.
 from: imports a specific member or members of the library.
 
-3. composite keys
+3. What is composite keys
 dictionary have tuple as key
 holidays = {(26,1):'rday',(15,8):'iday'}
 print(holidays.values())
 print(holidays.keys())
 
-4. extract value from dict
+4. How to extract extract value from dicttionary
 d = {'a':1, 'b':2}
 print(d.values())
 
-5. self and cls
+5. What is self and cls
 using the self keyword, we can access both the instance variables and the class attributes
 Using the cls keyword, we can only access the members of the class
 
-6. difference between list and array
-list is a container object, i.e. each slot of the list points to smoother object. it holds the reference of other objects.
-But in case of arrays, the memory slot does not hold the reference of the other objects, but it holds the actual value.
+6. Difference between list and array
+* Lists and arrays both are mutable and store ordered items. List can store elements of different types, but arrays can store elements only of the same type.
+* List cannot manage arithmetic operations. Array can manage arithmetic operations.
 
-7. your frd sends a python file.  You don't have any pychram or vscode or any .. How you will execute python file'''
+7. Your frd sends a python file.  You don't have any pychram or vscode or any .. How you will execute python file'''
 you will execute the python script in command prompt using command python demo.py
 
 8. What is the difference between.py and .pyc file
 .py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program
 
-9. what are inbuilt data types?
-Numeric Types:	int , float , complex
-Sequence Types:	list , tuple , range
-Mapping Type:	dict
-Set Types:	set , frozenset
+9. What are inbuilt data types?
+Numeric Types:	int, float, complex
+Sequence Types: list , tuple , range
+Mapping Type: dict
+Set Types:	set, frozenset
 
-10. what is monkey patching?
-the process of calling a function with different name
+10. What is monkey patching?
+Monkey patching in python refers to modifying or updating a piece of code or class or any module at the runtime.
 
-11. collection  or container object'''
+11. Collection  or Container object'''
 Collections in Python are containers that are used to store collections of data
 example list, dict, set, tuple and Strings can be defined as sequential collections of characters
 
@@ -98,7 +97,7 @@ except ZeroDivisionError:
  finally:
      print('close')
 
-18. why do you use pass
+18. Why do you use pass ?
 When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed
 
 19. what are iterators in python
@@ -131,8 +130,8 @@ os.path.isdir() method in Python is used to check whether the specified path is 
 Selenium
 
 26. OS modules
-The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents,
-changing and identifying the current directory, etc.
+The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents, changing and identifying the current directory, etc.
+
 cwd = os.getcwd()
 c = os.mkdir('___python')
 c = os.chdir()
@@ -154,7 +153,7 @@ Pylint is a plugin or extension that checks for syntax errors. Also, it tries to
 * The body of while loop gets executed until some condition is True. Once the condition if False, the control comes out of the while loop.
 * The body of for loop get executed for some fixed number of iterations.
 
-31. What are magic methods?
+31. What are magic methods ?
 Magic methods are special methods which starts and ends with double underscores. It is internally called by python. can customise the behaviour of an object or class using magic methods. They are also called as protocols.
 E.g. when you ask for the length of the list len(names) internally python will call _len_ method on list object.
 E.g. when you check for membership "apple" in names python internally triggers _contains_("apple")
@@ -189,7 +188,7 @@ Everything in Python is an object, and all variables hold references to the obje
 They are syntax constructions to ease the creation of a Dictionary or List based on existing iterable.
 
 39. Explain namespace in Python
-Namespace is currently defined name along with information of object that each name refference.
+Namespace is currently defined name along with information of object that each name reference.
 
 40. What is lambda in Python?
 It is a single expression anonymous function often used as inline function.
@@ -339,7 +338,7 @@ In Shallow copy, a copy of the original object is stored and only the reference 
 In Deep copy, the copy of the original object and the repetitive copies both are stored.
 
 68. What are Python libraries? Name a few of them.
-Python libraries are a collection of Python packages. Some of the majorly used python libraries are – Numpy, Pandas, Matplotlib, Scikit-learn and many more.
+Python libraries are a collection of Python packages. Some majorly used python libraries are – Numpy, Pandas, Matplotlib, Scikit-learn and many more.
 
 69. Range function
 The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
@@ -675,9 +674,12 @@ print ("String 1:",str1)
 print ("String 2:",str2)
 str = str1+str2.        #  Concatenation
 
+96. What are data structures in Python?
+Python Data Structures - Overview, Types, Examples
+The basic Python data structures in Python include list, set, tuples, and dictionary. Each of the data structures is unique in its own way. Data structures are “containers” that organize and group data according to type. The data structures differ based on mutability and order.
 
-
-
+97. What does for _ in range do in Python?
+Using for _ in range(num) is usually just to indicate that the variable doesn't matter from a conventional standpoint.
 
 
 

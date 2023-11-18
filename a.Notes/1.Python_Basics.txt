@@ -18,8 +18,7 @@ p = python
 p.designer()
 
 
-c. Support dynamic memory allocation: In Python, we don't need to specify the data-type of the variable.
-    When we assign some value to the variable, it automatically allocates the memory to the variable at run time.
+c. Support dynamic memory allocation: In Python, we don't need to specify the data-type of the variable. When we assign some value to the variable, it automatically allocates the memory to the variable at run time.
     Suppose we are assigned integer value 15 to x, then we don't need to write int x = 15. Just write x = 15.
 
 d. Python is an interpreted language: it means the Python program is executed one line at a time.
@@ -28,45 +27,46 @@ e. Cross-platform Language: Python can run equally on different platforms such a
     So, we can say that Python is a portable language.
 
 f. Large Standard Library: It provides a vast range of libraries for the various fields such as machine learning, web developer,
-    and also for the scripting. There are various machine learning libraries, such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc.
+    and also for the scripting.
+    There are various machine learning libraries, such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc.
     Django, flask, pyramids are the popular framework for Python web development.
 
-===================================================================================================================
+================================================================================================================
 
 """ Python Compilation """
 Compilation − The source code in python is saved as a . py file which is then compiled into a format known as byte code,
 byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the
 source is updated.
 
-===================================================================================================================
+================================================================================================================
 
 " Identifier"
 User defined name to represent a variable, functions, class, modules ect.
 
 Rules:
 a. Name can start "_" or "alphabet".
-b. can be alpha numeric but not start with number.
+b. can be alphanumeric but not start with number.
 c. No special character except "_".
-d. Kewords cannot be identifier.
+d. Keywords cannot be identifier.
 e. Max char is 79
 
 Note: To check weather python identifier is valid or not >>> "string".isidentifier
 
-==================================================================================================================
+===============================================================================================================
 
-"Key words"
+" Keywords "
 
 Special words which having special meaning.
 Cant assign any value to the keyword.
 
-Note: To get all ketwords
-a. help("keyword"
+Note: To get all keywords
+a. help("keyword")
 b. import keyword
     print(keyword.kwlist)
 
-==================================================================================================================
+===============================================================================================================
 
-"Python Variable"
+" Python Variable "
 Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
 
 a=10
@@ -75,9 +75,9 @@ print(id(x))
 
 "id" returns the memory location of an object
 
-==================================================================================================================
+==============================================================================================================
 
-"Memory allocation in variables"
+" Memory allocation in variables "
 
 There are two parts of memory (RAM)
 a. Stack memory (Organized memory)
@@ -85,15 +85,16 @@ b. Heap memory (Unorganized memory)
 
 In this method references are stored in Stack and values are stored in Heap.
 
-Eg: When a=10, 10 is created in heap and its reference is is assigned to variable 'a'. x=a, here will crete another refference variable if object
-already exist with same value.
-If we change the value of a (a=15) then link b/w 'a' and 10 disconnected. But 'x' still refer to 10.
-If we assign another value to 'x' (x=20). It is also disconnect link b/w 'x' and 10
-Now 10 does not have any reference link. The garbage collector automatically delete the object from heap memory.
+Eg:
+* When a=10, 10 is created in heap and its reference is assigned to variable 'a'.
+* x = a, here will crete another reference variable if object already exist with same value.
+* If we change the value of a (a=15) then link b/w 'a' and 10 disconnected. But 'x' still refer to 10.
+* If we assign another value to 'x' (x=20). It is also disconnect link b/w 'x' and 10
+* Now 10 does not have any reference link. The garbage collector automatically delete the object from heap memory.
 
-==================================================================================================================
+==============================================================================================================
 
-"Print"
+" Print "
 Standard function used to print the output.
 
 Parameter
@@ -104,9 +105,17 @@ default value:\n
 b. sep
 print(value, sep="string")
 
-"Input"
+==============================================================================================================
 
-=====================================================================================================================
+" Input "
+The input() function takes input from the user and returns it.
+name = input("Enter your name: ")
+print(name)
+
+# Output:
+# Enter your name: James
+# James
+===============================================================================================================
 
 Python dir() Function
 The dir() function returns all properties and methods of the specified object, without the values. This function will return all
@@ -116,26 +125,50 @@ a = 'srikantn'
 print(dir(a[3]))
 print(dir(a))
 
-=====================================================================================================================
+===============================================================================================================
+
+Python ord(), chr() functions
+* Python ord() function takes string argument of a single Unicode character and return its integer Unicode code point value (Ascii value).
+
+x = ord('A')
+print(x)
+
+* Python chr() function takes integer argument and return the string representing a character at that code point.
+
+y = chr(65)
+print(y)
+print(chr(123))
+print(chr(36))
+
+===============================================================================================================
 "Hashable object"
-*These objects which implements __hash__ magic method.
+* These objects which implements __hash__ magic method.
 * Only immutable have hash value. It is used to check mutable or immutable.
 * All immutable are hashble but all hashble are not immutable.
 
-======================================================================================================================
+ Eg.
+ a = 'sr'
+print(dir(a))       # Output have __hash__ method
+
+==============================================================================================================
 
 Mutable and Immutable data types
 
 ** Mutable datatypes: It will allow modification on the original object
 List, set, dict
-** Immutable data type: Does not allow modification. even if the modification is done there will be create new object.
+** Immutable data type: Does not allow modification. even if the modification is done there will be created new object.
 string, tuple, int, floot
 
-======================================================================================================================
-Sequences and Iterable
-A sequence ia an object which can be indexed.
+===============================================================================================================
 
-==========================================================================================================================
+Sequences and Iterable
+* An iterable is anything you can loop over with a for loop in Python. Iterables can be looped over, and anything that can be looped over is an iterable.
+   Sets, dictionaries, files, and generators are all iterables but none of these things are sequences.
+
+* Sequences are iterables that have a specific set of features. They can be indexed starting from 0 and ending at one less than the length of the sequence, they have a length, and they can be sliced.
+  Lists, tuples, strings
+
+===============================================================================================================
 "" Python Operators ""
 
 The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a specific programming language. Python provides a variety of operators, which are described as follows.

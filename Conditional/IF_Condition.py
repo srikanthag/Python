@@ -26,7 +26,7 @@
 # if element in list:
 #     print(f"{element} is a membor of list")
 
-
+# 6. wap to  check given element palindrome or not
 # year = 22022022
 # year_string = str(year)
 # if year_string == year_string[::-1]:

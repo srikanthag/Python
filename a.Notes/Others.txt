@@ -1,5 +1,4 @@
-1. Counters
-Counters are referred to as the container that holds the count of each of the elements that are available in the container.
+1. Counters are referred to as the container that holds the count of each of the elements that are available in the container.
 They allow us to access the stored object. The dictionary class holds the Counter as the sub-class.
 Counter helps us to count the key-value pairs in an object.
 

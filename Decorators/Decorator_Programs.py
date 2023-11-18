@@ -1,11 +1,10 @@
-
 # 1. wa decorator that prints or that logs a message before execution any function
 # def log (func):
 #     def wrapper(*args, **kwargs):
 #         print("in decorator function")
 #         return func(*args, **kwargs)
 #     return wrapper
-
+#
 # @log    #display = log(display)
 # def display():
 #    return "in display"

@@ -22,7 +22,7 @@ import json
 
 ** dump()
 data = "hello"
-with open("example.pkl","wb") as file:
+with open(r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\JSON\sample.json","wb") as file:
      pickle.dump(data, file)
 
 

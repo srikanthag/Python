@@ -1,4 +1,3 @@
-
 # 1. wad which execute a function for n times
 # def outer(n):
 #     def str_rev(func):
@@ -29,15 +28,6 @@
 #     print(a-b)
 # sub(2,1)
 
-
-#phone decorator                            #incomplete
-# numbers = [1234567890, 9087654321, 911234567890, 119876543210]
-# def add_prefix(number):
-#     str_number = str(number)
-#     if len(str_number) == 10:
-#         str_number =="+91" + str_number
-#         return str_number
-#     elif len(str_number)
 
 
 

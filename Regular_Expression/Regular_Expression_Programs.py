@@ -20,6 +20,7 @@ import re
 # 5. find only upper and lower char in string
 # e = re.findall(r"[A-Za-z]", "hi HOW 99 are 100 you")
 # print(e)
+# print(''.join(e))
 
 # 6. find all except number
 # e = re.findall(r"[^0-9]", "hi HOW@#$ 99 are 100 you")
@@ -43,7 +44,6 @@ import re
 # e = re.findall(r"\b\w{3}\b", "hi hello and python is a programming language")
 # print(e)
 
-
 # 11. grab minimum 3-character letter words
 # e = re.findall(r"\b\w{3,}\b", "hi hello and python his a programming language")
 # print(e)
@@ -63,12 +63,10 @@ import re
 # e = re.findall(r"\b[^aeiou\s]\w+", sentence)
 # print(e)
 
-
 # 15. find all words ends with 'o'
 # sentance = "hi hello and apython is a oprogramming language ohio"
 # e = re.findall(r"\b\w+o\b", sentance)
 # print(e)
-
 
 # 16. count individual number
 # word = "sony india pvt34 Ltd567 Bangalore"
@@ -87,7 +85,6 @@ import re
 # for item in e:
 #     total += int(item)
 # print(total)
-
 
 # 18. count number space
 # word = "sony123 india pvt34 Ltd567 Bangalore"
@@ -119,7 +116,6 @@ import re
 # d = {item:len(item) for item in e}
 # print(d)
 
-
 # 23. count the total number of upper and lower char
 # word = "sony india pvt#$% Ltd Bangalore"
 # e = re.findall(r"[A-Z]", word)
@@ -136,7 +132,6 @@ import re
 # e = re.findall(r"\.[a-zA-Z]+", word)
 # print(e)
 
-
 # 25.  Matches any character except new line
 # r = re.findall(r'.', "hello world")
 # print(r)
@@ -144,7 +139,6 @@ import re
 # 26. find one char after h
 # r = re.findall(r'h.', "hello")
 # print(r)
-
 
 # 27. find any one char between 2 char
 # r = re.findall(r'a.b', "acb gg abbr")
