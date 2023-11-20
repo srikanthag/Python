@@ -34,7 +34,7 @@
 # print(even())
 # print(list(even()))
 
-# 4. wag fuction and expression to yield tha names starting with vowels
+# 4. wag function and expression to yield tha names starting with vowels
 # names = ['john', 'srikanth', 'evagreen', 'anabella']
 # def vow(names):
 #     for item in names:

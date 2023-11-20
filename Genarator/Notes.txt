@@ -18,17 +18,22 @@ print(r)        # Returns address of object (<generator object squres at 0x00000
 for t in r:
     print(t)
 
-
-
-====================================================================================================
-
-Difference between yield and return
-
-The yield statement produces a generator object and can return multiple values to the caller without terminating the program, whereas a return statement is used to return a value to the caller from within a function and it terminates the program
-
 ====================================================================================================
 
 Difference Between Generator Function & Normal Function
 
-In generator functions, there are one or more yield functions, whereas, in Normal functions, there is only one function
-When the generator function is called, the normal function pauses its execution, and the call is transferred to the generator function.
+* Generator can be paused in the middle of execution and resumed but Normal function runs to completion and returns a value
+* Generator can return multiple values through multiple iterations but Normal function returns a single value (or none)
+* Generator keeps the current value in memory but Normal function create a large amount of memory overhead
+* Generator are used generate values that can be iterated over but Normal function are used when to perform a task and return a result.
+* the generator function uses the yield keyword instead of return and generates values as they are needed, rather than creating a list of all values at once.
+
+====================================================================================================
+
+Difference Between Yield andReturn
+* Yield is generally used to convert a regular Python function into a generator. Return is generally used for the end of the execution and “returns” the result to the caller statement.
+* Code written after yield statement execute in next function call. while, code written after return statement wont execute.
+* Yield can run multiple times. Return only runs single time.
+
+
+

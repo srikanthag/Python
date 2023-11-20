@@ -1,4 +1,4 @@
-"""Python Programs """
+""" Python Programs """
 
 '''1. Write a program to find the length of the string without using inbuilt function (len)'''
 # def _len(iterable):
@@ -36,8 +36,8 @@
 # print(recverce("srikanth"))
 
 '''3. Write a program to replace one string with another. e.g. "Hello World" replace "World" with "Universe".'''
-s = 'Hello world'
-s.replace('world', 'universe')
+# s = 'Hello world'
+# s.replace('world', 'universe')
 
 '''4. How to convert a string to a list and vice-versa.'''
 # s = 'srikanth'
@@ -112,11 +112,11 @@ s.replace('world', 'universe')
 # from itertools import isslice
 # def fist_n(n):
 # 	with open ('sample.txt') as file:
-#         s = isslice(f, n)
+#         s = isslice(file, n)
 #     	print(list(s))
 
 '''11. Write program to read a random line in a file. (ex. 50, 65, 78th line)'''
-from itertools import islice
+# from itertools import islice
 # def read_random_line(lineno):
 #     with open('Data/access-log.txt') as f:
 #         line = islice(f, lineno, lineno+1)
@@ -212,7 +212,7 @@ from itertools import islice
 # print(sub(1, 5))
 
 '''19 How to get the count of number of instances of a Class that is being created.'''
-# Class Login:
+# class Login:
 #     login_count = 0  # Class Variable that keeps count of login counts
 #
 #     def __init__(self):
@@ -311,6 +311,7 @@ if the item is integer of float it should reverse it.'''
 # sentence = "Hello world. Welcome to Python"
 # words = sentence.split()
 # d = {word: len(word) for word in words}
+# print(d)
 # print(max(d.items(), key= lambda item: item[-1]))
 
 '''29 write a program to reverse the values in the dictionary if the value is of type String'''
