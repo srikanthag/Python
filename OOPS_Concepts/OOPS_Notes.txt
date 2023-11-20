@@ -153,6 +153,7 @@ ClassNam .MethodName().
 E.g.1, The first parameter must be cls, which can be used to only access class attributes not instance attributes.
 class Student:
     name = 'srikanth' # class attribute
+
     def __init__(self, age):
         self.age = 20  # instance attribute
 
@@ -171,7 +172,6 @@ class Student:
     @classmethod
     def tostring(cls):
         print('Student Class Attributes: name=',cls.name,', age=', cls.age)
-
 
 Student.tostring() # calling class method  # User will get error
 
@@ -451,20 +451,9 @@ class Employee:
 emp = Employee('max', 25, 15000, 10000)
 print(emp.total_salary())                               # Output 190000
 
+=============================================================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+** Difference between Inheritance and Composition
+Inheritance is used where a class wants to derive the nature of parent class and then modify or extend the functionality of it. Inheritance will extend the functionality with extra features allows overriding of methods, but in the case of Composition, we can only use that class we can not modify or extend the functionality of it. It will not provide extra features.
 
 
