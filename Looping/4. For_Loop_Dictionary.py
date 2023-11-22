@@ -98,7 +98,7 @@
 #         d[word] += 1
 # print(d)
 
-#using defaultdict method
+# #using defaultdict method
 # from collections import defaultdict
 # s = 'hi how are you hi dude'
 # dd = defaultdict(int)

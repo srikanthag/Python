@@ -1,8 +1,8 @@
 import csv
+
 path = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\employees.csv"
 path2 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\test.csv"
 path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\vaccination_data.csv"
-
 
 # 1. wap to read all the names of the employees in the employee.CSV file
 # with open(path) as csv_file:
@@ -33,7 +33,7 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_
 #             d["female"] = [row[0]]
 #     print(d)
 
-#defalutdict
+# defalutdict
 # from collections import defaultdict
 # with open(path) as csv_file:
 #     emp = csv.reader(csv_file)
@@ -92,14 +92,13 @@ path3 = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_
 #     for row_ in vac:
 #         print(row_[5])
 
-#using dictreader
+# using dictreader
 # with open(path3) as file:
 #     vac = csv.DictReader(file)
 #     header = next(vac)
 #     print(header)
 #     for row in vac:
 #         print(row["TOTAL_VACCINATIONS"])
-
 
 
 # 8. total vaccination by country
@@ -160,10 +159,3 @@ from collections import defaultdict
 #
 # res = sorted(d.items())
 # print(res[-1])
-
-
-
-
-
-
-

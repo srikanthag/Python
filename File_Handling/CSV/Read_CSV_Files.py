@@ -1,5 +1,5 @@
 import csv
-path = r"C:\Users\srikanth\Desktop\IT\Python\Python\file_directory\csv_files\sample.CSV"
+path = r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\CSV_Samples\sample.csv"
 with open(path) as csv_file:
     read_obj = csv.reader(csv_file)
     print(read_obj)

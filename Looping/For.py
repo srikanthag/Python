@@ -27,32 +27,32 @@
 #     if i % 2 == 0:
 #         print(i)
 
-# 8. traversing through string
+# 8. Traversing through string
 # s = 'srikanth'
 # for i in s:
 #     print(i)
 
-# 9. traversing through list
+# 9. Traversing through list
 # list_ = [1,2,3]
 # for i in list_:
 #     print(i)
 
-# 10. traversing through tuple
+# 10. Traversing through tuple
 # tuple_ = (9, 7, 8)
 # for item in range(0, len(tuple_)):
 #     print(tuple_[item])
 
-# 11. traversing through sets
+# 11. Traversing through sets
 # sets_ = {1,2,3,'sri'}
 # for ele in sets_:
 #     print(ele, end=' ')
 
-# 12. traversing through dictionary
+# 12. Traversing through dictionary
 # d = {"one": 1, "two": 2, "three": 3}
 # for key in d:
 #     print(key, d[key], sep="-")
 
-# 13. Traverce through packed list
+# 13. Traverse through packed list
 # l = [1, 2, 3]
 # t = (4, 5, 6)
 # d = [[*l, *t]]

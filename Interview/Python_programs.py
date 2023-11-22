@@ -1212,7 +1212,7 @@ be in ascending order and even numbers should be in descending order'''
 # list = [item for item in keys[1::2]]
 # print(list)
 
-''' 128. Print latget number in list '''
+''' 128. Print largest number in list '''
 # numbers = [10, 20, 30, 40, 50]
 # largest = 0
 # for item in numbers:

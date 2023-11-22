@@ -624,21 +624,20 @@ p.designer()
  print([*l, *l1])   # unpacking
 
 88. Can we use the else block for, for loop ?
-Python allows the else keyword to be used with the for and while loops too. it execute when the loop is finished without any break
+Python allows the else keyword to be used with the for and while loops too. it executes when the loop is finished without any break
 
 89. Difference between xrange and range
 python2- xrange
 python3- range
 1. xrange does not stop, start and step attributes. But range object has start, stop and step attributes.
 In Python-2 The above attributes are not supported.
-
 2. range Object supports slicing! But xrange does not support slicing
 3. range object has __contains__ method implemented. So it supports membership testing.
 But xrange does not implement __contains__ method.
 So Python will iterate over each and every item in the range xrange object until it finds a match.
 (So if you are searching for a number in range is faster than xrange)
 
-90. modes of files
+90. Modes of files
 r (read):  for reading – The file pointer is placed at the beginning of the file. This is the default mode.
 w(write): Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing
 a (append): Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.
@@ -648,7 +647,8 @@ x (create): open for exclusive creation, failing if the file already exists
 Read ( ): Returns the read bytes in the form of a string. read the dat from starting to end
 Readline ( ): Reads a line of the file and returns in the form of a string.
 Readlines ( ): Reads all the lines and returns them as a string element in a list. 
-tell: The tell() method returns the current file position in a file stream. Tip: You can change the current file position with the seek() method.
+tell: The tell() method returns the current file position in a file stream.
+Tip: You can change the current file position with the seek() method.
 seek: The seek() method sets the current file position in a file stream. The seek() method also returns the new postion.
 
 92. file attributes
@@ -659,7 +659,7 @@ file.writable:
 file.readable:
 
 93. File count, isslice, deque
-* Counter: Counter is a sub-class that is used to count hashable objects.
+* Counter: Counter is a subclass that is used to count hashable objects.
 * isslice: The islice() function works much the same way as slicing a list or tuple.
 * deque: deque, has the feature of adding and removing elements from either end.
 
