@@ -1,5 +1,5 @@
 What is Python? What are the benefits of using Python?
-Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source.
+Python is a high-level, interpreted programming language known for its simplicity and readability. It emphasizes code readability and has a clean syntax that allows programmers to express concepts in fewer lines of code compared to other languages.
 
 What are the key features of Python?
 • Python is an interpreted language. That means that, unlike languages like C and its variants, Python does not need to be compiled before it is run. Other interpreted languages include PHP and Ruby.
@@ -9,7 +9,7 @@ What are the key features of Python?
 
 1. What is pickling and unpickling?
 “Pickling” is the process whereby a Python object hierarchy is converted into a binary stream
-“unpickling” is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into an python object hierarchy
+“unpickling” is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into a python object hierarchy
 
 2. Difference between import os and from os
 import module: import the whole library.
@@ -680,6 +680,30 @@ The basic Python data structures in Python include list, set, tuples, and dictio
 
 97. What does for _ in range do in Python?
 Using for _ in range(num) is usually just to indicate that the variable doesn't matter from a conventional standpoint.
+
+98. What's the difference between Python 2 and Python 3?
+ Python 2 and Python 3 have differences in syntax and functionality. Python 3 focuses on fixing inconsistencies and making the language more intuitive. Key differences include the print statement (Python 2) versus the print function (Python 3), Unicode handling, and various other syntactical changes.
+
+99. What is a virtual environment in Python?
+A virtual environment is a tool that helps manage dependencies and isolate project environments. It allows you to install packages in an isolated space without affecting the system's global Python installation.
+
+
+100. How does memory management work in Python?
+Python uses automatic memory management. It has a private heap space where all objects and data structures are stored. The memory allocation and deallocation are handled by the Python interpreter through mechanisms like reference counting and garbage collection.
+
+101. What is BaseException
+The BaseException class in Python serves as the base class for all built-in exceptions.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

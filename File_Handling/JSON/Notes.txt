@@ -1,0 +1,96 @@
+Python JSON
+JSON, which stands for JavaScript Object Notation, is a popular data format for online data exchange.
+JSON is the best format for organizing data between a client and a server.
+
+
+The following techniques
+
+load()
+loads()
+dump()
+dumps()
+
+===============================================================================================================
+
+1. Serializing JSON
+
+The process used to translate Python objects to JSON is known as serialization. When a computer needs to process a lot of data,
+it is a good idea to store that data in a file. Using the JSON function, we can store JSON data in a file.
+The dump() and dumps() methods are available in the json module and are used to modify Python objects.
+
+
+** dump()
+* The json.dump() function writes the serialized JSON data into a file named data.json. Adjust the filename and path as needed.
+
+data = "hello"
+with open(r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\JSON\sample.json","wb") as file:
+     json.dump(data, file)
+
+
+** dumps()
+* The json.dumps() function is used to serialize the Python dictionary (data) into a JSON string.
+
+a = {"hai": 3, "hello": 4}
+b = json.dumps(a)   #serilize any python object into json format file
+# print(b)
+# print(type(b))      # str
+
+=============================================================================================================
+
+2. Deserialization JSON
+The process of converting JSON data into Python objects is known as deserialization.
+The load() and loads() methods of the json module are used to transform JSON data into Python objects.
+
+** "load()"
+* json.load(): This function is used to read JSON data from a file-like object and deserialize it into a Python object. It reads the JSON data from a file and returns the corresponding Python object.
+
+with open("example.pkl","rb") as file:
+     json_object = json.load(file)
+     print(json_object)
+
+
+** "loads()"
+json.loads(): This function is used to deserialize a JSON string (text) into a Python object. It takes a JSON string as input and returns the corresponding Python object.
+
+a = {"hai": 3, "hello": 4}
+b = json.dumps(a)   #serilize any python object into json format file
+c = json.loads(b)    #deserilize any json string to python object'''
+print(type(c))      # dict
+
+
+=============================================================================================================
+
+Pickling (Serializing):
+Pickle.dump() serializes the Python object (data) into a binary file named data.pkl
+
+import pickle
+
+# Sample Python object (in this case, a dictionary)
+data = {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York"
+}
+
+# Pickle (serialize) the object into a binary file
+with open('data.pkl', 'wb') as pickle_file:
+    pickle.dump(data, pickle_file)
+
+## pickle.dump() serializes the Python object (data) into a binary file named data.pkl
+
+
+
+Unpickling (Deserializing):
+import pickle
+
+# Unpickle (deserialize) the object from the binary file
+with open('data.pkl', 'rb') as pickle_file:
+    loaded_data = pickle.load(pickle_file)
+
+# Display the unpickled Python object
+print(loaded_data)
+
+pickle.load() reads the binary file data.pkl and deserializes the data back into a Python object (loaded_data), which should be the same as the original data.
+
+
+

@@ -103,7 +103,34 @@
 # e = (mail.emil())
 # print(e)
 
+# =============================================================================================================
 
-
-
-
+# class BankAccount:
+#     def __init__(self, account_number, account_holder, balance=0):
+#         self.account_number = account_number
+#         self.account_holder = account_holder
+#         self.balance = balance
+#
+#     def deposit(self, amount):
+#         if amount > 0:
+#             self.balance += amount
+#             print(f"Deposited ${amount}. Current balance: ${self.balance}")
+#         else:
+#             print("Deposit amount should be greater than 0.")
+#
+#     def withdraw(self, amount):
+#         if 0 < amount <= self.balance:
+#             self.balance -= amount
+#             print(f"Withdrew ${amount}. Current balance: ${self.balance}")
+#         else:
+#             print("Insufficient funds or invalid amount for withdrawal.")
+#
+#     def check_balance(self):
+#         print(f"Account Balance for {self.account_holder}: ${self.balance}")
+#
+# account1 = BankAccount("123456", "Alice", 1000)
+#
+# # Depositing and withdrawing
+# account1.deposit(500)
+# account1.withdraw(200)
+# account1.check_balance()

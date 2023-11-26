@@ -233,8 +233,7 @@ we can have multiple constructors in class but latest will take
 
 2. ENCAPSULATION
 
-It describes the idea of wrapping data and the methods that work on data within one unit. This puts
-restrictions on accessing variables and methods directly and can prevent the accidental modification of data
+It describes the idea of wrapping data and the methods that work on data within one unit. This put restrictions on accessing variables and methods directly and can prevent the accidental modification of data
 
 a. Protected members:  The protected members access limited to the defined class and the classes (sub-classes) that are derived from the defined class.
 '_' can be overridden in child Class''''''(protected)'''
@@ -280,6 +279,7 @@ u1 = user()
 print(u1.__id)
 print(u1.__name)
 u1.__userdetails()    # User will get Attribute error
+
 
 c. Public method: All the python class members are public, and we can access all the class members outside of the class based on our requirements.
 
@@ -407,7 +407,7 @@ Class parent2(child1, child2):
 =============================================================================================================
 4. POLYMORPHISM
 
-same function by name but different behavior
+Same function by name but different behavior
 
 class Polymarph:
      def __init__(self, a, b):
@@ -433,7 +433,7 @@ In this concept, we will describe a class that references to one or more objects
 
 class Salary:
     def __init__(self, pay, bonus):
-        self.pay=pay
+        self.pay = pay
         self.bonus = bonus
 
     def annual_salary(self):
@@ -441,9 +441,9 @@ class Salary:
 
 class Employee:
     def __init__(self, name, age, pay, bonus):
-        self.name=name
-        self.age=age
-        self.obj_salary=Salary(pay, bonus)     # Accessing Salary class
+        self.name = name
+        self.age = age
+        self.obj_salary = Salary(pay, bonus)     # Accessing Salary class
 
     def total_salary(self):
         return self.obj_salary.annual_salary()
@@ -455,5 +455,109 @@ print(emp.total_salary())                               # Output 190000
 
 ** Difference between Inheritance and Composition
 Inheritance is used where a class wants to derive the nature of parent class and then modify or extend the functionality of it. Inheritance will extend the functionality with extra features allows overriding of methods, but in the case of Composition, we can only use that class we can not modify or extend the functionality of it. It will not provide extra features.
+
+
+=============================================================================================================
+============================================================================================================
+6. GETTER and SETTER METHODS
+
+Getter: A method that allows you to access an attribute in a given class. Setter: A method that allows you to set or mutate the value of an attribute in a class.
+
+** Using normal function to achieve getters and setters behaviour
+
+class Geek:
+	def __init__(self, age = 0):
+		self._age = age
+
+	# getter method
+	def get_age(self):
+		return self._age
+
+	# setter method
+	def set_age(self, x):
+		self._age = x
+
+raj = Geek()
+
+# setting the age using setter
+raj.set_age(21)
+
+# retrieving age using getter
+print(raj.get_age())
+
+print(raj._age)
+
+
+
+** Using property() function to achieve getters and setters behaviour
+
+In Python property()is a built-in function that creates and returns a property object.
+A property object has three methods, getter(), setter(), and delete().
+
+class Geeks:
+	def __init__(self):
+		self._age = 100
+
+	# function to get value of _age
+	def get_age(self):
+		print("getter method called")
+		return self._age
+
+	# function to set value of _age
+	def set_age(self, a):
+		print("setter method called")
+		self._age = a
+
+	# function to delete _age attribute
+	def del_age(self):
+		del self._age
+
+	age = property(get_age, set_age, del_age)
+
+mark = Geeks()
+
+mark.age = 10
+
+print(mark.age)
+
+
+** Using @property decorators to achieve getters and setters behaviour
+Python @property is one of the built-in decorators. The main purpose of any decorator is to change your class methods or attributes in such a way so that the user of your class no need to make any change in their code.
+
+class Geeks:
+	def __init__(self):
+		self._age = 0
+
+	# using property decorator
+	# a getter function
+	@property
+	def age(self):
+		print("getter method called")
+		return self._age
+
+	# a setter function
+	@age.setter
+	def age(self, a):
+		if(a < 18):
+			raise ValueError("Sorry you age is below eligibility criteria")
+		print("setter method called")
+		self._age = a
+
+mark = Geeks()
+
+mark.age = 19
+
+print(mark.age)
+
+
+
+
+
+
+
+
+
+
+
 
 
