@@ -12,7 +12,7 @@
 # print(shortest)
 # print(longest)
 
-# 3. wap to print longest and shortest words along with their lengths in the below sentance
+# 3. wap to print longest and shortest words along with their lengths in the below sentence
 # s = "hi how are you srikanth"
 # s1 = s.split()
 # shortest, *rest, longest = sorted(s1, key=len)
@@ -72,7 +72,6 @@
 # print(res[-1])
 
 # 12. wap oto print the longest word with its length
-
 # sentance = 'hi hi howfdd are you you'
 # s = sentance.split()
 # d_len = {word: len(word) for word in s}
@@ -94,20 +93,3 @@
 # print(sorted(l, key=lambda item: item['Class']))
 # print(sorted(l, key=lambda item: item['age']))
 # print(sorted(l, key=lambda item: item['name']))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

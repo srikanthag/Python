@@ -659,7 +659,7 @@ passed are more than 5'''
 # names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'facebook', 'apple', 'gmail', 'gmail', 'gmail', 'gmail']
 # d = {item:names.count(item) for item in names if names.count(item) > 1}
 # print(d)
-#
+
 '''71 Write a program to count the number of occurrences of each word in a file.'''
 # from collections import defaultdict
 # d = defaultdict(int)

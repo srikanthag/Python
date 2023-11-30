@@ -1,4 +1,4 @@
-#1. waf to check whether the number is prime or not
+# 1. waf to check whether the number is prime or not
 # def prime(num):
 #     for item in range(2, num):
 #         if num % item == 0:
@@ -8,7 +8,7 @@
 # print(prime(9))
 
 
-#2. waf to written last digit of num
+# 2. waf to written last digit of num
 # def last(num):
 #     num1 = str(num)
 #     for item in num1:
@@ -22,12 +22,12 @@
 # print(last(123546))
 
 
-#3. wap named tail that takes sequence as input and a number n and returns the last n element as the sequence
+# 3. wap named tail that takes sequence as input and a number n and returns the last n element as the sequence
 # def tail(sequence, n):
 #     return sequence[-n:]
 # print(tail('hello', 2))
 
-#4. waf name is perfect squre and that accept number and returns true if it is a perfect squre and retuens false if it is not
+# 4. waf name is perfect square and that accept number and returns true if it is a perfect squre and retuens false if it is not
 # def is_perfectsqr(num):
 #     a = int(num ** 0.5)
 #     if a * a == num:
@@ -35,7 +35,7 @@
 #     return False
 # print(is_perfectsqr(25))
 
-#or
+# or
 
 # def is_perfectsqr(num):
 #     for i in range(num):
@@ -44,7 +44,7 @@
 #     return False
 # print(is_perfectsqr(24))
 
-'''or'''
+# or
 # n = 16
 # a = n**0.5
 # if a**2 == n:
@@ -52,7 +52,7 @@
 # else:
 #     print('no')
 
-#5. waf to get the below output
+# 5. waf to get the below output
 # func("TRACXN", 0)  #Print RCN
 # func("TRACXN", 1)  #Print TAX
 # def fun(string, num):
@@ -65,7 +65,7 @@
 # print(fun("TRACXN", 1))
 
 
-#6. waf that takes variable number of inputs and returns length of all the iterabled given
+# 6. waf that takes variable number of inputs and returns length of all the iterable given
 # def len_var(*args):
 #     for item in args:
 #         if isinstance(item, (str, tuple, list, set, dict)):
@@ -73,13 +73,13 @@
 #
 # len_var('sri', [1,2,3])
 
-#7. waf to print 1 to 10
+# 7. waf to print 1 to 10
 # def count_10(start, end):
 #     for i in range(start, end+1):
 #         print(i)
 # count_10(20, 44)
 
-#8. Anagramous
+# 8. Anagrams
 # def str_(a,b):
 #     a = sorted(a)
 #     b = sorted(b)
@@ -91,7 +91,7 @@
 # print(str_('eat', 'tea'))
 
 
-#8. only print result in the function body
+# 8. only print result in the function body
 # def spam(val1, val2):
 #     a = val1
 #     b = val2
@@ -100,7 +100,7 @@
 
 # print(spam)
 
-#9. returning the value from the function
+# 9. returning the value from the function
 # def spam(val1, val2):
 #     a = val1
 #     b = val2
@@ -108,11 +108,11 @@
 #     return c
 # print(spam(2, 4))
 
-#store
+# store
 # res = spam(2, 4)
 # print(res)
 
-#10. return statements multiple values
+# 10. return statements multiple values
 # def function(a, b):
 #     print(a, b)
 #     return a, b
@@ -120,12 +120,12 @@
 # res = function(1, 2)
 # print(res)
 
-#11. return statements single values
+# 11. return statements single values
 # def f1(a):
 #     return a
 # print(f1('srikanth'))
 
-#12. wa function to add two numbers and return the result
+# 12. wa function to add two numbers and return the result
 # def add_(a,b):
 #     c = a + b
 #     return c
@@ -133,8 +133,7 @@
 # z = add_(1,2)
 # print(z)
 
-
-#13. wa function which returns list even numbers from the range 1 to 50 in ythe given range
+# 13. wa function which returns list even numbers from the range 1 to 50 in the given range
 # def evens(end, start=0):
 #     l = []
 #     for i in range(start, end):
@@ -144,9 +143,7 @@
 # print(evens(21))
 # print(evens(21, 5))
 
-
-
-#14. wa function that is integers and float datatypes as input or aguments and returns its sum
+# 14. wa function that is integers and float datatypes as input or aguments and returns its sum
 # def sum_(*args):
 #     i = 0
 #     for item in args:
@@ -155,13 +152,11 @@
 #     return i
 # print(sum_(1,5))
 
-
 #15. write a function to print message 'hai everyone' if the user input is not present  and if user input present print the user input
 # def spam(msg= 'hi everyone'):
 #     print(msg)
 # spam('hello')
 # spam()
-
 
 # 16. Waf to accept global variable in the functions
 # num = 10
@@ -182,7 +177,7 @@
 # index_ele(s)
 # index_ele('srikanth')
 
-# 18. waf to traverce through a string in reverce order
+# 18. waf to traverse through a string in reverse order
 # def rev_str(argu):
 #     print(argu[::-1])
 #
@@ -199,7 +194,6 @@
 #         print(d[item] = count)
 #
 # print(coun_str('ss112ri'))
-
 
 # 20. waf to print even index characters in the string
 # def even_index(arg):
@@ -248,15 +242,15 @@
 #
 # print(sum_char('ser1234'))
 
-# 26. wap to print all the consonents present in the string and conunt of it
-# def cosonent(arg):
+# 26. wap to print all the consonants present in the string and count of it
+# def consonants(arg):
 #     count = 0
 #     for item in arg:
 #         if item.lower() not in 'aeiou':
 #             count += 1
 #     return count
 #
-# print(cosonent('srikan'))
+# print(consonants('srikan'))
 
 # 27. wap to print a tuple of index and its item in the string
 # def in_it(arg):
@@ -278,7 +272,7 @@
 
 #List#
 
-# 29. Traverce through a list
+# 29. Traverse through a list
 # def list(arg):
 #     return arg
 # print(list([1,2,3,'sr']))
@@ -288,7 +282,6 @@
 #     for index, item in enumerate(arg):
 #         print(item, index)
 # list([1,2,3, 'srikanth'])
-
 
 # 31. wap to print elements in the list in reverse order
 # def list(arg):
@@ -314,7 +307,6 @@
 #     print(l)
 #
 # list(['python', 10, 3.2, 'selenium', 1+5j, True, 'java'])
-
 
 # 34. wap to print length of each string in the list
 # def list(arg):

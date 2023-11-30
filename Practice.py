@@ -1,16 +1,17 @@
-import pickle
+sentence = 'hello 123 world 567 welcome to 9724 py'
+import re
+d = re.findall(r'\d', sentence)
+# print(d)
+dd = {}
+for index, item in enumerate(d):
+    dd[item] = index
+print(dd)
 
-# Sample Python object (in this case, a dictionary)
-data = {
-    "name": "John Doe",
-    "age": 30,
-    "city": "New York"
-}
 
-# Pickle (serialize) the object into a binary file
-with open('data.pkl', 'wb') as pickle_file:
-    p = pickle.dump(data, pickle_file)
-print(p)
+
+
+
+
 
 
 
