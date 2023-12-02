@@ -6,28 +6,30 @@ when function is decorate using @decorator function. when interpreter execute @d
 Uses
 Allow the extension of an existing function, without any modification to the original function source code.
 
+Outer Function:
+The outer function is the actual decorator function. It takes a function as an argument, defines an inner function, modifies or extends the behavior of the input function, and returns the inner function.
+
+Inner Function:
+The inner function is the wrapper that encapsulates the original function. It is the function that actually replaces or enhances the behavior of the original function passed to the decorator.
+
+
 E.g.1
-def str_rev(func):                            # here, we are creating a function and passing the parameter
-    def wrapper(*args, **kwargs):      # here, we are creating a function and passing the parameter
-        for i in range(3):
-            func(*args, **kwargs)          # here, we are returning the function with the parameters
+def log_decorator(func):   # outer function
+    def wrapper(*args, **kwargs):   # inner function
+        print(f"Calling function '{func.__name__}' with arguments {args} and {kwargs}")
+        result = func(*args, **kwargs)
+        print(f"Function '{func.__name__}' finished execution")
+        return result
     return wrapper
 
-@str_rev
-def add(a,b):                                    # here, we are creating a function and passing the parameter
-    print(a+b)
-add(1,6)
+@log_decorator
+def add_numbers(a, b):
+    return a + b
 
-@str_rev
-def sub(a,b):
-    print(a-b)
-sub(1,6)
+result = add_numbers(2, 3)  # This will trigger the decorator
+print("Result:", result)
 
-@str_rev
-def mul(a,b):
-    print(a*b)
-mul(2,6)
-
+When you call add_numbers(2, 3), the log_decorator is applied to the add_numbers function. It prints information before and after calling add_numbers, providing a way to extend the behavior of the original function without modifying its code.
 
 E.g.2
 def outer(func):

@@ -21,7 +21,7 @@ holidays = {(26,1):'rday',(15,8):'iday'}
 print(holidays.values())
 print(holidays.keys())
 
-4. How to extract extract value from dicttionary
+4. How to extract extract value from dictionary
 d = {'a':1, 'b':2}
 print(d.values())
 
@@ -34,7 +34,7 @@ Using the cls keyword, we can only access the members of the class
 * List cannot manage arithmetic operations. Array can manage arithmetic operations.
 
 7. Your frd sends a python file.  You don't have any pychram or vscode or any .. How you will execute python file'''
-you will execute the python script in command prompt using command python demo.py
+you will execute the python script in command prompt using command "python demo.py"
 
 8. What is the difference between.py and .pyc file
 .py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program
@@ -78,10 +78,10 @@ os
 A package is basically a directory with Python files and a file with the name __init__ . py.
 
 17. Exception
-to handle unexpected termination of the program
+To handle unexpected termination of the program
 The try block lets you test a block of code for errors.
 The except block lets you handle the error specific exception block
-finally block execute after normal termination of try block
+The finally block execute after normal termination of try block
 
 s = 'srikanth'
 try:
@@ -127,7 +127,9 @@ print(dir(a))
 os.path.isdir() method in Python is used to check whether the specified path is an existing directory or not
 
 25. Which are the libraries you used in python?
-Selenium
+Selenium library
+Request library
+CSV library
 
 26. OS modules
 The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents, changing and identifying the current directory, etc.
@@ -209,7 +211,7 @@ Python sequences can be index in positive and negative numbers. For positive ind
 
 45. What is module and package in Python?
 In Python, module is the way to structure a program. Each Python program file is a module, which imports other modules like objects and attributes.
-The folder of Python program is a package of modules. A package can have modules or subfolders.
+The folder of Python program is a package of modules. A package can have modules or sub-folders.
 
 46. What are the rules for local and global variables in Python?
 Here are the rules for local and global variables in Python:
@@ -352,7 +354,6 @@ print(chr(value)
 print(ord('2'))
 print(ord('g'))
 print(ord('&'))
-
 
 71. zip and zip_longest in python
 zip combines multiple iterators. if iterators have difference length, the iterator with least item will decide tha length of the new iterators. 

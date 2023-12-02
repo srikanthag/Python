@@ -10,7 +10,7 @@ loads()
 dump()
 dumps()
 
-===============================================================================================================
+=========================================================================================================
 
 1. Serializing JSON
 
@@ -42,7 +42,7 @@ The process of converting JSON data into Python objects is known as deserializat
 The load() and loads() methods of the json module are used to transform JSON data into Python objects.
 
 ** "load()"
-* json.load(): This function is used to read JSON data from a file-like object and deserialize it into a Python object. It reads the JSON data from a file and returns the corresponding Python object.
+json.load(): This function is used to read JSON data from a file-like object and deserialize it into a Python object. It reads the JSON data from a file and returns the corresponding Python object.
 
 with open("example.pkl","rb") as file:
      json_object = json.load(file)
@@ -91,6 +91,3 @@ with open('data.pkl', 'rb') as pickle_file:
 print(loaded_data)
 
 pickle.load() reads the binary file data.pkl and deserializes the data back into a Python object (loaded_data), which should be the same as the original data.
-
-
-

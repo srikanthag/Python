@@ -1053,7 +1053,7 @@ be in ascending order and even numbers should be in descending order'''
 # word = re.sub(r'[aeiou]','**', sentence)
 # print(word)
 
-'''110 Replace all occurances of "Java" with "Python" in a file'''
+'''110 Replace all occurrences of "Java" with "Python" in a file'''
 # with open (sample.text) as file:
 #     for line in file:
 #         nl = re.sub(r'java.txt', 'python.txt', line)
@@ -1207,8 +1207,9 @@ be in ascending order and even numbers should be in descending order'''
 
 '''128 Write a program to get the below output'''
 # d = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
-# # o/p should be ['b', 'd']
+# o/p should be ['b', 'd']
 # keys = list(d.keys())
+# print(keys)
 # list = [item for item in keys[1::2]]
 # print(list)
 

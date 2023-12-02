@@ -12,7 +12,7 @@
 # def sub(a, b):
 #     print(a-b)
 # sub(1,2)
-#
+
 
 # 2. wad print "hello world" message if the user has not given input
 # def outer(n='krishna'):

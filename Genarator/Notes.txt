@@ -1,24 +1,21 @@
 Python Generators
 In Python, a generator is a function that returns an iterator that produces a sequence of values when iterated over.
-
 Generators are useful when we want to produce a large sequence of values, but we don't want to store all of them in memory at once.
-
 Here, the yield keyword is used to produce a value from the generator.
 
-When the generator function is called, it does not execute the function body immediately. Instead, it returns a generator object
-that can be iterated over to produce the values.
+When the generator function is called, it does not execute the function body immediately. Instead, it returns a generator object that can be iterated over to produce the values.
 
-def squres(l):
+def squares(l):
     for item in l:
         yield item**2
 
-r = squres([5,6,7])
-print(r)        # Returns address of object (<generator object squres at 0x000001EBD2882260>)
+r = squares([5,6,7])
+print(r)        # Returns address of object (<generator object squares at 0x000001EBD2882260>)
 
 for t in r:
     print(t)
 
-====================================================================================================
+========================================================================================================
 
 Difference Between Generator Function & Normal Function
 
@@ -28,12 +25,10 @@ Difference Between Generator Function & Normal Function
 * Generator are used generate values that can be iterated over but Normal function are used when to perform a task and return a result.
 * the generator function uses the yield keyword instead of return and generates values as they are needed, rather than creating a list of all values at once.
 
-====================================================================================================
+========================================================================================================
 
 Difference Between Yield andReturn
+
 * Yield is generally used to convert a regular Python function into a generator. Return is generally used for the end of the execution and “returns” the result to the caller statement.
-* Code written after yield statement execute in next function call. while, code written after return statement wont execute.
+* Code written after yield statement execute in next function call. while, code written after return statement won't execute.
 * Yield can run multiple times. Return only runs single time.
-
-
-

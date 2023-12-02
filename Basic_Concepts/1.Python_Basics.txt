@@ -1,5 +1,6 @@
 "Python"
 a. Python is programming language.
+
 b. Powerful object-oriented programming language: Python supports object-oriented language and concepts of classes and objects
     come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
     programmer to write reusable code and develop applications in less code.
@@ -19,40 +20,40 @@ p.designer()
 
 
 c. Support dynamic memory allocation: In Python, we don't need to specify the data-type of the variable. When we assign some value to the variable, it automatically allocates the memory to the variable at run time.
-    Suppose we are assigned integer value 15 to x, then we don't need to write int x = 15. Just write x = 15.
+  Suppose we are assigned integer value 15 to x, then we don't need to write int x = 15. Just write x = 15.
 
 d. Python is an interpreted language: it means the Python program is executed one line at a time.
 
 e. Cross-platform Language: Python can run equally on different platforms such as Windows, Linux, UNIX, and Macintosh, etc.
-    So, we can say that Python is a portable language.
+   So, we can say that Python is a portable language.
 
 f. Large Standard Library: It provides a vast range of libraries for the various fields such as machine learning, web developer,
-    and also for the scripting.
-    There are various machine learning libraries, such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc.
-    Django, flask, pyramids are the popular framework for Python web development.
+   and also for the scripting.
+   There are various machine learning libraries, such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc.
+   Django, flask, pyramids are the popular framework for Python web development.
 
-================================================================================================================
+=======================================================================================================
 
 """ Python Compilation """
 Compilation − The source code in python is saved as a . py file which is then compiled into a format known as byte code,
 byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the
 source is updated.
 
-================================================================================================================
+=======================================================================================================
 
 " Identifier"
 User defined name to represent a variable, functions, class, modules ect.
 
 Rules:
 a. Name can start "_" or "alphabet".
-b. can be alphanumeric but not start with number.
+b. Can be alphanumeric but not start with number.
 c. No special character except "_".
 d. Keywords cannot be identifier.
 e. Max char is 79
 
 Note: To check weather python identifier is valid or not >>> "string".isidentifier
 
-===============================================================================================================
+======================================================================================================
 
 " Keywords "
 
@@ -64,7 +65,9 @@ a. help("keyword")
 b. import keyword
     print(keyword.kwlist)
 
-===============================================================================================================
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+======================================================================================================
 
 " Python Variable "
 Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
@@ -75,7 +78,7 @@ print(id(x))
 
 "id" returns the memory location of an object
 
-==============================================================================================================
+=====================================================================================================
 
 " Memory allocation in variables "
 
@@ -92,7 +95,7 @@ Eg:
 * If we assign another value to 'x' (x=20). It is also disconnect link b/w 'x' and 10
 * Now 10 does not have any reference link. The garbage collector automatically delete the object from heap memory.
 
-==============================================================================================================
+=====================================================================================================
 
 " Print "
 Standard function used to print the output.
@@ -105,7 +108,7 @@ default value:\n
 b. sep
 print(value, sep="string")
 
-==============================================================================================================
+=====================================================================================================
 
 " Input "
 The input() function takes input from the user and returns it.
@@ -115,7 +118,7 @@ print(name)
 # Output:
 # Enter your name: James
 # James
-===============================================================================================================
+======================================================================================================
 
 Python dir() Function
 The dir() function returns all properties and methods of the specified object, without the values. This function will return all
@@ -125,7 +128,7 @@ a = 'srikantn'
 print(dir(a[3]))
 print(dir(a))
 
-===============================================================================================================
+======================================================================================================
 
 Python ord(), chr() functions
 * Python ord() function takes string argument of a single Unicode character and return its integer Unicode code point value (Ascii value).
@@ -140,7 +143,7 @@ print(y)
 print(chr(123))
 print(chr(36))
 
-===============================================================================================================
+======================================================================================================
 "Hashable object"
 * These objects which implements __hash__ magic method.
 * Only immutable have hash value. It is used to check mutable or immutable.
@@ -150,7 +153,7 @@ print(chr(36))
  a = 'sr'
 print(dir(a))       # Output have __hash__ method
 
-==============================================================================================================
+=====================================================================================================
 
 Mutable and Immutable data types
 
@@ -159,7 +162,7 @@ List, set, dict
 ** Immutable data type: Does not allow modification. even if the modification is done there will be created new object.
 string, tuple, int, floot
 
-===============================================================================================================
+=====================================================================================================
 
 Sequences and Iterable
 * An iterable is anything you can loop over with a for loop in Python. Iterables can be looped over, and anything that can be looped over is an iterable.
@@ -168,7 +171,7 @@ Sequences and Iterable
 * Sequences are iterables that have a specific set of features. They can be indexed starting from 0 and ending at one less than the length of the sequence, they have a length, and they can be sliced.
   Lists, tuples, strings
 
-===============================================================================================================
+=====================================================================================================
 "" Python Operators ""
 
 The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a specific programming language. Python provides a variety of operators, which are described as follows.
@@ -220,7 +223,7 @@ is:	It is evaluated to be true if the reference present at both sides point to t
 is not:	It is evaluated to be true if the reference present at both sides do not point to the same object.
 
 
-=================================================================================================================
+========================================================================================================
 "Default values"
 Int: 0/Int()
 Float: 0.0/float()
