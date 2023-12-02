@@ -94,7 +94,7 @@
 #         lower += 1
 # print(lower)
 
-# 10. print tuple of char and its ascii avalue
+# 10. print tuple of char and its ascii a value
 # string = 'srikanth'
 # for item in string:
 #     print(item, ord(item))
@@ -129,7 +129,7 @@
 # for i in range(len(s)):
 #     print((i, s[i]))
 
-# 15. wap to reverse a string atleast using 3 ways
+# 15. wap to reverse a string at-least using 3 ways
 # s = 'srikanth'
 # for item in s[::-1]:
 #     print(item)
@@ -146,7 +146,7 @@
 #     if not ('a' <= i <= 'z' or 'A' <= i <= 'Z' or '0' <= i <= '9'):
 #         print(i)
 
-# 17. wap to check the if the given charracter present in string if it present return its index
+# 17. wap to check the if the given character present in string if it presents return its index
 # s = 'srikanth'
 # char = 'm'
 # for i in range(0, len(s)):
@@ -224,13 +224,11 @@
 #     if item in 'aeiouAEIOU':
 #         print(item, ord(item))
 
-
 # 23. wap to print word and its length in the string
 # string = 'she sells sea shells on the sea shores'
 # s = string.split(' ')
 # for item in s:
 #     print(item, len(item))
-
 
 # 24. wap to print the words that are string with vowels in the string
 # string = 'she is a very good actor'
@@ -246,7 +244,6 @@
 #     count += 1
 # print(count)
 
-
 # 26. wap to reverse a string without using slicing
 # string = 'hello worls'
 # for item in reversed(string):
@@ -256,16 +253,9 @@
 #     print(string[item])
 
 # 27. using concatination
+# string = 'hello worls'
 # s = ''
 # for char in string:
 #     s = char + s
 # print(s)
-
-
-
-
-
-
-
-
 

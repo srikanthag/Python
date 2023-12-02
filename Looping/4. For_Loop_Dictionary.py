@@ -1,7 +1,7 @@
 # 1. wap to print the keys in a dictionary
 # d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
 
-#traversing through the directli
+# traversing through the dictionary
 # for key in d:
 #     print(key)
 
@@ -32,7 +32,6 @@
 #get methodj
 # for key in d:
 #     print(d.get(key))
-
 
 # 3. wap to print the items in a dictionary along with the indexes
 # d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
@@ -222,7 +221,7 @@
 #         d[char] += 1
 # print(d)
 
-# 16. wap to print the number if occurance of character in a string without using inbuild function
+# 16. wap to print the number if occurrence of character in a string without using inbuilt function
 # s = 'srikanthtth'
 # d = {}
 # for char in s:

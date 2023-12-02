@@ -7,7 +7,6 @@
 # for index in range(len(l)):
 #     print(index, l[index])
 
-
 # 2. wap to print index and its corresponding item in the list
 # l = ['python', 10, 3.2,'java']
 # for item, index in enumerate(l):
@@ -109,7 +108,6 @@
 #         d.append(item[::-1])
 # print(d)
 
-
 # 13. wap to reverse the elements inside the list if the elements of type string or else keep it as it is
 # l = ['python', 10, 2.2, True, 'selenium', 'True', 'java', 'sri', 'for']
 # sl = []
@@ -120,13 +118,11 @@
 #         sl.append(item)
 # print(sl)
 
-
 # 14. wap to print the element which have starting with vowel
 # files = ["Amezon", "Flipcart", "walmart", "gmail", "yahoo"]
 # for item in files:
 #     if item[0] in 'AEIOUaeiou':
 #         print(item)
-
 
 # 15. wap print all the extensions in the followig list
 # files = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipcart.in']
@@ -143,7 +139,6 @@
 #         pass                #pass
 #     else:
 #         print(a[0])
-
 
 # 17. wap to return index of the first occurrence of the given element
 # number = [10, 20, 30, 40, 50, 40, 80, 30]
@@ -194,8 +189,6 @@
 #     if isinstance(num,(int, float, complex)):
 #         print(num, end=',')
 
-
-
 # 23. wap wap to to sum of all even number in the given string
 # l = "hello 123 world 567 welcome to 9724 python"
 # even = 0
@@ -221,7 +214,7 @@
 #         l.append(item)
 # print(l)
 
-# 26. reverse the item of list of odd length otherwise keep its as is
+# 26. reverse the item of list of odd length otherwise keep It's as is
 # names = ['apple', 'google', 'yahoo', 'facebook', 'yelp']
 # l = []
 # for item in names:
@@ -241,7 +234,6 @@
 #         entire_sum += i
 #     print(internal_sum)
 # print(entire_sum)
-
 
 # 28. wap to reverse the list as below
 # words = ['hi', 'hello', 'python']
