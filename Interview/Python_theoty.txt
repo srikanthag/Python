@@ -432,7 +432,6 @@ aa. upper():		Converts a string into upper case
 
 73. Python List/Array Methods
 append():		Adds an element at the end of the list
-
 clear():		Removes all the elements from the list
 copy(): 		Returns a copy of the list
 count():		Returns the number of elements with the specified value
@@ -640,7 +639,7 @@ So Python will iterate over each and every item in the range xrange object until
 
 90. Modes of files
 r (read):  for reading – The file pointer is placed at the beginning of the file. This is the default mode.
-w(write): Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing
+w (write): Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing
 a (append): Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.
 x (create): open for exclusive creation, failing if the file already exists
 
@@ -688,24 +687,8 @@ Using for _ in range(num) is usually just to indicate that the variable doesn't 
 99. What is a virtual environment in Python?
 A virtual environment is a tool that helps manage dependencies and isolate project environments. It allows you to install packages in an isolated space without affecting the system's global Python installation.
 
-
 100. How does memory management work in Python?
 Python uses automatic memory management. It has a private heap space where all objects and data structures are stored. The memory allocation and deallocation are handled by the Python interpreter through mechanisms like reference counting and garbage collection.
 
 101. What is BaseException
 The BaseException class in Python serves as the base class for all built-in exceptions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

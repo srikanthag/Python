@@ -189,7 +189,7 @@
 #     if isinstance(num,(int, float, complex)):
 #         print(num, end=',')
 
-# 23. wap wap to to sum of all even number in the given string
+# 23. wap to sum of all even number in the given string
 # l = "hello 123 world 567 welcome to 9724 python"
 # even = 0
 # for char in l:

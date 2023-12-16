@@ -3,7 +3,7 @@ A function is a block of code which only runs when it is called. You can pass da
 A function can return data as a result.
 
 Types of functions
-1. Built in function
+1. Built-in function
 * print()
 * input()
 * id()

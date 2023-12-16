@@ -237,16 +237,16 @@ print([*l1,*l2]    # For unpack
 
 "Methods"
 
-a. append():		Adds an element at the end of the list
+a. append():	Adds an element at the end of the list
 a = [1,2,3]
 a.append([5.7])
 print(a)
 
-b. clear():		Removes all the elements from the list
+b. clear():	Removes all the elements from the list
 
-c. copy(): 		Returns a copy of the list
+c. copy(): Returns a copy of the list
 
-d. count():		Returns the number of elements with the specified value
+d. count():	Returns the number of elements with the specified value
 a = [1,2,3]
 print(a.count(1))
 
@@ -281,7 +281,7 @@ print(b)
 print(s.split())
 print("".join(b))
 
-================================================================================================================
+========================================================================================================
 
 7. Tuple
 * Collection of homogenous and heterogeneous elements. Separated by comma.
@@ -296,7 +296,7 @@ print(a.count(2))
 b. Index
 print(a.index(2))
 
-=================================================================================================================
+========================================================================================================
 
  8. Sets
 * Sets are built in dta type.
@@ -318,7 +318,7 @@ print(a.index(2))
 * isdisjoint(): Returns whether two sets have a intersection or not
 * issubset(): Returns whether another set contains this set or not
 * issuperset():	Returns whether this set contains another set or not
-* pop(): Removes an rondom element from the set
+* pop(): Removes an random element from the set
 * remove(): Removes the specified element
 * symmetric_difference(): Returns a set with the symmetric differences of two sets
 * symmetric_difference_update():	 inserts the symmetric differences from this set and another
@@ -355,7 +355,6 @@ d = {}
 print(d.fromkeys(list))             # {'a': None, 'b': None, 'c': None}
 print(d.fromkeys('hello', 'hi'))        # {'h': 'hi', 'e': 'hi', 'l': 'hi', 'o': 'hi'}
 
-
 * get(): Returns the value of the specified key
 d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
 print(d.get('a'))
@@ -391,26 +390,3 @@ print(d)
 # for value in d:
 #     d.values()
 #     print(value)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -31,10 +31,9 @@
 # geek = "GeeksforGeeks"
 # Error_Message: NameError: name 'geek' is not defined
 
-
 #  6. SyntaxError: Raised by the parser when a syntax error is encountered.
-# a = 'sri'
-# print(s
+# a = 'sri
+# print(a)
 # Error_Message: SyntaxError: '(' was never closed
 
 #  7. IndentationError: Raised when there is an incorrect indentation.

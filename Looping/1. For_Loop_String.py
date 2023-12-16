@@ -187,7 +187,7 @@
 #         res += item
 # print((res))
 
-# 20. wap to create a string with only consonets present in the string
+# 20. wap to create a string with only consents present in the string.
 # string = 'Python selenium'
 # st = ''
 # for item in string:
@@ -196,7 +196,7 @@
 # print(st)
 
 
-# 21. wap to search for a character in the string and returns its first occurance position
+# 21. wap to search for a character in the string and returns its first occurrence position
 # s = 'srikanith'
 # char = 'i'
 # print(s.find('i'))

@@ -104,7 +104,7 @@
 #
 # c = [*a, *b]
 # print(c)
-#
+# #
 # d = a + b
 # print(d)
 
@@ -343,8 +343,7 @@ if the item is integer of float it should reverse it.'''
 #     if item not in a:
 #         print(item)
 
-'''32 A function takes variable number of positional arguments as input. How to check if the arguments that are 
-passed are more than 5'''
+'''32 A function takes variable number of positional arguments as input. How to check if the arguments that are passed are more than 5'''
 # def spam(*args):
 #     if len(args) > 5:
 #         print('Length of arguments passed is greater than 5')
