@@ -108,7 +108,7 @@
 # d = a + b
 # print(d)
 
-'''10. 11. Write program to read a first n line in a file.  '''
+'''10. Write program to read a first n line in a file.  '''
 # from itertools import isslice
 # def fist_n(n):
 # 	with open ('sample.txt') as file:

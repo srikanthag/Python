@@ -20,15 +20,13 @@ p.designer()
 The class can be defined as a collection of objects. It is a logical entity that has some specific attributes and methods.
 For example: if you have an employee class, then it should contain an attribute and method, i.e. an email id, name, age, salary, etc.
 
-=========
-
 a. Instance or Object: The object is an entity that has state and behavior.
 
 b. Method: A function written inside the class is called method and first parameter is "self".
     * self: Holds the address of the instance which is invoking the method.
 
 c. Constructor: In a class "__init__" is called the constructor. It is used to construct object/instance with different variable.
-We can have multiple constructor but it will take the latest one.
+We can have multiple constructor, but it will take the latest one.
 
 d. __dict__: Dictionary or other mapping object used to store an object's (writable) attributes.
 
@@ -183,7 +181,7 @@ Difference between Class method vs Static Method
 * A class method can access or modify the class state while a static method can’t access or modify it.
 * In general, static methods know nothing about the class state. They are utility-type methods that take some
   parameters and work upon those parameters. On the other hand class methods must have class as a parameter.
-* We use @classmethod decorator in python to create a class method and we use @staticmethod decorator to create
+* We use @classmethod decorator in python to create a class method, and we use @staticmethod decorator to create
   a static method in python.
 
 =============================================================================================================

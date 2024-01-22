@@ -95,7 +95,7 @@
 # l1 = [str(item)[::-1] if not isinstance(item, str) else item for item in l]
 # print(l1)
 
-# 6. wa list Comprehension to create a list with strating with vowels
+# 6. wa list Comprehension to create a list with starting with vowels
 # l = ['python', 'node js', 'english', 'selenium', 'javea2']
 #
 # l1 = [item for item in l if item[0] in 'aeiouAEIOU']

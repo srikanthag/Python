@@ -10,7 +10,6 @@
 # dict_ = {item: index for index, item in enumerate(s)}
 # print(dict_)
 
-
 # 2. wap to create a dictionary with word and its length pair
 # s = 'hi how are you'
 #normal
