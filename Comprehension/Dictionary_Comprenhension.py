@@ -87,7 +87,7 @@
 # dict_ = {word: len(word) for word in s if word[0] in 'aeiouAEIOU'}
 # print(dict_)
 
-# 8. wap to create a dictionary of item and its index pair if the item is of string data type reverse it or else keet is as it
+# 8. wap to create a dictionary of item and its index pair if the item is of string data type reverse it or else keep is as it
 # list_ = ['sri', 10, 10.2, True, 'kanth']
 # dict_ = {index: item[::-1] if isinstance(item, str) else item for index, item in enumerate(list_)}
 # print(dict_)

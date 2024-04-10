@@ -147,7 +147,7 @@ print(chr(36))
 "Hashable object"
 * These objects which implements __hash__ magic method.
 * Only immutable have hash value. It is used to check mutable or immutable.
-* All immutable are hashble but all hashble are not immutable.
+* All immutable are hashable but all hashable are not immutable.
 
  Eg.
  a = 'sr'
@@ -160,7 +160,7 @@ Mutable and Immutable data types
 ** Mutable datatypes: It will allow modification on the original object
 List, set, dict
 ** Immutable data type: Does not allow modification. even if the modification is done there will be created new object.
-string, tuple, int, floot
+string, tuple, int, float
 
 =====================================================================================================
 
