@@ -5,6 +5,12 @@ A function can return data as a result.
 Types of functions
 1. Built-in function
 * print()
+
+def add (x, y):
+    print(x + y)
+
+add(4,5)  # No need to create any object here, directly we can call the function
+
 * input()
 * id()
 * type()
@@ -13,12 +19,29 @@ Types of functions
 2. User define in function
 
 * Return statement
-It is used to get or return the value from the function
+A return statement is used to end the execution of the function call and “returns” the result
+(value of the expression following the return keyword) to the caller.
+A return statement is overall used to invoke a function so that the passed statements can be executed.
 
+Eg.
+def add(a, b):
+	# returning sum of a and b
+	return a + b
+
+def is_true(a):
+	# returning boolean of a
+	return bool(a)
+
+# calling function
+res = add(2, 3)
+print("Result of add function is {}".format(res))
+
+res = is_true(2<5)
+print("\nResult of is_true function is {}".format(res))
 
 ===================================================================
 
-* Arguments
+* Arguments:
 Arguments are the variables passed to the function in the function call.
 Parameters are the variables used in the function definition.
 
@@ -119,7 +142,11 @@ print(keyword_arg(a=1, b= 2, c=3))
 =======================================================================================================
 
 Lambda function
-Anonymous function is a function that is defined without name.
+Python Lambda Functions are anonymous functions means that the function is without a name. As we already know the def keyword is used to define a normal function in Python.
+Similarly, the lambda keyword is used to define an anonymous function in Python.
+
+This function can have any number of arguments but only one expression, which is evaluated and returned.
+
 Syntax:
 lambda arguments: Expression
 
@@ -129,7 +156,8 @@ eg: add = lambda a,b: a+b
 =======================================================================================================
 
 Filter function
-Pass each element in iterable and return only the once that evaluate to true'
+The filter() function is utilized to apply a function to each element of an iterable (like a list or tuple)
+and return another iterable containing just the elements for which the function brings True back.
 
 syntax:
 filter (function, iterable)
@@ -142,7 +170,8 @@ print(list(re))
 
 =======================================================================================================
 Map function
-Map function applies to the all the item in input list
+The map() function takes two arguments: a function and an iterable. The function contention is the function that
+will be applied to every element of the iterable, and the iterable contention is the iterable that the function will be applied to
 
 eg:
 l = ['hi', 'mom']

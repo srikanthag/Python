@@ -90,7 +90,7 @@ In this method references are stored in Stack and values are stored in Heap.
 
 Eg:
 * When a=10, 10 is created in heap and its reference is assigned to variable 'a'.
-* x = a, here will crete another reference variable if object already exist with same value.
+* x = a here will crete another reference variable if object already exist with same value.
 * If we change the value of a (a=15) then link b/w 'a' and 10 disconnected. But 'x' still refer to 10.
 * If we assign another value to 'x' (x=20). It is also disconnect link b/w 'x' and 10
 * Now 10 does not have any reference link. The garbage collector automatically delete the object from heap memory.
@@ -181,7 +181,7 @@ a. Arithmetic operators.
 - (Subtraction): It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10
 / (divide):	It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0
 * (Multiplication):	It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200
-% (reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0
+% (Reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0
 ** (Exponent):	It is an exponent operator represented as it calculates the first operand power to the second operand.
 // (Floor division):	It gives the floor value of the quotient produced by dividing the two operands.
 
@@ -234,4 +234,6 @@ List: []/list()
 Tuple: ()/tuple()
 Set: set()
 Dictionary: {}/dit()
+
+=========================================================================================================
 
