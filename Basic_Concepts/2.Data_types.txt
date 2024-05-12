@@ -270,7 +270,7 @@ j. reverse(): Reverses the order of the list
 k. sort(): Sorts the list
 * list.sort() ## sort based on alphabet
 * list.sort(reverse=True)   ## sort the list descending order
-* list.sort (key=len)  ## sort based on length
+* list.sort(key=len)  ## sort based on length
 
 ==================================
 "" Converting list in to string ""
