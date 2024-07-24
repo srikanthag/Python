@@ -229,16 +229,15 @@ we can have multiple constructors in class but latest will take
 ======================================================================================================
 ======================================================================================================
 
-2. ENCAPSULATION
+2. ENCAPSULATION:
 
 It describes the idea of wrapping data and the methods that work on data within one unit. This put restrictions on accessing variables and methods directly and can prevent the accidental modification of data
 
-a. Protected members:  The protected members access limited to the defined class and the classes (sub-classes) that are derived from the defined class.
+a. Protected members:  The protected members access limited to the defined class and the classes (subclasses) that are derived from the defined class.
 '_' can be overridden in child Class''''''(protected)'''
 
 E.g.
 class user:
-
    def __init__(self, id, name):
      self._id = id
      self._name = name
@@ -260,7 +259,7 @@ print(e1._name)
 e1._userdetails()               # We are able to access the protected members from the derived classes.
 
 
-b. Private member: the private members access is limited to the defined class. If you try to access the private members outside of the class, you will get an exception.
+b. Private member: the private members access is limited to the defined class. If you try to access the private members outside  the class, you will get an exception.
 
 '__' can not be overridden in child Class""" '''private'''
 '''we cant outside the Class'''
@@ -279,7 +278,7 @@ print(u1.__name)
 u1.__userdetails()    # User will get Attribute error
 
 
-c. Public method: All the python class members are public, and we can access all the class members outside of the class based on our requirements.
+c. Public method: All the python class members are public, and we can access all the class members outside the class based on our requirements.
 
 E.g.
 class user:
@@ -299,7 +298,7 @@ print(c.userdetails())
 =============================================================================================================
 =============================================================================================================
 
-3. INHERITANCE
+3. INHERITANCE:
 Inheritance enables us to define a Class that takes all the functionality from a parent Class and allows us to add more
 
 ''' Parent Class '''
@@ -459,7 +458,8 @@ Inheritance is used where a class wants to derive the nature of parent class and
 ============================================================================================================
 6. GETTER and SETTER METHODS
 
-Getter: A method that allows you to access an attribute in a given class. Setter: A method that allows you to set or mutate the value of an attribute in a class.
+Getter: A method that allows you to access an attribute in a given class.
+Setter: A method that allows you to set or mutate the value of an attribute in a class.
 
 ** Using normal function to achieve getters and setters behaviour
 
@@ -546,16 +546,4 @@ mark = Geeks()
 mark.age = 19
 
 print(mark.age)
-
-
-
-
-
-
-
-
-
-
-
-
 

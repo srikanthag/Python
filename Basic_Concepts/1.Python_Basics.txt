@@ -1,9 +1,7 @@
 "Python"
 a. Python is programming language.
 
-b. Powerful object-oriented programming language: Python supports object-oriented language and concepts of classes and objects
-    come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to
-    programmer to write reusable code and develop applications in less code.
+b. Powerful object-oriented programming language: Python supports object-oriented language and concepts of classes and objects come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to programmer to write reusable code and develop applications in less code.
 
 " Without creating an Object ""
 class python:

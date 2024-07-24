@@ -332,8 +332,7 @@ def list(arg):
 
 list(['python', 'selenium', 'jav'])
 
-# 36. wap to print the elements in the list if the element is of even length print as it is, if it is odd then
-reverse and print
+# 36. wap to print the elements in the list if the element is of even length print as it is, if it is odd the reverse and print
 def list(arg):
     for item in arg:
         if len(item) % 2 == 0:

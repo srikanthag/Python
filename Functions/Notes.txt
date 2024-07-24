@@ -170,8 +170,7 @@ print(list(re))
 
 =======================================================================================================
 Map function
-The map() function takes two arguments: a function and an iterable. The function contention is the function that
-will be applied to every element of the iterable, and the iterable contention is the iterable that the function will be applied to
+The map() function takes two arguments: a function and an iterable. The function contention is the function that will be applied to every element of the iterable, and the iterable contention is the iterable that the function will be applied to
 
 eg:
 l = ['hi', 'mom']
@@ -183,7 +182,6 @@ print(list(res))
 Sorted function
 
 * Default sorting the collection datatype
-
 # s = 'srikanth'
 # print(sorted(s))
 
@@ -207,6 +205,3 @@ Sorted function
 * Custom sorting
 t = ('python', 'java', 'ruby')
 print(sorted(t, key=len))
-
-
-
