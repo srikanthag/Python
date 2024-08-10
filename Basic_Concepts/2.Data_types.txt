@@ -71,7 +71,7 @@ Boolean variables are defined on True or False keywords.
 5. String
 
 * String is a set  or collection of characters. (" ", ' ', '" "')
-* It is a immutable datatype
+* It is an immutable datatype
 
 s =100
 d = str(s)
@@ -247,7 +247,7 @@ print([*l1,*l2]    # For unpack
 
 "Methods"
 
-a. append():	Adds an element at the end of the list
+a. append(): Adds an element at the end of the list
 a = [1,2,3]
 a.append([5.7])
 print(a)

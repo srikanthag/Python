@@ -15,23 +15,17 @@ Python.algo()
 
 # Creating a class
 class Student:
-    school = 'Balwin'       #class variable
+    school = 'Balwin'       # class variable
 
-    def __int__(self, name, age):       #constructor
+    def __int__(self, name, age):       # constructor
         self.name = name
         self.age = age
 
     @classmethod
     def change_school(cls, name):
-        print(Student.school)   #access variable
+        print(Student.school)   # access variable
         Student.school = name      # modifying the class variable
 
-sri = Student('sro', 10)
+sri = Student()
 Student.change_school("vidyavikas")
-
-
-
-
-
-
 

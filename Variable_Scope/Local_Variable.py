@@ -9,23 +9,3 @@ def add():
     print("The sum is:", c)
 
 add()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
