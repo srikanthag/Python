@@ -46,14 +46,3 @@ The writerow() function only write one row, and the writerows() function write m
 #     dictwriter_obj.writeheader()
 #     dictwriter_obj.writerow({"x": 10,"y":20,"z":30 })
 
-
-
-
-
-
-
-
-
-
-
-

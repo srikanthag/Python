@@ -9,7 +9,7 @@ with open(path) as csv_file:
 # using DictReader
 with open(path) as csv_file:
     read_obj = csv.DictReader(csv_file)
-    print(read_obj)                       #itrerator object
+    print(read_obj)                       # itrerator object
     for row in read_obj:
-        print(row)                         #reads row as a list
+        print(row)                         # reads row as a list
 

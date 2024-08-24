@@ -1,0 +1,76 @@
+* Collection of homogenous and heterogeneous elements. Separated by comma.
+* Elements in the list is ordered.
+* It can hold duplicate elements.
+* It is a mutable data type.
+
+Var = [val1, val2, val3,......]
+len (Var)
+
+s = "hello world"
+Convert from string to list
+print(list(s))
+
+'index'
+print(s[8])  #r
+
+'slicing'
+p = list(s)
+print(p[::-1])
+print(p[-5:-3:])
+
+==================================================================
+
+"" Merging list""
+
+l1 = [1,2,3]
+l2 = [5,6,7]
+print(*l1+l2)
+print([*l1,*l2]    # For unpack
+
+======================================================================
+
+"Methods"
+
+a. append(): Adds an element at the end of the list
+a = [1,2,3]
+a.append([5.7])
+print(a)
+
+b. clear():	Removes all the elements from the list
+
+c. copy(): Returns a copy of the list
+
+d. count():	Returns the number of elements with the specified value
+a = [1,2,3]
+print(a.count(1))
+
+e. extend(): Add the elements of a list (or any iterable), to the end of the current list
+a.extend([8.7])
+print(a)
+
+f. index(): Returns the index of the first element with the specified value
+
+g. insert(): Adds an element at the specified position
+
+h. pop(): Removes the element at the specified position
+a = [1,2,3]
+a.pop(2)
+print(a)
+
+i. remove(): Removes the first item with the specified value
+
+j. reverse(): Reverses the order of the list
+
+k. sort(): Sorts the list
+* list.sort() ## sort based on alphabet
+* list.sort(reverse=True)   ## sort the list descending order
+* list.sort(key=len)  ## sort based on length
+
+==================================
+"" Converting list in to string ""
+
+s = "hello"
+b = list(s)
+print(b)
+print(s.split())
+print("".join(b))

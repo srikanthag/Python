@@ -1,0 +1,62 @@
+* Collections of key values pair.
+* Key cannot be duplicate
+* Values can be duplicate
+* Values can be access through the key.
+* Key must be immutable data type.
+* Values can be anything
+
+"Composite keys"
+* tuple as key
+
+Holidays = {(26,1):"Republic day", (15,8): Independence day}
+
+==========================
+"Methods"
+
+* clear():	Removes all the elements from the dictionary
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.clear())
+print(d)
+
+* fromkeys(): Returns a dictionary with the specified keys and value
+list = ['a', 'b', 'c']
+# print(dict(list))           # Value error
+d = {}
+print(d.fromkeys(list))             # {'a': None, 'b': None, 'c': None}
+print(d.fromkeys('hello', 'hi'))        # {'h': 'hi', 'e': 'hi', 'l': 'hi', 'o': 'hi'}
+
+* get(): Returns the value of the specified key
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.get('a'))
+
+* items(): Returns a list containing a tuple for each key value pair
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+# for key, value in d.items():
+#     print(value, end=',')
+
+keys(): Returns a list containing the dictionary's keys
+#d.keys()
+# for key in d:
+#     d.key()
+#     print(key)
+
+* pop(): Removes the element with the specified key
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.pop('a'))           # Will return deleted item
+
+* popitem(): Removes the last inserted key-value pair
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+print(d.popitem('a'))           # Will return deleted item
+print(d.popitem())          # Delete last item
+
+* update(): Updates the dictionary with the specified key-value pairs
+d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+d.update(f = 99)
+d.update(a = 100)
+print(d)
+
+* values(): Returns a list of all the values in the dictionary
+#d.values()
+# for value in d:
+#     d.values()
+#     print(value)

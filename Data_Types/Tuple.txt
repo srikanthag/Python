@@ -1,0 +1,11 @@
+* Collection of homogenous and heterogeneous elements. Separated by comma.
+* Indexing and slicing are similler as string and list
+* Tupules are faster and memory efficiency than list.
+
+" Methods ""
+a. Count
+a = (1,2,2,3)
+print(a.count(2))
+
+b. Index
+print(a.index(2))

@@ -1,0 +1,20 @@
+In Python, the float data type is used to represent floating-point numbers, which are numbers that have a decimal point.
+It specifies the data stored inside. The memory allocation should be a decimal.
+
+# Define float variables
+x = 3.14
+y = -0.001
+z = 2.71828
+
+# Perform arithmetic operations
+sum_xy = x + y
+difference = x - y
+product = x * z
+quotient = x / 2
+power = x ** 2
+
+** You can convert other numeric types or strings to floating-point numbers using the float() function.
+str_num = "45.67"
+converted_float = float(str_num)
+print("Converted float:", converted_float)
+

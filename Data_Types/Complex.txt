@@ -1,0 +1,14 @@
+In Python, the complex data type is used to represent complex numbers, which are numbers with a real part and an imaginary part. Complex numbers are written in the form a+bj, where a is the real part and b is the imaginary part. The letter j is used in Python to denote the imaginary unit (in mathematics, this is often denoted as i)
+
+# Define complex number variables
+z1 = 3 + 4j
+z2 = 1 - 2j
+
+# Perform arithmetic operations
+sum_z = z1 + z2
+difference = z1 - z2
+product = z1 * z2
+quotient = z1 / z2
+magnitude_z1 = abs(z1)  # Magnitude (or modulus) of z1
+conjugate_z1 = z1.conjugate()  # Conjugate of z1
+

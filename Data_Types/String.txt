@@ -1,0 +1,140 @@
+* String is a set  or collection of characters. (" ", ' ', '" "')
+* It is an immutable datatype
+
+s =100
+d = str(s)
+print(type(d))
+==============================
+
+"" Raw string ""
+* String prefixed with "r" or "R"
+* Raw string do not treat backslash as a part of an escape sequence.
+
+E.g.
+In regular string consider backslash as special character
+s = "hello \world \gu"
+print(s)
+
+In raw string consider entire string as character.
+s = r"hello \world \gu"
+print(s)
+
+=================================
+
+"" Indexing ""
+* Process of extracting single character is called indexing.
+* It can start with positive or negative.
+s = 'sri'
+print(s.index('r'))
+
+
+"" Slicing ""
+* Process of extracting multiple character.
+
+Eg.
+s = "hello world"
+print(s[-3])
+print(s[2])
+print(s[0:7:2])
+print(s[len(s):0:-2])
+print(s[len(s)::-1])
+
+==================================
+** Note
+String is immutable, Because once memory allocated to the string we can never modify original memory using any methods.
+When string inbuilt method is applied an any string the original string giving to the output of new string.
+
+s = "hello world"
+b = s.upper()
+print(b)
+print(id(s))   ## 2590597596080
+print(id(b))  ## 2590597595952
+===================================
+
+Python String Methods
+
+a. count(): Returns the number of times a specified value occurs in a string
+s= 'sriikanth'
+print(s.count('i'))
+
+b. endswith():	Returns true if the string ends with the specified value
+s= 'sriikanth'
+print(s.endswith('g')) ### False
+print(s.endswith('h')) ### True
+
+c. find():		Searches the string for a specified value and returns the position of where it was found
+s= 'sriikanth'
+print(s.find('p'))  ## returns -1 (return -1 if character not available)
+print(s.find('h'))  ## returns 8
+
+d. index():		Searches the string for a specified value and returns the position of where it was found
+s= 'sriikanth'
+print(s.index('z'))  ## returns value error
+print(s.index('h'))  ## returns 6
+
+e. isalnum():	Returns True if all characters in the string are alphanumeric
+s= 'sriikant456h'
+print(s.isalnum())  ##True
+
+f. isalpha():		Returns True if all characters in the string are in the alphabet
+s= '123'
+print(s.isalpha()) ## True
+
+g. isascii():		Returns True if all characters in the string are ascii characters
+print(s.isascii())
+
+h. isdecimal():	Returns True if all characters in the string are decimals
+
+i. isdigit():		Returns True if all characters in the string are digits
+s= '123'
+print(s.isdigit())
+
+j. isidentifier():	Returns True if the string is an identifier
+
+k. islower():		Returns True if all characters in the string are lower case
+string = "sriKanth"
+print(string.lower())
+
+l. isnumeric():	Returns True if all characters in the string are numeric
+
+m. isspace():		Returns True if all characters in the string are whitespaces
+
+n. isupper():		Returns True if all characters in the string are upper case
+string = "sriKanth"
+print(string.upper())
+
+o. join():		Converts the elements of an iterable into a string
+string = "hello world"
+print('-'.join(string))
+
+p. lower():		Converts a string into lower case
+
+q. lstrip():		Returns a left trim version of the string
+
+r. replace():		Returns a string where a specified value is replaced with a specified value
+s= ' Srikanth'
+print(s.replace('r','Z'))
+
+s. rfind():		Searches the string for a specified value and returns the last position of where it was found
+
+t. rindex():		Searches the string for a specified value and returns the last position of where it was found
+
+u. rsplit():		Splits the string at the specified separator, and returns a list
+
+v. rstrip():		Returns a right trim version of the
+string = "***hello eworld"
+print(string.lstrip('*'))
+
+w. split()		Splits the string at the specified separator, and returns a list
+s= 'Srikanth is a student'
+print(s.split(' '))
+
+x. startswith()	Returns true if the string starts with the specified value
+
+y. strip():		Returns a trimmed version of the string
+
+z. swapcase():	Swaps cases, lower case becomes upper case and vice versa
+s= 'Srikanth'
+print(s.swapcase())
+
+aa. upper():		Converts a string into upper case

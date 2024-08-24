@@ -1,0 +1,37 @@
+In Python, the int data type is used to represent integer numbers, which are whole numbers without any decimal part.
+Python's int type can handle arbitrarily large values, limited only by the available memory of your system.
+
+It specifies the data stored inside. The memory allocation should be an integer.
+
+# Define integer variables
+a = 10
+b = -3
+c = 1234567890123456789
+
+# Perform arithmetic operations
+sum_ab = a + b
+difference = a - b
+product = a * b
+quotient = a // 3  # Integer division
+remainder = a % 3  # Remainder after division
+power = a ** 3  # a raised to the power of 3
+
+
+** abs: Give only positive integer as the output.
+d =-1
+print(abs(d))
+
+** round num: round off the number
+d =1.95
+print(round(d))
+
+** Mathtrunc: Truncate removes the decimal point from a floating point
+import math
+d =1.95
+print(math.trunc(d))
+
+
+** You can convert other numeric types or strings to integers using the int() function.
+str_num = "42"
+converted_int = int(str_num)
+print("Converted integer:", converted_int)
