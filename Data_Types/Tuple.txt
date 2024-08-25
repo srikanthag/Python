@@ -3,9 +3,12 @@
 * Tupules are faster and memory efficiency than list.
 
 " Methods ""
-a. Count
-a = (1,2,2,3)
-print(a.count(2))
+1. Count: Returns the number of times a specified value appears in the tuple.
+my_tuple = (1, 2, 3, 2, 2)
+count = my_tuple.count(2)
+print(count)  # Output: 3
 
-b. Index
-print(a.index(2))
+2. Index: Returns the index of the first occurrence of a specified value. Raises a ValueError if the value is not found.
+my_tuple = (1, 2, 3)
+index = my_tuple.index(2)
+print(index)  # Output: 1

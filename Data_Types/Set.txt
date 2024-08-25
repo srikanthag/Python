@@ -3,23 +3,92 @@
 * Sets are mutable but elements in side the sets set must be hashable.
 * Sets cannot be indexed and slicing.
 
-===================
-"Methods"
 
-* add(): Adds an element to the set
-* clear(): Removes all the elements from the set
-* copy(): Returns a copy of the set
-* difference(): Returns a set containing the difference between two or more sets
-* difference_update(): Removes the items in this set that are also included in another, specified set
-* discard(): Remove the specified item but doesn't raise any error
-* intersection(): Returns a set, that is the intersection of two or more sets
-* intersection_update(): Removes the items in this set that are not present in other, specified set(s)
-* isdisjoint(): Returns whether two sets have a intersection or not
-* issubset(): Returns whether another set contains this set or not
-* issuperset():	Returns whether this set contains another set or not
-* pop(): Removes an random element from the set
-* remove(): Removes the specified element
-* symmetric_difference(): Returns a set with the symmetric differences of two sets
-* symmetric_difference_update():	 inserts the symmetric differences from this set and another
-* union(): Return a set containing the union of sets
-* update(): Update the set with another set, or any other iterable
+Python Set Methods
+
+1. add(): Adds an element to the set
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  # Output: {1, 2, 3, 4}
+
+2. clear(): Removes all the elements from the set
+my_set = {1, 2, 3}
+my_set.clear()
+print(my_set)  # Output: set()
+
+3. copy(): Returns a copy of the set
+my_set = {1, 2, 3}
+copy_set = my_set.copy()
+print(copy_set)  # Output: {1, 2, 3}
+
+4. difference(): Returns a set containing the difference between two or more sets
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+difference_set = set1.difference(set2)
+print(difference_set)  # Output: {1}
+
+5. difference_update(): Removes the items in this set that are also included in another, specified set
+
+6. discard(): Remove the specified item but doesn't raise any error
+my_set = {1, 2, 3}
+my_set.discard(2)
+print(my_set)  # Output: {1, 3}
+my_set.discard(4)  # No error even though 4 is not present
+
+7. intersection(): Returns a set, that is the intersection of two or more sets
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+intersection_set = set1.intersection(set2)
+print(intersection_set)  # Output: {2, 3}
+
+8. intersection_update(): Removes the items in this set that are not present in other, specified set(s)
+
+9. isdisjoint(): Returns whether two sets have a intersection or not
+set1 = {1, 2, 3}
+set2 = {4, 5, 6}
+is_disjoint = set1.isdisjoint(set2)
+print(is_disjoint)  # Output: True
+
+10. issubset(): Returns whether another set contains this set or not
+set1 = {1, 2}
+set2 = {1, 2, 3}
+is_subset = set1.issubset(set2)
+print(is_subset)  # Output: True
+
+11. issuperset():	Returns whether this set contains another set or not
+set1 = {1, 2, 3}
+set2 = {1, 2}
+is_superset = set1.issuperset(set2)
+print(is_superset)  # Output: True
+
+12 pop(): Removes an random element from the set
+my_set = {1, 2, 3}
+element = my_set.pop()
+print(element)  # Output: 1 (or 2 or 3, since it's arbitrary)
+print(my_set)  # Output: {2, 3} or {1, 3} or {1, 2}
+
+13. remove(): Removes the specified element
+my_set = {1, 2, 3}
+my_set.remove(2)
+print(my_set)  # Output: {1, 3}
+# my_set.remove(4)  # This would raise a KeyError
+
+14. symmetric_difference(): Returns a set with the symmetric differences of two sets
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+symmetric_diff_set = set1.symmetric_difference(set2)
+print(symmetric_diff_set)  # Output: {1, 4}
+
+15. symmetric_difference_update():	 inserts the symmetric differences from this set and another
+
+16. union(): Return a set containing the union of sets
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union_set = set1.union(set2)
+print(union_set)  # Output: {1, 2, 3, 4, 5}
+
+17. update(): Update the set with another set, or any other iterable
+my_set = {1, 2}
+my_set.update([3, 4])
+print(my_set)  # Output: {1, 2, 3, 4}
+
