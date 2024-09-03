@@ -25,12 +25,3 @@ print(cwd)
 '''Check exist or not'''
 # r = os.path.exists(r"C:\Users\srikanth\Desktop\IT\Python\python_practice\_python\Comprehension\Dictionary_Comprenhension.py")
 # print(r)
-
-
-
-
-
-
-
-
-

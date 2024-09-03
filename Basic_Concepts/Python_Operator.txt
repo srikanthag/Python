@@ -2,48 +2,182 @@
 
 The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a specific programming language. Python provides a variety of operators, which are described as follows.
 
-a. Arithmetic operators.
-+ (Addition):	It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30
-- (Subtraction): It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10
-/ (divide):	It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0
-* (Multiplication):	It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200
-% (Reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0
-** (Exponent):	It is an exponent operator represented as it calculates the first operand power to the second operand.
-// (Floor division):	It gives the floor value of the quotient produced by dividing the two operands.
+1. Arithmetic operators.
+a. + (Addition):	It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30
 
-b. Comparison operator
+b. - (Subtraction): It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10
+c. / (divide):	It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0
+d. * (Multiplication):	It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200
+e. % (Reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0
+f. ** (Exponent):	It is an exponent operator represented as it calculates the first operand power to the second operand.
+g. // (Floor division):	It gives the floor value of the quotient produced by dividing the two operands.
+
+
+2. Comparison operator
 Comparison operators are used to comparing the value of the two operands and returns Boolean true or false accordingly.
 
-==	If the value of two operands is equal, then the condition becomes true.
-!=	If the value of two operands is not equal, then the condition becomes true.
-<=	If the first operand is less than or equal to the second operand, then the condition becomes true.
->=	If the first operand is greater than or equal to the second operand, then the condition becomes true.
->	If the first operand is greater than the second operand, then the condition becomes true.
-<	If the first operand is less than the second operand, then the condition becomes true.
+a. Equal to (==): If the value of two operands is equal, then the condition becomes true.
+a = 10
+b = 10
+print(a == b)  # Output: True
+c = 5
+print(a == c)  # Output: False
 
-c. Assignment Operators
+b. Not equal to (!=): If the value of two operands is not equal, then the condition becomes true.
+a = 10
+b = 5
+print(a != b)  # Output: True
+c = 10
+print(a != c)  # Output: False
+
+c. Greater than or equal to (>=): if the first operand is less than or equal to the second operand, then the condition becomes true.
+a = 10
+b = 10
+print(a >= b)  # Output: True
+c = 5
+print(a >= c)  # Output: True
+d = 15
+print(a >= d)  # Output: False
+
+d. Less than or equal to (<=): If the first operand is greater than or equal to the second operand, then the condition becomes true.
+a = 5
+b = 10
+print(a <= b)  # Output: True
+c = 5
+print(a <= c)  # Output: True
+d = 3
+print(a <= d)  # Output: False
+
+e. Greater than (>)	If the first operand is greater than the second operand, then the condition becomes true.
+a = 10
+b = 5
+print(a > b)   # Output: True
+c = 15
+print(a > c)   # Output: False
+
+f. Less than (<)	If the first operand is less than the second operand, then the condition becomes true.
+a = 5
+b = 10
+print(a < b)   # Output: True
+c = 3
+print(a < c)   # Output: False
+
+
+3. Assignment Operators
 The assignment operators are used to assign the value of the right expression to the left operand.
-=	It assigns the value of the right expression to the left operand.
-+=	It increases the value of the left operand by the value of the right operand and assigns the modified value back to leftm operand. For example, if a = 10, b = 20 => a+ = b will be equal to a = a+ b and therefore, a = 30.
--=	It decreases the value of the left operand by the value of the right operand and assigns the modified value back to left 			operand. For example, if a = 20, b = 10 => a- = b will be equal to a = a- b and therefore, a = 10.
-*=	It multiplies the value of the left operand by the value of the right operand and assigns the modified value back to then the l	eft 		operand. For example, if a = 10, b = 20 => a* = b will be equal to a = a* b and therefore, a = 200.
-%=	It divides the value of the left operand by the value of the right operand and assigns the reminder back to the left operand. 	For 		example, if a = 20, b = 10 => a % = b will be equal to a = a % b and therefore, a = 0.
-**=	a**=b will be equal to a=a**b, for example, if a = 4, b =2, a**=b will assign 4**2 = 16 to a.
-//=	A//=b will be equal to a = a// b, for example, if a = 4, b = 3, a//=b will assign 4//3 = 1 to a.
+a. Assignment (=): It assigns the value of the right expression to the left operand.
+x = 5  # Assigns the value 5 to the variable x
+y = 10  # Assigns the value 10 to the variable y
+print(x)  # Output: 5
+print(y)  # Output: 10
 
-d. Logical Operators
+b. Addition Assignment (+=): It increases the value of the left operand by the value of the right operand and assigns the modified value back to left operand.
+x = 10
+x += 5  # Equivalent to x = x + 5
+print(x)  # Output: 15
+
+c. Subtraction Assignment (-=):	It decreases the value of the left operand by the value of the right operand and assigns the modified value back to left.
+x = 10
+x -= 3  # Equivalent to x = x - 3
+print(x)  # Output: 7
+
+d. Multiplication Assignment (*=):	It multiplies the value of the left operand by the value of the right operand and assigns the modified value back to then the left operand.
+x = 4
+x *= 3  # Equivalent to x = x * 3
+print(x)  # Output: 12
+
+e. Division Assignment (/=):	It divides the value of the left operand by the value of the right operand and assigns the reminder back to the left operand.
+x = 20
+x /= 4  # Equivalent to x = x / 4
+print(x)  # Output: 5.0
+
+f. Exponentiation Assignment (**=):	Raises the variable on the left to the power of the value on the right and assigns the result to the variable on the left.
+x = 2
+x **= 3  # Equivalent to x = x ** 3
+print(x)  # Output: 8
+
+g. Floor Division Assignment (//=): Performs floor division (integer division) on the variable on the left by the value on the right and assigns the result to the variable on the left.
+x = 20
+x //= 3  # Equivalent to x = x // 3
+print(x)  # Output: 6
+
+f. Modulus Assignment (%=): Takes the modulus (remainder) of the variable on the left by the value on the right and assigns the result to the variable on the left.
+x = 17
+x %= 5  # Equivalent to x = x % 5
+print(x)  # Output: 2
+
+
+4. Logical Operators
 The logical operators are used primarily in the expression evaluation to make a decision.
-and: 	If both the expression are true, then the condition will be true. If a and b are the two expressions.
-or:	If one of the expressions is true, then the condition will be true.
-not:	If an expression a is true, then not (a) will be false and vice versa.
+a. and: 	If both the expression are true, then the condition will be true. If a and b are the two expressions.
+a = 5
+b = 10
+# Both conditions are True
+result = (a < b) and (b > 0)  # True and True = True
+print(result)  # Output: True
 
-e. Membership Operators
+# One condition is False
+result = (a > b) and (b > 0)  # False and True = False
+print(result)  # Output: False
+
+b. or:	If one of the expressions is true, then the condition will be true.
+a = 5
+b = -10
+# One condition is True
+result = (a > 0) or (b > 0)  # True or False = True
+print(result)  # Output: True
+
+# Both conditions are False
+result = (a < 0) or (b > 0)  # False or False = False
+print(result)  # Output: False
+
+c. not:	If an expression a is true, then not (a) will be false and vice versa.
+a = True
+b = False
+# Inverts the boolean value
+result = not a  # not True = False
+print(result)  # Output: False
+
+result = not b  # not False = True
+print(result)  # Output: True
+
+
+5. Membership Operators
 Python membership operators are used to check the membership of value inside a Python data structure. If the value is present in the data structure, then the resulting value is true otherwise it returns false.
 
-in:	It is evaluated to be true if the first operand is found in the second operand (list, tuple, or dictionary).
-not in:	It is evaluated to be true if the first operand is not found in the second operand (list, tuple, or dictionary).
+a. in:	It is evaluated to be true if the first operand is found in the second operand (list, tuple, or dictionary).
+numbers = (1, 2, 3, 4, 5)
+result = 3 in numbers  # True because 3 is in the tuple
+print(result)  # Output: True
 
-f. Identity Operators
+b. not in:	It is evaluated to be true if the first operand is not found in the second operand (list, tuple, or dictionary).
+numbers = (1, 2, 3, 4, 5)
+result = 6 not in numbers  # True because 6 is not in the tuple
+print(result)  # Output: True
+
+
+6. Identity Operators
 The identity operators are used to decide whether an element certain class or type.
-is:	It is evaluated to be true if the reference present at both sides point to the same object.
-is not:	It is evaluated to be true if the reference present at both sides do not point to the same object.
+a. is:	It is evaluated to be true if the reference present at both sides point to the same object.
+x = 1000
+y = 1000
+print(x is y)  # Output: False
+# Explanation: x and y are different objects with the same value
+
+# Example with small integers (cached)
+a = 5
+b = 5
+print(a is b)  # Output: True
+# Explanation: Small integers are cached, so a and b refer to the same object
+
+b. is not:	It is evaluated to be true if the reference present at both sides do not point to the same object.
+x = 500
+y = 500
+print(x is not y)  # Output: True
+# Explanation: x and y are different objects, even though they have the same value
+
+# Example with small integers (cached)
+a = 5
+b = 5
+print(a is not b)  # Output: False
+# Explanation: Small integers are cached, so a and b refer to the same object

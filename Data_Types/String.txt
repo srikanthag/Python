@@ -83,6 +83,12 @@ print(s.isalpha()) ## True
 print(s.isascii())
 
 8. isdecimal():	Returns True if all characters in the string are decimals
+string1 = "12345"
+print(string1.isdecimal())  # Output: True
+
+# Example 2: String with non-decimal characters
+string2 = "1234a5"
+print(string2.isdecimal())  # Output: False
 
 9. isdigit():		Returns True if all characters in the string are digits
 s= '123'
@@ -95,45 +101,74 @@ string = "sriKanth"
 print(string.lower())
 
 12. isnumeric(): Returns True if all characters in the string are numeric
+string = "123"
+print(string.isnumeric())
 
 13. isspace(): Returns True if all characters in the string are whitespaces
+string = " "
+print(string.isspace())
 
 14. isupper(): Returns True if all characters in the string are upper case
-string = "sriKanth"
-print(string.upper())
+string = "SRI"
+print(string.isupper())
 
 15. join(): Converts the elements of an iterable into a string
 string = "hello world"
 print('-'.join(string))
 
 16. lower(): Converts a string into lower case
+string = "sri"
+print(string.lower())
 
-17. lstrip(): Returns a left trim version of the string
+17. lstrip(): The lstrip() method removes leading whitespace or specified characters from the beginning of a string
+string1 = "   Hello, World!   "
+print(f"Original string: '{string1}'")
+print(f"After lstrip(): '{string1.lstrip()}'")  # Removes leading whitespace
+# Output: 'Hello, World!
 
 18. replace(): Returns a string where a specified value is replaced with a specified value
 s= ' Srikanth'
 print(s.replace('r','Z'))
 
 19. rfind(): Searches the string for a specified value and returns the last position of where it was found
+string1 = "hello world, hello universe"
+index = string1.rfind("hello")
+print(index)  # Output: 13 (Index of the last 'hello')
 
 20. rindex(): Searches the string for a specified value and returns the last position of where it was found
+string1 = "hello world, hello universe"
+index = string1.rindex("hello")
+print(index)  # Output: 13 (Index of the last 'hello'
 
 21. rsplit(): Splits the string at the specified separator, and returns a list
+string1 = "one two three four"
+print(string1.rsplit())  # Splits by whitespace, starting from the right
+# Output: ['one', 'two', 'three', 'four']
 
-22. rstrip(): Returns a right trim version of the
-string = "***hello eworld"
-print(string.lstrip('*'))
+22. rstrip(): The rstrip() method removes trailing whitespace or specified characters from the end of a string.
+string3 = "   Hello, World!   "
+print(f"Original string: '{string3}'")
+print(f"After rstrip(): '{string3.rstrip()}'")  # Removes trailing whitespace
+# Output: '   Hello, World!'
 
 23. split(): Splits the string at the specified separator, and returns a list
 s= 'Srikanth is a student'
 print(s.split(' '))
 
 24. startswith(): Returns true if the string starts with the specified value
+string1 = "Hello, World!"
+print(string1.startswith("Hello"))  # Output: True
+print(string1.startswith("World"))  # Output: False
 
 25. strip(): Returns a trimmed version of the string
+string1 = "   Hello, World!   "
+print(f"Original string: '{string1}'")
+print(f"After strip(): '{string1.strip()}'")
 
 26. swapcase():	Swaps cases, lower case becomes upper case and vice versa
 s= 'Srikanth'
 print(s.swapcase())
 
 27. upper(): Converts a string into upper case
+string = "sriKanth"
+print(string.upper())
