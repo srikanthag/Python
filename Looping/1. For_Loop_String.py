@@ -185,7 +185,7 @@ for item in string:
         res += item
 print(res)
 
-# 20. wap to create a string with only consents present in the string.
+# 20. wap to create a string with only consonants present in the string.
 string = 'Python selenium'
 st = ''
 for item in string:

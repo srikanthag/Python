@@ -3,13 +3,18 @@
 The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a specific programming language. Python provides a variety of operators, which are described as follows.
 
 1. Arithmetic operators.
-a. + (Addition):	It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30
+a. + (Addition): It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30
 
 b. - (Subtraction): It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10
+
 c. / (divide):	It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0
+
 d. * (Multiplication):	It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200
+
 e. % (Reminder):	It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0
+
 f. ** (Exponent):	It is an exponent operator represented as it calculates the first operand power to the second operand.
+
 g. // (Floor division):	It gives the floor value of the quotient produced by dividing the two operands.
 
 
@@ -109,7 +114,7 @@ print(x)  # Output: 2
 
 4. Logical Operators
 The logical operators are used primarily in the expression evaluation to make a decision.
-a. and: 	If both the expression are true, then the condition will be true. If a and b are the two expressions.
+a. and: If both the expression are true, then the condition will be true. If a and b are the two expressions.
 a = 5
 b = 10
 # Both conditions are True
@@ -131,7 +136,7 @@ print(result)  # Output: True
 result = (a < 0) or (b > 0)  # False or False = False
 print(result)  # Output: False
 
-c. not:	If an expression a is true, then not (a) will be false and vice versa.
+c. not:	If an expression an is true, then not (a) will be false and vice versa.
 a = True
 b = False
 # Inverts the boolean value

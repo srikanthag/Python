@@ -11,7 +11,7 @@ for key in d:
     print(key)
 
 # Using d.item()
-d = {'a' : 1, 'b' : 2, 'c': 3, 'd' : 4, 'e' : 5}
+d = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 for key, value in d.items():
     print(value, end=',')
 
@@ -232,7 +232,7 @@ for char in s:
     d[char] = count
 print(d)
 
-# 17. wap to get the index of the each item in the bellow name
+# 17. wap to get the index of the item in the bellow name
 names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail']
 d = {}
 for item, index in enumerate(names):

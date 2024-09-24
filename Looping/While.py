@@ -52,7 +52,7 @@ while i < len(l):
     print(l[i])
     i += 1
 
-# 9. wap to print all the character in the list
+# 9. wap to print all the character in the tuple
 t = (1, 2, 3, 4)
 i = 0
 while i < len(t):
