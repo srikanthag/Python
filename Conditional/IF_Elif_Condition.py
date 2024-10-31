@@ -63,7 +63,7 @@ if len(list_) % 2 == 0:
 else:
     print("iterable has odd numbered elements")
 
-# 7. to check if the first digit in the given number is even or odd """
+# 7. to check if the first digit in the given number is even or odd
 number = 1234
 str_num = str(number)
 if int(str_num[0]) % 2 == 0:

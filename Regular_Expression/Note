@@ -2,15 +2,15 @@
 A Regular Expressions (RegEx) is a special sequence of characters that uses a search pattern to find a string or set of strings.
 
 
-\d	It matches any digit and is equivalent to [0-9].
-\D	It matches any non-digit character and is equivalent to [^0-9].
-\s	     It matches any white space character and is equivalent to [\t\n\r\f\v]
-\S	It matches any character except the white space character and is equivalent to [^\t\n\r\f\v]
-\w	It matches any alphanumeric character and is equivalent to [a-zA-Z0-9]
-\W	It matches any characters except the alphanumeric character and is equivalent to [^a-zA-Z0-9]
-\A	It matches the defined pattern at the start of the string.
-\b	r"\bxt" - It matches the pattern at the beginning of a word in a string.
-r"xt\b" - It matches the pattern at the end of a word in a string.
-\B	This is the opposite of \b.
-\Z	It returns a match object when the pattern is at the end of the string.
+\d: It matches any digit and is equivalent to [0-9].
+\D: It matches any non-digit character and is equivalent to [^0-9].
+\s: It matches any white space character and is equivalent to [\t\n\r\f\v]
+\S: It matches any character except the white space character and is equivalent to [^\t\n\r\f\v]
+\w: It matches any alphanumeric character and is equivalent to [a-zA-Z0-9]
+\W: It matches any characters except the alphanumeric character and is equivalent to [^a-zA-Z0-9]
+\A: It matches the defined pattern at the start of the string.
+\b: r"\bxt" - It matches the pattern at the beginning of a word in a string.
+r"xt\b": It matches the pattern at the end of a word in a string.
+\B: This is the opposite of \b.
+\Z: It returns a match object when the pattern is at the end of the string.
 

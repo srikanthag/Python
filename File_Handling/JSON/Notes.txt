@@ -18,14 +18,12 @@ The process used to translate Python objects to JSON is known as serialization. 
 it is a good idea to store that data in a file. Using the JSON function, we can store JSON data in a file.
 The dump() and dumps() methods are available in the json module and are used to modify Python objects.
 
-
 ** dump()
 * The json.dump() function writes the serialized JSON data into a file named data.json. Adjust the filename and path as needed.
 
 data = "hello"
 with open(r"C:\Users\hp\Desktop\IT\Python\Python\File_Handling\JSON\sample.json","wb") as file:
      json.dump(data, file)
-
 
 ** dumps()
 * The json.dumps() function is used to serialize the Python dictionary (data) into a JSON string.
@@ -48,7 +46,6 @@ with open("example.pkl","rb") as file:
      json_object = json.load(file)
      print(json_object)
 
-
 ** "loads()"
 json.loads(): This function is used to deserialize a JSON string (text) into a Python object. It takes a JSON string as input and returns the corresponding Python object.
 
@@ -57,10 +54,8 @@ b = json.dumps(a)   #serilize any python object into json format file
 c = json.loads(b)    #deserilize any json string to python object'''
 print(type(c))      # dict
 
-
 =============================================================================================================
-
-Pickling (Serializing):
+** Pickling (Serializing):
 Pickle.dump() serializes the Python object (data) into a binary file named data.pkl
 
 import pickle
@@ -79,8 +74,7 @@ with open('data.pkl', 'wb') as pickle_file:
 ## pickle.dump() serializes the Python object (data) into a binary file named data.pkl
 
 
-
-Unpickling (Deserializing):
+** Unpickling (Deserializing):
 import pickle
 
 # Unpickle (deserialize) the object from the binary file

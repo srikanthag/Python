@@ -1219,7 +1219,7 @@ print(keys)
 list = [item for item in keys[1::2]]
 print(list)
 
-''' 128. Print largest number in list '''
+'''128. Print largest number in list'''
 numbers = [10, 20, 30, 40, 50]
 largest = 0
 for item in numbers:
@@ -1227,12 +1227,10 @@ for item in numbers:
         largest = item
 print(largest)
 
-''' 129. Move 0 to the corner of list '''
+'''129. Move 0 to the corner of list'''
 list = [-1,0,9,0,1,5,6,9,8,0,0,1,5]
 def test(list):
     result = sorted(list, key=lambda x: not x)
     return result
 print(test(list))
-
-
 

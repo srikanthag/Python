@@ -32,14 +32,14 @@ f. Large Standard Library: It provides a vast range of libraries for the various
 
 =======================================================================================================
 
-""" Python Compilation """
+Python Compilation:
 Compilation − The source code in python is saved as a . py file which is then compiled into a format known as byte code,
 byte code is then converted to machine code. After the compilation, the code is stored in . pyc files and is regenerated when the
 source is updated.
 
 =======================================================================================================
 
-" Identifier"
+Identifier:
 User defined name to represent a variable, functions, class, modules ect.
 
 Rules:
@@ -53,7 +53,7 @@ Note: To check weather python identifier is valid or not >>> "string".isidentifi
 
 ======================================================================================================
 
-" Keywords "
+Keywords:
 
 Special words which having special meaning.
 Cant assign any value to the keyword.
@@ -67,7 +67,7 @@ b. import keyword
 
 ======================================================================================================
 
-" Python Variable "
+Python Variable:
 Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
 
 a=10
@@ -78,7 +78,7 @@ print(id(x))
 
 =====================================================================================================
 
-" Memory allocation in variables "
+Memory allocation in variables:
 
 There are two parts of memory (RAM)
 a. Stack memory (Organized memory)
@@ -95,7 +95,7 @@ Eg:
 
 =====================================================================================================
 
-" Print "
+Print:
 Standard function used to print the output.
 
 Parameter
@@ -108,7 +108,7 @@ print(value, sep="string")
 
 =====================================================================================================
 
-" Input "
+Input:
 The input() function takes input from the user and returns it.
 name = input("Enter your name: ")
 print(name)
@@ -142,7 +142,7 @@ print(chr(123))
 print(chr(36))
 
 ======================================================================================================
-"Hashable object"
+Hashable object:
 * These objects which implements __hash__ magic method.
 * Only immutable have hash value. It is used to check mutable or immutable.
 * All immutable are hashable but all hashable are not immutable.
@@ -170,7 +170,9 @@ Sequences and Iterable
   Lists, tuples, strings
 
 ========================================================================================================
-"Default values"
+
+Default values:
+
 Int: 0/Int()
 Float: 0.0/float()
 Bool: False/bool()
@@ -183,7 +185,7 @@ Dictionary: {}/dit()
 
 =========================================================================================================
 
-Data types
+Data types:
 
 Datatypes are represent the type of data ths is store in memory location.
 Variable can hold the value and every value has a data type.
@@ -196,12 +198,58 @@ dir(): returns the list of attributes.
 d = "srikanth"
 print(dir(d))
 
+=========================================================================================================
+
 Different types of datatypes
+
 Text Type:	str
 Numeric Types:	int, float, complex
 Sequence Types:	list, tuple, range
 Mapping Type:	dict
 Set Types:	set, frozenset
 Boolean Type:	bool
-Binary Types:	bytes, bytearray, memoryview
+Binary Types:	bytes, bytearray, memory view
 None Type:	NoneType
+
+=========================================================================================================
+
+Counters:
+Counters are referred to as the container that holds the count of each of the elements that are available in the container.
+They allow us to access the stored object. The dictionary class holds the Counter as the subclass.
+Counter helps us to count the key-value pairs in an object.
+
+Eg:
+from collections import Counter
+List1 = ['a', 'b', 'a', 'a', 'c', 'd', 'e', 'c', 'd', 'f']
+Str = "sriakknjdkfhdf"
+# Print count of the variable
+print(Counter(List1))
+print(Counter(Str))
+
+=========================================================================================================
+
+Itertools:
+In Python, Itertools is the inbuilt module that allows us to handle the iterators in an efficient way.
+They make iterating through the iterables like lists and strings very easily. One such itertools function is islice().
+
+** islice(iterable,start,stop,step) - It slices the given iterable according to given position.
+It accepts four arguments respectively and these are iterable, container, starting pos., ending position and step(optional).
+
+=========================================================================================================
+Deque:
+A Deque, also known as a Double-ended queue, has the attribute of inserting and deleting data elements from either end.
+The deque module is a segment of the library known as collections. It contains the attributes to add and remove data elements
+that can be invoked directly with parameters. In order to declare a deque, we have to import the collections library first.
+
+=========================================================================================================
+
+Tell() and Seek()
+The tell() method returns the current file position in a file stream
+seek() function is used to change the position of the File Handle to a given specific position.
+
+=========================================================================================================
+
+The super() function is used to give access to methods and properties of a parent or sibling class.
+The super() function returns an object that represents the parent class.
+
+=========================================================================================================

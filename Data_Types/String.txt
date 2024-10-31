@@ -6,7 +6,7 @@ d = str(s)
 print(type(d))
 
 
-** Raw string ""
+** Raw string:
 * String prefixed with "r" or "R"
 * Raw string do not treat backslash as a part of an escape sequence.
 
