@@ -22,7 +22,17 @@ def reverse(any_string):
         temp.append(any_string[i])
     return ''.join(temp)
 
-''' print(reverse('Hello world'))'''
+print(reverse('Hello world'))
+
+# Alternate
+def reverse(any_string):
+    tem = []
+    for item in any_string[::-1]:
+        tem.append(item)
+    return tem
+print(''.join(reverse("srikanth")))
+
+
 # Alternate
 a = 'srikanth'
 for item in range(len(a)-1, -1, -1):
@@ -31,6 +41,7 @@ for item in range(len(a)-1, -1, -1):
 # Alternate
 for item in a[::-1]:
     print(item)
+
 
 # Alternate
 def recverce(any_string):
@@ -115,7 +126,7 @@ print(d)
 '''10. Write program to read a first n line in a file.  '''
 from itertools import islice
 def fist_n(n):
-    with open ('sample.txt') as file:
+    with open (r'C:\Users\hp\Desktop\IT\Python\Python\File_Handling\File_Directory\Text_File_Sample\file1.txt') as file:
         s = islice(file, n)
 
 print(list(s))
@@ -179,7 +190,7 @@ def search_character(string, key):
 search_character('hello world', 'w')
 search_character('hello world', 'd')
 
-'''alternate method'''
+# Alternate
 
 a = "srikanth"
 b = "k"

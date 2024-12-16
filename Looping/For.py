@@ -60,7 +60,7 @@ print(d)
 for item in d:
     print(item)
 
-# 14. Check original string ismutable orimmutable
+# 14. Check original string ismutable or immutable
 a = "srikanth"  # original string is immutable, but it's giving output as new string
 f = a.upper()
 print(f)

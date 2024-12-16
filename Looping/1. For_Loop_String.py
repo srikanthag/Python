@@ -105,7 +105,7 @@ for i in s:
         sum += int(i)
 print(sum)
 
-# 12. wap to print all the consonants present in the string and conunt of it
+# 12. wap to print all the consonants present in the string and count of it
 s = 'srikanth*&'
 count = 0
 for i in s:
@@ -170,8 +170,8 @@ for item in string:
         alphabet += 1
     elif item.isdigit():
         digit += 1
-print(alphabet)
-print(digit)
+print('no of alphabet present in string is:',alphabet)
+print('no of digit present in string is:',digit)
 
 # 19. wap to create a string by swapping the cases of the character without using inbuilt method
 string = 'SRIkanth'

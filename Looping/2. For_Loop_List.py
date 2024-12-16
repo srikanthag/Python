@@ -35,7 +35,7 @@ for item in reversed(l):
 l = ['python', 10, 3.2, 'selenium', 'java']
 
 # range function
-for item in range (0, len(l), 2):
+for item in range(0, len(l), 2):
     print(l[item])
 
 # slicing method
@@ -43,7 +43,7 @@ for item in l[::2]:
     print(item)
 
 # use condition (odd index)
-for i in range (len(l)):
+for i in range(len(l)):
     if i % 2 == 1:
         print(l[i])
 
