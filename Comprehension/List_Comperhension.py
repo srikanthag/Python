@@ -75,22 +75,22 @@ l1 = [item[::-1] if isinstance(item, str) else item for item in l]
 print(l1)
 
 # 15. wap to print the element which have starting with vowel
-l = ["Amezon", "Flipcart", "walmart", "gmail", "yahoo"]
+l = ["Amazon", "Flipkart", "walmart", "gmail", "yahoo"]
 l1 = [item for item in l if item[0] in 'aeiouAEIOU']
 print(l1)
 
-# 16. wap print all the extensions in the followig list
-l = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipcart.in']
+# 16. wap print all the extensions in the following list
+l = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipkart.in']
 l1 = [(item.split('.')[1]) for item in l]
 print(l1)
 
-# 17. wap print all the file name in the followig list
-l = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipcart.in']
+# 17. wap print all the file name in the following list
+l = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipkart.in']
 l1 = [(item.split('.')[0]) for item in l]
 print(l1)
 
 # 18. wap to print the file name if the file name is of odd length
-files = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipcart.in']
+files = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipkart.in']
 l1 = [(item.split('.')[0]) for item in files if len(item) % 2 == 1]
 print(l1)
 

@@ -145,7 +145,7 @@ for i in s:
     if not ('a' <= i <= 'z' or 'A' <= i <= 'Z' or '0' <= i <= '9'):
         print(i)
 
-# 17. wap to check the if the given character present in string if it presents return its index
+# 17. wap to check, if the given character present in string if it presents return its index
 s = 'srikanth'
 char = 'm'
 for i in range(0, len(s)):

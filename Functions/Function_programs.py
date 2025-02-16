@@ -25,7 +25,7 @@ def tail(sequence, n):
     return sequence[-n:]
 print(tail('hello', 2))
 
-# 4. waf name is perfect square and that accept number and returns true if it is a perfect squre and retuens false if it is not
+# 4. waf name is perfect square and that accept number and returns true if it is a perfect square and returns false if it is not
 def is_perfect_sqr(num):
     a = int(num ** 0.5)
     if a * a == num:
@@ -182,13 +182,13 @@ index_ele(s)
 index_ele('srikanth')
 
 # 18. waf to traverse through a string in reverse order
-def rev_str(argu):
-    print(argu[::-1])
+def rev_str(arg):
+    print(arg[::-1])
 
-rev_str('srikanth')
+rev_str('Srikanth')
 
 # 19. wap to count the number of characters present in the given string without using len function
-def coun_str(arg):
+def count_str(arg):
     d = {}
     for item in arg:
         count = 0
@@ -197,7 +197,7 @@ def coun_str(arg):
                 count += 1
         # print(d[item] = count)
 
-print(coun_str('ss112ri'))
+print(count_str('ss112ri'))
 
 # 20. waf to print even index characters in the string
 def even_index(arg):

@@ -34,10 +34,10 @@ def is_true(a):
 
 # calling function
 res = add(2, 3)
-print("Result of add function is {}".format(res))
+print(res)
 
 res = is_true(2<5)
-print("\nResult of is_true function is {}".format(res))
+print(res)
 
 ===================================================================
 
@@ -106,7 +106,7 @@ add_(1, 2, 3, d=4) #type error
 7. Keyword positional argument (**kwargs): *kwargs are pack the data in the form of dictionary.
 
 
-** Default parameter: It indicate the function argument will take the value if user not passes the any value during
+** Default parameter: It indicates the function argument will take the value if user not passes the any value during
 function call. Default value assigned by using assignment (=) operator.
 
 #default parameters
@@ -156,8 +156,7 @@ eg: add = lambda a,b: a+b
 =======================================================================================================
 
 Filter function
-The filter() function is utilized to apply a function to each element of an iterable (like a list or tuple)
-and return another iterable containing just the elements for which the function brings True back.
+The filter() function is utilized to apply a function to each element of an iterable (like a list or tuple) and return another iterable containing just the elements for which the function brings True back.
 
 syntax:
 filter (function, iterable)
