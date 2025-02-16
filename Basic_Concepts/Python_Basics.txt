@@ -14,13 +14,13 @@ In Python, everything is an object, including basic data types like integers, st
 " Without creating an Object ""
 class python:
      def designer():
-         print("Guido van Rossum")
+         print("Srikanthm")
 python.designer()
 
 " With creating an Object ""
 class python:
      def designer():
-         print("Guido van Rossum")
+         print("Srikanthm")
 p = python
 p.designer()
 
